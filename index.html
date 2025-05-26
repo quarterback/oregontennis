@@ -5,198 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oregon HS Tennis Scoop</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
-            color: #2d3748;
-            background: #ffffff;
-        }
-
-        .container {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #333;
+            background: #f8f8f8;
             max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        header {
-            background: #1a365d;
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .tagline {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        main {
-            padding: 3rem 0;
-        }
-
-        .intro {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 0.5rem;
+            margin: auto;
             padding: 2rem;
-            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        header {
             text-align: center;
+            margin-bottom: 2rem;
         }
-
-        .intro h2 {
+        h1 {
             color: #1a365d;
-            margin-bottom: 1rem;
         }
-
-        .years-grid {
+        .years {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
+            gap: 1rem;
+            margin-top: 2rem;
         }
-
-        .year-card {
+        .year {
             background: white;
-            border: 2px solid #e2e8f0;
-            border-radius: 0.5rem;
-            padding: 2rem;
-            text-align: center;
-            transition: all 0.2s;
-        }
-
-        .year-card:hover {
-            border-color: #3182ce;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .year-card h3 {
-            font-size: 1.5rem;
-            color: #1a365d;
-            margin-bottom: 1rem;
-        }
-
-        .year-card a {
-            display: inline-block;
-            background: #3182ce;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.2s;
-        }
-
-        .year-card a:hover {
-            background: #2c5282;
-        }
-
-        .criteria-section {
-            background: #fef5e7;
-            border-left: 4px solid #d69e2e;
-            padding: 2rem;
-            margin: 3rem 0;
-            border-radius: 0 0.5rem 0.5rem 0;
-        }
-
-        .criteria-section h3 {
-            color: #1a365d;
-            margin-bottom: 1rem;
-        }
-
-        .new-2025 {
-            background: white;
-            border: 1px solid #d69e2e;
             padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 0.5rem;
-        }
-
-        footer {
-            background: #1a365d;
-            color: white;
-            padding: 2rem 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
             text-align: center;
-            margin-top: 4rem;
+            transition: box-shadow 0.3s;
         }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            .years-grid { grid-template-columns: 1fr; }
+        .year:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .year a {
+            text-decoration: none;
+            color: #3182ce;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Oregon HS Tennis Scoop</h1>
-            <p class="tagline">All-State Teams & Tournament Coverage</p>
-        </div>
+        <h1>Oregon HS Tennis Scoop</h1>
+        <p>All-State Teams & Tournament Coverage</p>
     </header>
 
-    <main class="container">
-        <div class="intro">
-            <h2>Oregon High School Tennis All-State Teams</h2>
-            <p>Honoring the top tennis players across Oregon HS tennis since 2020.</p>
-        </div>
-
-        <div class="criteria-section">
-            <h3>2025 Selection Criteria Updates</h3>
-            <p>We've made some tweaks to the All-State teams, making 1st team honors more exclusive and adding a third team:</p>
-            <div class="new-2025">
-                <ul>
-                    <li><strong>First Team:</strong> Champion, Runner-up, 3rd place winner</li>
-                    <li><strong>Second Team:</strong> 4th place, consolation champion</li>
-                    <li><strong>Third Team:</strong>Quarterfinalists, Consolation Finalist</li>
-                    <li><strong>NEW:</strong> District Player of the Year awards</li>
-                    <li><strong>NEW:</strong> Newcomer of the Year</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="years-grid">
-            <div class="year-card">
-                <h3>2025</h3>
-                <p>All classifications</p>
-                <a href="2025.html">View Teams</a>
-            </div>
-
-            <div class="year-card">
-                <h3>2024</h3>
-                <p>All classifications</p>
-                <a href="2024.html">View Teams</a>
-            </div>
-
-            <div class="year-card">
-                <h3>2023</h3>
-                <p>All classifications</p>
-                <a href="2023.html">View Teams</a>
-            </div>
-
-            <div class="year-card">
-                <h3>2022</h3>
-                <p>All classifications</p>
-                <a href="2022.html">View Teams</a>
-            </div>
-        </div>
-    </main>
+    <section class="years">
+        <div class="year"><a href="2025.md">2025 All-State Teams →</a></div>
+        <div class="year"><a href="2024.md">2024 All-State Teams →</a></div>
+        <div class="year"><a href="2023.md">2023 All-State Teams →</a></div>
+        <div class="year"><a href="2022.md">2022 All-State Teams →</a></div>
+    </section>
 
     <footer>
-        <div class="container">
-           
-        </div>
+        <p></p>
     </footer>
 </body>
 </html>
