@@ -11,34 +11,23 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --primary: #1a365d;
-            --accent: #3182ce;
-            --text: #2d3748;
-            --text-light: #4a5568;
-            --bg: #ffffff;
-            --bg-light: #f7fafc;
-            --border: #e2e8f0;
-            --shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
-            color: var(--text);
-            background: var(--bg);
+            color: #2d3748;
+            background: #ffffff;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 0 1rem;
         }
 
         header {
-            background: var(--primary);
+            background: #1a365d;
             color: white;
-            padding: 2rem 0;
+            padding: 3rem 0;
             text-align: center;
         }
 
@@ -53,185 +42,99 @@
             opacity: 0.9;
         }
 
-        nav {
-            background: var(--bg-light);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem 0;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text);
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            transition: all 0.2s;
-        }
-
-        .nav-links a:hover, .nav-links a.active {
-            background: var(--accent);
-            color: white;
-        }
-
         main {
-            padding: 2rem 0;
+            padding: 3rem 0;
         }
 
-        .page-section {
-            display: none;
-        }
-
-        .page-section.active {
-            display: block;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .tabs {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .tab {
-            padding: 0.5rem 1rem;
-            border: 2px solid var(--accent);
-            background: white;
-            color: var(--accent);
-            border-radius: 0.5rem;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.2s;
-        }
-
-        .tab.active {
-            background: var(--accent);
-            color: white;
-        }
-
-        .teams-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .team-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 0.5rem;
-            padding: 1.5rem;
-            box-shadow: var(--shadow);
-        }
-
-        .team-header {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--primary);
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .team-tier {
-            margin-bottom: 1rem;
-        }
-
-        .tier-title {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            font-size: 0.9rem;
-        }
-
-        .first-team { background: #ffd700; color: #8b5a00; }
-        .second-team { background: #c0c0c0; color: #4a4a4a; }
-        .third-team { background: #cd7f32; color: white; }
-
-        .player-list {
-            list-style: none;
-            margin-left: 1rem;
-        }
-
-        .player-list li {
-            padding: 0.25rem 0;
-            font-size: 0.95rem;
-        }
-
-        .champion {
-            font-weight: 600;
-        }
-
-        .articles-grid {
-            display: grid;
-            gap: 2rem;
-        }
-
-        .article-card {
-            background: white;
-            border: 1px solid var(--border);
+        .intro {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
             border-radius: 0.5rem;
             padding: 2rem;
-            box-shadow: var(--shadow);
+            margin-bottom: 3rem;
+            text-align: center;
         }
 
-        .article-title {
-            font-size: 1.5rem;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .article-date {
-            color: var(--text-light);
-            font-size: 0.9rem;
+        .intro h2 {
+            color: #1a365d;
             margin-bottom: 1rem;
         }
 
-        .article-excerpt {
-            color: var(--text-light);
-            line-height: 1.7;
-        }
-
-        .criteria-box {
-            background: var(--bg-light);
-            border: 1px solid var(--border);
-            border-radius: 0.5rem;
-            padding: 1.5rem;
+        .years-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
             margin: 2rem 0;
         }
 
-        .criteria-title {
-            font-size: 1.25rem;
-            color: var(--primary);
+        .year-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .year-card:hover {
+            border-color: #3182ce;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .year-card h3 {
+            font-size: 1.5rem;
+            color: #1a365d;
+            margin-bottom: 1rem;
+        }
+
+        .year-card a {
+            display: inline-block;
+            background: #3182ce;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .year-card a:hover {
+            background: #2c5282;
+        }
+
+        .criteria-section {
+            background: #fef5e7;
+            border-left: 4px solid #d69e2e;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        .criteria-section h3 {
+            color: #1a365d;
             margin-bottom: 1rem;
         }
 
         .new-2025 {
-            background: #fef5e7;
-            border-left: 4px solid #d69e2e;
+            background: white;
+            border: 1px solid #d69e2e;
             padding: 1rem;
             margin: 1rem 0;
-            border-radius: 0 0.5rem 0.5rem 0;
+            border-radius: 0.5rem;
+        }
+
+        footer {
+            background: #1a365d;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
         }
 
         @media (max-width: 768px) {
             h1 { font-size: 2rem; }
-            .nav-links { justify-content: center; }
-            .tabs { justify-content: center; }
+            .years-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -243,320 +146,57 @@
         </div>
     </header>
 
-    <nav>
-        <div class="container">
-            <div class="nav-links">
-                <a href="#" onclick="showSection('home')" class="active">Home</a>
-                <a href="#" onclick="showSection('all-state')">All-State Teams</a>
-                <a href="#" onclick="showSection('articles')">Articles</a>
-                <a href="#" onclick="showSection('criteria')">Selection Criteria</a>
-            </div>
-        </div>
-    </nav>
-
     <main class="container">
-        <!-- HOME SECTION -->
-        <section class="page-section active" id="home">
-            <div class="section-title">Oregon High School Tennis Coverage</div>
-            
-            <div class="criteria-box">
-                <h3 class="criteria-title">2025 All-State Teams</h3>
-                <p>Our objective All-State selections recognize the best performers from Oregon's state tennis championships. Based entirely on tournament results - no voting, no politics.</p>
-                
-                <div class="new-2025">
-                    <strong>New for 2025:</strong> More exclusive First Team (top 3 only), added Third Team recognition, plus new district Player of the Year awards.
-                </div>
-            </div>
+        <div class="intro">
+            <h2>Oregon High School Tennis All-State Teams</h2>
+            <p>Honoring the top tennis players across Oregon HS tennis since 2020.</p>
+        </div>
 
-            <div class="articles-grid">
-                <div class="article-card">
-                    <h3 class="article-title">2025 State Championships Recap</h3>
-                    <div class="article-date">May 25, 2025</div>
-                    <p class="article-excerpt">Complete coverage from all classifications, featuring breakthrough performances and championship moments that define Oregon high school tennis...</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ALL-STATE TEAMS SECTION -->
-        <section class="page-section" id="all-state">
-            <div class="section-title">All-State Teams</div>
-            
-            <div class="tabs">
-                <div class="tab active" onclick="showTeams('6a')">6A</div>
-                <div class="tab" onclick="showTeams('5a')">5A</div>
-                <div class="tab" onclick="showTeams('4a-1a')">4A-1A</div>
-            </div>
-
-            <!-- 6A TEAMS -->
-            <div class="teams-content" id="teams-6a" style="display: block;">
-                <div class="teams-grid">
-                    <!-- 2024 Boys -->
-                    <div class="team-card">
-                        <div class="team-header">2024 6A Boys Singles</div>
-                        
-                        <div class="team-tier">
-                            <div class="tier-title first-team">First Team</div>
-                            <ul class="player-list">
-                                <li class="champion">Will Semler (Lincoln) - Champion</li>
-                                <li>Vitomir Petcov (Southridge)</li>
-                                <li>Arnav Arora (Mountainside)</li>
-                                <li>Reif Larsen (Jesuit)</li>
-                                <li>Cooper Wyngarden (Lakeridge)</li>
-                            </ul>
-                        </div>
-
-                        <div class="team-tier">
-                            <div class="tier-title second-team">Second Team</div>
-                            <ul class="player-list">
-                                <li>Alexander Gurov (South Medford)</li>
-                                <li>Surya Panyam (Jesuit)</li>
-                                <li>Mason Men (Lake Oswego)</li>
-                                <li>Tiger Semler (Lincoln)</li>
-                                <li>Rowan Morrison (West Linn)</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 2024 Girls -->
-                    <div class="team-card">
-                        <div class="team-header">2024 6A Girls Singles</div>
-                        
-                        <div class="team-tier">
-                            <div class="tier-title first-team">First Team</div>
-                            <ul class="player-list">
-                                <li class="champion">Lauren Han (Clackamas) - Champion</li>
-                                <li>Carissa Gerung (Jesuit)</li>
-                                <li>Nikhitha Suresh (Sunset)</li>
-                                <li>Alexis Uschold (South Medford)</li>
-                                <li>Ava Kitchin (Lake Oswego)</li>
-                            </ul>
-                        </div>
-
-                        <div class="team-tier">
-                            <div class="tier-title second-team">Second Team</div>
-                            <ul class="player-list">
-                                <li>Tirzah Tarbox (Sprague)</li>
-                                <li>Sydney Board (Tigard)</li>
-                                <li>Sonya Drayton (West Linn)</li>
-                                <li>Carlyta Barfield (Benson)</li>
-                                <li>Sariah Plaisted (Century)</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 2023 Boys -->
-                    <div class="team-card">
-                        <div class="team-header">2023 6A Boys Singles</div>
-                        
-                        <div class="team-tier">
-                            <div class="tier-title first-team">First Team</div>
-                            <ul class="player-list">
-                                <li class="champion">Will Semler (Lincoln) - Champion</li>
-                                <li>Tannor Binder (Beaverton)</li>
-                                <li>Jaxson Ledwith (West Linn)</li>
-                                <li>Cooper Whittington (Lake Oswego)</li>
-                                <li>Josiah Mones (Grant)</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 2023 Girls -->
-                    <div class="team-card">
-                        <div class="team-header">2023 6A Girls Singles</div>
-                        
-                        <div class="team-tier">
-                            <div class="tier-title first-team">First Team</div>
-                            <ul class="player-list">
-                                <li class="champion">Neena Feldman (Westview) - Champion</li>
-                                <li>Lauren Han (Clackamas)</li>
-                                <li>Carissa Gerung (Jesuit)</li>
-                                <li>Claudia Barbieri (Wells)</li>
-                                <li>Sonya Drayton (West Linn)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 5A TEAMS -->
-            <div class="teams-content" id="teams-5a" style="display: none;">
-                <div class="teams-grid">
-                    <!-- 2024 5A Boys -->
-                    <div class="team-card">
-                        <div class="team-header">2024 5A Boys Singles</div>
-                        
-                        <div class="team-tier">
-                            <div class="tier-title first-team">First Team</div>
-                            <ul class="player-list">
-                                <li class="champion">Richard Wang (Crescent Valley) - Champion</li>
-                                <li>Kaiden Harris (La Salle Prep)</li>
-                                <li>Max Himstreet (Summit)</li>
-                                <li>Aiden Cruz (Caldera)</li>
-                                <li>Brandon Vu (Centennial)</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 2024 5A Girls -->
-                    <div class="team-card">
-                        <div class="team-header">2024 5A Girls Singles</div>
-                        
-                        <div class="team-tier">
-                            <div class="tier-title first-team">First Team</div>
-                            <ul class="player-list">
-                                <li class="champion">Kennedy Harris (La Salle Prep) - Champion</li>
-                                <li>Emily Gu (Crescent Valley)</li>
-                                <li>Veronica Miller (Ashland)</li>
-                                <li>Kate Bonetto (Summit)</li>
-                                <li>Matilda Morgan (Summit)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4A-1A TEAMS -->
-            <div class="teams-content" id="teams-4a-1a" style="display: none;">
-                <div class="teams-grid">
-                    <!-- 2024 4A-1A Boys -->
-                    <div class="team-card">
-                        <div class="team-header">2024 4A-1A Boys Singles</div>
-                        
-                        <div class="team-tier">
-                            <div class="tier-title first-team">First Team</div>
-                            <ul class="player-list">
-                                <li class="champion">EJ Roedl (Marist Catholic) - Champion</li>
-                                <li>Zareh Gonzalvo (Catlin Gabel)</li>
-                                <li>Reid Ravassipour (St. Mary's, Medford)</li>
-                                <li>Mason Do (Oregon Episcopal)</li>
-                                <li>Rand Freres (Oregon Episcopal)</li>
-                            </ul>
-                        </div>
-
-                        <div class="team-tier">
-                            <div class="tier-title second-team">Second Team</div>
-                            <ul class="player-list">
-                                <li>Aston Selley (Catlin Gabel)</li>
-                                <li>Dawson Richards (Nyssa)</li>
-                                <li>Alexander Ricketts (Marist Catholic)</li>
-                                <li>Dominic Pulver (Sisters)</li>
-                                <li>Jack Hally (Ontario)</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 2024 4A-1A Girls -->
-                    <div class="team-card">
-                        <div class="team-header">2024 4A-1A Girls Singles</div>
-                        
-                        <div class="team-tier">
-                            <div class="tier-title first-team">First Team</div>
-                            <ul class="player-list">
-                                <li class="champion">Patricia Dougherty (Klamath Union) - Champion</li>
-                                <li>Raegan Farm (North Bend)</li>
-                                <li>Whitney Hedden (Marist Catholic)</li>
-                                <li>Bailey Bell (Philomath)</li>
-                                <li>Ryan Lomber (Valley Catholic)</li>
-                            </ul>
-                        </div>
-
-                        <div class="team-tier">
-                            <div class="tier-title second-team">Second Team</div>
-                            <ul class="player-list">
-                                <li>Sami Shivakumar (Valley Catholic)</li>
-                                <li>Ella Li (Oregon Episcopal)</li>
-                                <li>Amanda Perez (Catlin Gabel)</li>
-                                <li>Juhree Kizziar (Sisters)</li>
-                                <li>Adele Beckstead (Philomath)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ARTICLES SECTION -->
-        <section class="page-section" id="articles">
-            <div class="section-title">Articles & Coverage</div>
-            
-            <div class="articles-grid">
-                <div class="article-card">
-                    <h3 class="article-title">Small School, Big Dreams: 4A-1A Championships</h3>
-                    <div class="article-date">May 25, 2025</div>
-                    <p class="article-excerpt">Oregon's smaller classifications delivered championship-level drama at Oregon State University, with repeat champions and breakthrough performances showcasing the depth of tennis talent across the state...</p>
-                </div>
-
-                <div class="article-card">
-                    <h3 class="article-title">Lincoln's Dynasty Continues with Team Title</h3>
-                    <div class="article-date">May 24, 2025</div>
-                    <p class="article-excerpt">Freshman Cayden Laughton captures individual gold while leading the Cardinals to their fourth boys tennis team championship in program history...</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CRITERIA SECTION -->
-        <section class="page-section" id="criteria">
-            <div class="section-title">Selection Criteria</div>
-            
-            <div class="criteria-box">
-                <h3 class="criteria-title">How All-State Teams Are Selected</h3>
-                <p>Our All-State selections are based entirely on state tournament results. No voting, no politics - just objective recognition of tournament performance.</p>
-            </div>
-
+        <div class="criteria-section">
+            <h3>2025 Selection Criteria Updates</h3>
+            <p>We've made some tweaks to the All-State teams, making 1st team honors more exclusive and adding a third team:</p>
             <div class="new-2025">
-                <h4>2025 Updates</h4>
                 <ul>
-                    <li><strong>First Team:</strong> Now limited to top 3 (Champion, Runner-up, 3rd place) - making it truly elite</li>
-                    <li><strong>Second Team:</strong> 4th place, consolation champion, semifinalists</li>
-                    <li><strong>Third Team:</strong> NEW - Consolation runner-up, quarterfinalists</li>
-                    <li><strong>District Player of the Year:</strong> NEW - Season-long excellence in each district</li>
-                    <li><strong>State Newcomer of the Year:</strong> NEW - Outstanding 9th graders</li>
+                    <li><strong>First Team:</strong> Champion, Runner-up, 3rd place winner</li>
+                    <li><strong>Second Team:</strong> 4th place, consolation champion</li>
+                    <li><strong>Third Team:</strong>Quarterfinalists, Consolation Finalist</li>
+                    <li><strong>NEW:</strong> District Player of the Year awards</li>
+                    <li><strong>NEW:</strong> Newcomer of the Year</li>
                 </ul>
             </div>
+        </div>
 
-            <div class="criteria-box">
-                <h3 class="criteria-title">Why Tournament Results?</h3>
-                <p>Given Oregon's size, most teams don't play outside their district during the regular season. Using state tournament results ensures fair recognition across all regions and eliminates subjective bias.</p>
+        <div class="years-grid">
+            <div class="year-card">
+                <h3>2025</h3>
+                <p>All classifications</p>
+                <a href="2025-all-state.html">View Teams</a>
             </div>
-        </section>
+
+            <div class="year-card">
+                <h3>2024</h3>
+                <p>All classifications</p>
+                <a href="2024-all-state.html">View Teams</a>
+            </div>
+
+            <div class="year-card">
+                <h3>2023</h3>
+                <p>All classifications</p>
+                <a href="2023-all-state.html">View Teams</a>
+            </div>
+
+            <div class="year-card">
+                <h3>2022</h3>
+                <p>All classifications</p>
+                <a href="2022-all-state.html">View Teams</a>
+            </div>
+        </div>
     </main>
 
-    <script>
-        function showSection(sectionName) {
-            // Hide all sections
-            document.querySelectorAll('.page-section').forEach(section => {
-                section.classList.remove('active');
-            });
-            
-            // Remove active class from nav links
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.classList.remove('active');
-            });
-            
-            // Show selected section
-            document.getElementById(sectionName).classList.add('active');
-            
-            // Add active class to clicked nav link
-            event.target.classList.add('active');
-        }
-
-        function showTeams(classification) {
-            // Hide all team content
-            document.querySelectorAll('.teams-content').forEach(content => {
-                content.style.display = 'none';
-            });
-            
-            // Remove active class from tabs
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Show selected teams
-            document.getElementById(`teams-${classification}`).style.display = 'block';
-            
-            // Add active class to clicked tab
-            event.target.classList.add('active');
-        }
-    </script>
+    <footer>
+        <div class="container">
+           
+        </div>
+    </footer>
 </body>
 </html>
