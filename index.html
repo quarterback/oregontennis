@@ -288,11 +288,11 @@
             </div>
 
             <!-- 6A TEAMS -->
-            <div class="teams-content active" id="teams-6a">
+            <div class="teams-content" id="teams-6a" style="display: block;">
                 <div class="teams-grid">
                     <!-- 2024 Boys -->
                     <div class="team-card">
-                        <div class="team-header">2024 Boys Singles</div>
+                        <div class="team-header">2024 6A Boys Singles</div>
                         
                         <div class="team-tier">
                             <div class="tier-title first-team">First Team</div>
@@ -319,7 +319,7 @@
 
                     <!-- 2024 Girls -->
                     <div class="team-card">
-                        <div class="team-header">2024 Girls Singles</div>
+                        <div class="team-header">2024 6A Girls Singles</div>
                         
                         <div class="team-tier">
                             <div class="tier-title first-team">First Team</div>
@@ -346,7 +346,7 @@
 
                     <!-- 2023 Boys -->
                     <div class="team-card">
-                        <div class="team-header">2023 Boys Singles</div>
+                        <div class="team-header">2023 6A Boys Singles</div>
                         
                         <div class="team-tier">
                             <div class="tier-title first-team">First Team</div>
@@ -362,7 +362,7 @@
 
                     <!-- 2023 Girls -->
                     <div class="team-card">
-                        <div class="team-header">2023 Girls Singles</div>
+                        <div class="team-header">2023 6A Girls Singles</div>
                         
                         <div class="team-tier">
                             <div class="tier-title first-team">First Team</div>
@@ -379,11 +379,11 @@
             </div>
 
             <!-- 5A TEAMS -->
-            <div class="teams-content" id="teams-5a">
+            <div class="teams-content" id="teams-5a" style="display: none;">
                 <div class="teams-grid">
                     <!-- 2024 5A Boys -->
                     <div class="team-card">
-                        <div class="team-header">2024 Boys Singles</div>
+                        <div class="team-header">2024 5A Boys Singles</div>
                         
                         <div class="team-tier">
                             <div class="tier-title first-team">First Team</div>
@@ -399,7 +399,7 @@
 
                     <!-- 2024 5A Girls -->
                     <div class="team-card">
-                        <div class="team-header">2024 Girls Singles</div>
+                        <div class="team-header">2024 5A Girls Singles</div>
                         
                         <div class="team-tier">
                             <div class="tier-title first-team">First Team</div>
@@ -416,11 +416,11 @@
             </div>
 
             <!-- 4A-1A TEAMS -->
-            <div class="teams-content" id="teams-4a-1a">
+            <div class="teams-content" id="teams-4a-1a" style="display: none;">
                 <div class="teams-grid">
                     <!-- 2024 4A-1A Boys -->
                     <div class="team-card">
-                        <div class="team-header">2024 Boys Singles</div>
+                        <div class="team-header">2024 4A-1A Boys Singles</div>
                         
                         <div class="team-tier">
                             <div class="tier-title first-team">First Team</div>
@@ -447,7 +447,7 @@
 
                     <!-- 2024 4A-1A Girls -->
                     <div class="team-card">
-                        <div class="team-header">2024 Girls Singles</div>
+                        <div class="team-header">2024 4A-1A Girls Singles</div>
                         
                         <div class="team-tier">
                             <div class="tier-title first-team">First Team</div>
@@ -543,7 +543,7 @@
         function showTeams(classification) {
             // Hide all team content
             document.querySelectorAll('.teams-content').forEach(content => {
-                content.classList.remove('active');
+                content.style.display = 'none';
             });
             
             // Remove active class from tabs
@@ -552,7 +552,7 @@
             });
             
             // Show selected teams
-            document.getElementById(`teams-${classification}`).classList.add('active');
+            document.getElementById(`teams-${classification}`).style.display = 'block';
             
             // Add active class to clicked tab
             event.target.classList.add('active');
