@@ -173,7 +173,7 @@ OREGON_SCHOOLS = {
     "Ontario": {"city": "Ontario", "lat": 44.0265, "lon": -116.9629},
     "Vale": {"city": "Vale", "lat": 43.9818, "lon": -117.2384},
     "Nyssa": {"city": "Nyssa", "lat": 43.8765, "lon": -116.9929},
-    "Hermiston": {"city": "Hermiston", "lat": 45.8401, "lon": -119.2890},
+    # Note: Pendleton left OSAA for WIAA in 2018-19 due to travel hardships
     "The Dalles": {"city": "The Dalles", "lat": 45.5946, "lon": -121.1787},
     "Hood River Valley": {"city": "Hood River", "lat": 45.7101, "lon": -121.5140},
     "Enterprise": {"city": "Enterprise", "lat": 45.4265, "lon": -117.2790},
@@ -564,7 +564,7 @@ def generate_sample_data() -> list[Game]:
         # 2025 Baseball
         (2025, "baseball", "6A", "First Round", "Jesuit", 1, "South Medford", 16),
         (2025, "baseball", "6A", "Quarterfinals", "Sheldon", 4, "Clackamas", 5),
-        (2025, "baseball", "5A", "First Round", "Summit", 1, "Hermiston", 16),
+        (2025, "baseball", "5A", "First Round", "Summit", 1, "Pendleton", 16),
         (2025, "baseball", "5A", "First Round", "Crescent Valley", 2, "Pendleton", 15),
         (2025, "baseball", "5A", "Quarterfinals", "La Salle Prep", 3, "Redmond", 14),
         (2025, "baseball", "4A", "First Round", "Marist Catholic", 1, "Ontario", 16),
@@ -593,7 +593,7 @@ def generate_sample_data() -> list[Game]:
         # 2024 Softball
         (2024, "softball", "6A", "First Round", "Sheldon", 1, "Grants Pass", 16),
         (2024, "softball", "6A", "Quarterfinals", "Jesuit", 3, "Roseburg", 6),
-        (2024, "softball", "5A", "First Round", "Summit", 1, "Hermiston", 16),
+        (2024, "softball", "5A", "First Round", "Summit", 1, "Pendleton", 16),
         (2024, "softball", "5A", "Quarterfinals", "Crescent Valley", 4, "Pendleton", 5),
         (2024, "softball", "4A", "First Round", "Valley Catholic", 1, "Klamath Union", 16),
 
@@ -601,7 +601,7 @@ def generate_sample_data() -> list[Game]:
         (2023, "baseball", "6A", "First Round", "Clackamas", 1, "South Medford", 16),
         (2023, "baseball", "6A", "Quarterfinals", "Jesuit", 4, "Crater", 5),
         (2023, "baseball", "5A", "First Round", "Churchill", 1, "Pendleton", 16),
-        (2023, "baseball", "5A", "First Round", "Summit", 2, "Hermiston", 15),
+        (2023, "baseball", "5A", "First Round", "Summit", 2, "Pendleton", 15),
         (2023, "baseball", "5A", "Quarterfinals", "Crescent Valley", 3, "Redmond", 6),
         (2023, "baseball", "4A", "First Round", "Philomath", 1, "Ontario", 16),
         (2023, "baseball", "4A", "First Round", "Marist Catholic", 2, "Baker", 15),
@@ -618,7 +618,7 @@ def generate_sample_data() -> list[Game]:
         # 2022 Baseball
         (2022, "baseball", "6A", "First Round", "Tualatin", 1, "Crater", 16),
         (2022, "baseball", "6A", "Quarterfinals", "Clackamas", 3, "South Medford", 6),
-        (2022, "baseball", "5A", "First Round", "Crescent Valley", 1, "Hermiston", 16),
+        (2022, "baseball", "5A", "First Round", "Crescent Valley", 1, "Pendleton", 16),
         (2022, "baseball", "5A", "First Round", "Summit", 2, "Pendleton", 15),
         (2022, "baseball", "5A", "Quarterfinals", "Churchill", 4, "Redmond", 5),
         (2022, "baseball", "4A", "First Round", "Philomath", 1, "Baker", 16),
@@ -630,7 +630,7 @@ def generate_sample_data() -> list[Game]:
         (2022, "softball", "6A", "First Round", "Jesuit", 1, "Roseburg", 16),
         (2022, "softball", "6A", "Quarterfinals", "Sheldon", 3, "South Medford", 6),
         (2022, "softball", "5A", "First Round", "Summit", 1, "Pendleton", 16),
-        (2022, "softball", "5A", "First Round", "Crescent Valley", 2, "Hermiston", 15),
+        (2022, "softball", "5A", "First Round", "Crescent Valley", 2, "Pendleton", 15),
         (2022, "softball", "4A", "First Round", "Valley Catholic", 1, "Klamath Union", 16),
     ]
 
@@ -1137,11 +1137,11 @@ def generate_html(games: list[Game], output_file: str = "brackets.html"):
                     </tr>
                     <tr class="tier-yellow">
                         <td><strong>Crescent Valley</strong></td>
-                        <td>2025</td>
-                        <td>Softball</td>
+                        <td>2022</td>
+                        <td>Baseball</td>
                         <td>5A</td>
                         <td>441 mi</td>
-                        <td>R1: vs Hermiston (211mi) → QF: vs Pendleton (230mi)</td>
+                        <td>R1: vs Pendleton (230mi) → QF: vs Pendleton (230mi)</td>
                     </tr>
                 </tbody>
             </table>
@@ -1167,6 +1167,15 @@ def generate_html(games: list[Game], output_file: str = "brackets.html"):
                     <tr class="tier-yellow"><td>Pendleton</td><td>8</td><td>277 mi</td><td>🟡 High</td></tr>
                 </tbody>
             </table>
+
+            <div style="background: #fef3c7; padding: 1rem; border-radius: 8px; border-left: 4px solid #d97706; margin-bottom: 1.5rem;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #92400e;">⚠️ Precedent: Pendleton Left OSAA Due to Travel</h4>
+                <p style="margin: 0; color: #78350f;">
+                    <strong>Pendleton High School switched to WIAA (Washington) in 2018-19</strong> specifically due to travel hardships.
+                    Located in Eastern Oregon, they now compete in Washington's Mid-Columbia Conference where geographic proximity
+                    reduces travel burden. This demonstrates schools are already voting with their feet on this issue.
+                </p>
+            </div>
 
             <div style="background: #ebf8ff; padding: 1rem; border-radius: 8px; border-left: 4px solid #3182ce; margin-bottom: 2rem;">
                 <h4 style="margin: 0 0 0.5rem 0; color: #2c5282;">🎾 Tennis Tournament Implications</h4>

@@ -6,7 +6,6 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2025,baseball,6A,First Round,Sunset,5,Roseburg,28,,Sunset HS,False,160.7,yellow
 2025,baseball,6A,Quarterfinals,Sheldon,4,Lincoln,5,,PK Park,True,100.3,green
 2025,baseball,5A,First Round,Summit,1,Pendleton,32,,Summit HS,False,164.8,yellow
-2025,baseball,5A,First Round,Crescent Valley,2,Hermiston,31,,Crescent Valley HS,False,211.0,yellow
 2025,baseball,5A,First Round,Churchill,3,Redmond,30,,Churchill HS,False,98.3,green
 2025,baseball,4A,First Round,Marist Catholic,1,Ontario,32,,Marist Catholic HS,False,303.1,red
 2025,baseball,4A,First Round,Philomath,2,Baker,31,,Philomath HS,False,272.3,red
@@ -32,7 +31,6 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2025,softball,6A,First Round,Jesuit,4,Roseburg,29,,Jesuit HS,False,159.6,yellow
 2025,softball,6A,First Round,Tualatin,5,North Medford,28,,Tualatin HS,False,209.9,yellow
 2025,softball,6A,Quarterfinals,Sheldon,3,South Medford,6,,Jane Sanders Stadium,True,123.2,yellow
-2025,softball,5A,First Round,Crescent Valley,1,Hermiston,32,,Crescent Valley HS,False,211.0,yellow
 2025,softball,5A,First Round,Summit,2,Pendleton,31,,Summit HS,False,164.8,yellow
 2025,softball,5A,First Round,Churchill,3,Redmond,30,,Churchill HS,False,98.3,green
 2025,softball,5A,First Round,La Salle Prep,5,Ridgeview,28,,La Salle Prep,False,107.7,green
@@ -58,7 +56,6 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2024,baseball,6A,Second Round,Jesuit,1,Roseburg,17,,Jesuit HS,False,159.6,yellow
 2024,baseball,6A,Quarterfinals,Sheldon,5,Sunset,4,,Volcanoes Stadium,True,98.9,green
 2024,baseball,5A,First Round,Crescent Valley,1,Pendleton,32,,Crescent Valley HS,False,229.7,yellow
-2024,baseball,5A,First Round,Summit,2,Hermiston,31,,Summit HS,False,156.1,yellow
 2024,baseball,5A,First Round,La Salle Prep,3,Redmond,30,,La Salle Prep,False,107.7,green
 2024,baseball,5A,First Round,Churchill,4,The Dalles,29,,Churchill HS,False,144.6,yellow
 2024,baseball,5A,First Round,Wilsonville,5,Ridgeview,28,,Wilsonville HS,False,105.8,green
@@ -85,7 +82,6 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2024,softball,6A,First Round,Sheldon,3,Grants Pass,30,,Sheldon HS,False,114.9,green
 2024,softball,6A,First Round,Jesuit,4,Roseburg,29,,Jesuit HS,False,159.6,yellow
 2024,softball,6A,First Round,Tualatin,5,North Medford,28,,Tualatin HS,False,209.9,yellow
-2024,softball,5A,First Round,Summit,1,Hermiston,32,,Summit HS,False,156.1,yellow
 2024,softball,5A,First Round,Crescent Valley,2,Pendleton,31,,Crescent Valley HS,False,229.7,yellow
 2024,softball,5A,First Round,Churchill,3,Redmond,30,,Churchill HS,False,98.3,green
 2024,softball,5A,First Round,Wilsonville,4,Ridgeview,29,,Wilsonville HS,False,105.8,green
@@ -110,9 +106,7 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2023,baseball,6A,First Round,Sunset,5,Roseburg,28,,Sunset HS,False,160.7,yellow
 2023,baseball,6A,Quarterfinals,Jesuit,2,Crater,7,,PK Park,True,215.4,yellow
 2023,baseball,5A,First Round,Churchill,1,Pendleton,32,,Churchill HS,False,241.0,yellow
-2023,baseball,5A,First Round,Summit,2,Hermiston,31,,Summit HS,False,156.1,yellow
 2023,baseball,5A,First Round,Crescent Valley,3,Redmond,30,,Crescent Valley HS,False,104.3,green
-2023,baseball,5A,Quarterfinals,Summit,2,Hermiston,7,,Summit HS,False,156.1,yellow
 2023,baseball,4A,First Round,Philomath,1,Ontario,32,,Philomath HS,False,318.6,red
 2023,baseball,4A,First Round,Marist Catholic,2,Baker,31,,Marist Catholic HS,False,263.5,red
 2023,baseball,4A,First Round,Hidden Valley,3,La Grande,30,,Hidden Valley HS,False,330.8,red
@@ -137,7 +131,6 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2023,softball,6A,Quarterfinals,Sheldon,2,South Medford,7,,Jane Sanders Stadium,True,123.2,yellow
 2023,softball,5A,First Round,Crescent Valley,1,Pendleton,32,,Crescent Valley HS,False,229.7,yellow
 2023,softball,5A,First Round,Churchill,2,Redmond,31,,Churchill HS,False,98.3,green
-2023,softball,5A,First Round,Summit,3,Hermiston,30,,Summit HS,False,156.1,yellow
 2023,softball,4A,First Round,Marist Catholic,1,Klamath Union,32,,Marist Catholic HS,False,139.5,yellow
 2023,softball,4A,First Round,Valley Catholic,2,Ontario,31,,Valley Catholic HS,False,303.3,red
 2023,softball,4A,First Round,Philomath,3,Baker,30,,Philomath HS,False,272.3,red
@@ -156,7 +149,6 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2022,baseball,6A,First Round,West Linn,4,North Medford,29,,West Linn HS,False,208.9,yellow
 2022,baseball,6A,First Round,Lincoln,5,Roseburg,28,,Lincoln HS,False,162.2,yellow
 2022,baseball,6A,Quarterfinals,Tualatin,1,South Medford,8,,Tualatin HS,False,212.0,yellow
-2022,baseball,5A,First Round,Crescent Valley,1,Hermiston,32,,Crescent Valley HS,False,211.0,yellow
 2022,baseball,5A,First Round,Summit,2,Pendleton,31,,Summit HS,False,164.8,yellow
 2022,baseball,5A,First Round,Churchill,3,Redmond,30,,Churchill HS,False,98.3,green
 2022,baseball,5A,Quarterfinals,Crescent Valley,1,Pendleton,8,,Crescent Valley HS,False,229.7,yellow
@@ -182,7 +174,6 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2022,softball,6A,First Round,Tualatin,5,North Medford,28,,Tualatin HS,False,209.9,yellow
 2022,softball,6A,Quarterfinals,Sheldon,2,Crater,7,,Jane Sanders Stadium,True,119.0,green
 2022,softball,5A,First Round,Summit,1,Pendleton,32,,Summit HS,False,164.8,yellow
-2022,softball,5A,First Round,Crescent Valley,2,Hermiston,31,,Crescent Valley HS,False,211.0,yellow
 2022,softball,5A,First Round,Churchill,3,Redmond,30,,Churchill HS,False,98.3,green
 2022,softball,4A,First Round,Valley Catholic,1,Klamath Union,32,,Valley Catholic HS,False,229.4,yellow
 2022,softball,4A,First Round,Marist Catholic,2,Ontario,31,,Marist Catholic HS,False,303.1,red

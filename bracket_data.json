@@ -10,7 +10,6 @@
     {"year": 2025, "sport": "baseball", "division": "6A", "round": "Quarterfinals", "team1": "Sheldon", "team1_seed": 4, "team2": "Lincoln", "team2_seed": 5, "location": "PK Park", "neutral_site": true},
 
     {"year": 2025, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 32, "location": "Summit HS"},
-    {"year": 2025, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 2, "team2": "Hermiston", "team2_seed": 31, "location": "Crescent Valley HS"},
     {"year": 2025, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "location": "Churchill HS"},
     {"year": 2025, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "La Salle Prep", "team1_seed": 4, "team2": "The Dalles", "team2_seed": 29, "location": "La Salle Prep"},
     {"year": 2025, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Wilsonville", "team1_seed": 5, "team2": "Hood River Valley", "team2_seed": 28, "location": "Wilsonville HS"},
@@ -44,7 +43,6 @@
     {"year": 2025, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Tualatin", "team1_seed": 5, "team2": "North Medford", "team2_seed": 28, "location": "Tualatin HS"},
     {"year": 2025, "sport": "softball", "division": "6A", "round": "Quarterfinals", "team1": "Sheldon", "team1_seed": 3, "team2": "South Medford", "team2_seed": 6, "location": "Jane Sanders Stadium", "neutral_site": true},
 
-    {"year": 2025, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 1, "team2": "Hermiston", "team2_seed": 32, "location": "Crescent Valley HS"},
     {"year": 2025, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 2, "team2": "Pendleton", "team2_seed": 31, "location": "Summit HS"},
     {"year": 2025, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "location": "Churchill HS"},
     {"year": 2025, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Wilsonville", "team1_seed": 4, "team2": "The Dalles", "team2_seed": 29, "location": "Wilsonville HS"},
@@ -76,7 +74,6 @@
     {"year": 2024, "sport": "baseball", "division": "6A", "round": "Quarterfinals", "team1": "Sheldon", "team1_seed": 5, "team2": "Sunset", "team2_seed": 4, "location": "Volcanoes Stadium", "neutral_site": true},
 
     {"year": 2024, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 32, "location": "Crescent Valley HS"},
-    {"year": 2024, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 2, "team2": "Hermiston", "team2_seed": 31, "location": "Summit HS"},
     {"year": 2024, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "La Salle Prep", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "location": "La Salle Prep"},
     {"year": 2024, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 4, "team2": "The Dalles", "team2_seed": 29, "location": "Churchill HS"},
     {"year": 2024, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Wilsonville", "team1_seed": 5, "team2": "Ridgeview", "team2_seed": 28, "location": "Wilsonville HS"},
@@ -111,7 +108,6 @@
     {"year": 2024, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Tualatin", "team1_seed": 5, "team2": "North Medford", "team2_seed": 28, "location": "Tualatin HS"},
     {"year": 2024, "sport": "softball", "division": "6A", "round": "Quarterfinals", "team1": "Sheldon", "team1_seed": 3, "team2": "West Linn", "team2_seed": 6, "location": "Jane Sanders Stadium", "neutral_site": true},
 
-    {"year": 2024, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 1, "team2": "Hermiston", "team2_seed": 32, "location": "Summit HS"},
     {"year": 2024, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 2, "team2": "Pendleton", "team2_seed": 31, "location": "Crescent Valley HS"},
     {"year": 2024, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "location": "Churchill HS"},
     {"year": 2024, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Wilsonville", "team1_seed": 4, "team2": "Ridgeview", "team2_seed": 29, "location": "Wilsonville HS"},
@@ -142,11 +138,9 @@
     {"year": 2023, "sport": "baseball", "division": "6A", "round": "Quarterfinals", "team1": "Jesuit", "team1_seed": 2, "team2": "Crater", "team2_seed": 7, "location": "PK Park", "neutral_site": true},
 
     {"year": 2023, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 32, "location": "Churchill HS"},
-    {"year": 2023, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 2, "team2": "Hermiston", "team2_seed": 31, "location": "Summit HS"},
     {"year": 2023, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "location": "Crescent Valley HS"},
     {"year": 2023, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "La Salle Prep", "team1_seed": 4, "team2": "Hood River Valley", "team2_seed": 29, "location": "La Salle Prep"},
     {"year": 2023, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Wilsonville", "team1_seed": 5, "team2": "The Dalles", "team2_seed": 28, "location": "Wilsonville HS"},
-    {"year": 2023, "sport": "baseball", "division": "5A", "round": "Quarterfinals", "team1": "Summit", "team1_seed": 2, "team2": "Hermiston", "team2_seed": 7, "location": "Summit HS"},
 
     {"year": 2023, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Philomath", "team1_seed": 1, "team2": "Ontario", "team2_seed": 32, "location": "Philomath HS"},
     {"year": 2023, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Marist Catholic", "team1_seed": 2, "team2": "Baker", "team2_seed": 31, "location": "Marist Catholic HS"},
@@ -176,7 +170,6 @@
 
     {"year": 2023, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 32, "location": "Crescent Valley HS"},
     {"year": 2023, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 2, "team2": "Redmond", "team2_seed": 31, "location": "Churchill HS"},
-    {"year": 2023, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 3, "team2": "Hermiston", "team2_seed": 30, "location": "Summit HS"},
     {"year": 2023, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Wilsonville", "team1_seed": 4, "team2": "The Dalles", "team2_seed": 29, "location": "Wilsonville HS"},
     {"year": 2023, "sport": "softball", "division": "5A", "round": "First Round", "team1": "La Salle Prep", "team1_seed": 5, "team2": "Hood River Valley", "team2_seed": 28, "location": "La Salle Prep"},
 
@@ -202,7 +195,6 @@
     {"year": 2022, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Lincoln", "team1_seed": 5, "team2": "Roseburg", "team2_seed": 28, "location": "Lincoln HS"},
     {"year": 2022, "sport": "baseball", "division": "6A", "round": "Quarterfinals", "team1": "Tualatin", "team1_seed": 1, "team2": "South Medford", "team2_seed": 8, "location": "Tualatin HS"},
 
-    {"year": 2022, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 1, "team2": "Hermiston", "team2_seed": 32, "location": "Crescent Valley HS"},
     {"year": 2022, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 2, "team2": "Pendleton", "team2_seed": 31, "location": "Summit HS"},
     {"year": 2022, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "location": "Churchill HS"},
     {"year": 2022, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "La Salle Prep", "team1_seed": 4, "team2": "The Dalles", "team2_seed": 29, "location": "La Salle Prep"},
@@ -236,7 +228,6 @@
     {"year": 2022, "sport": "softball", "division": "6A", "round": "Quarterfinals", "team1": "Sheldon", "team1_seed": 2, "team2": "Crater", "team2_seed": 7, "location": "Jane Sanders Stadium", "neutral_site": true},
 
     {"year": 2022, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 32, "location": "Summit HS"},
-    {"year": 2022, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 2, "team2": "Hermiston", "team2_seed": 31, "location": "Crescent Valley HS"},
     {"year": 2022, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "location": "Churchill HS"},
     {"year": 2022, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Wilsonville", "team1_seed": 4, "team2": "The Dalles", "team2_seed": 29, "location": "Wilsonville HS"},
     {"year": 2022, "sport": "softball", "division": "5A", "round": "First Round", "team1": "La Salle Prep", "team1_seed": 5, "team2": "Hood River Valley", "team2_seed": 28, "location": "La Salle Prep"},
