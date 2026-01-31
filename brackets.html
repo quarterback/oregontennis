@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSAA Playoff Brackets - Travel Distance Analysis</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: white;
+            border-radius: 8px;
+        }
+        h1 {
+            margin: 0 0 0.5rem 0;
+        }
+        .subtitle {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+        .back-link:hover {
+            color: white;
+        }
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .filter-group label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #555;
+        }
+        .filter-group select {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            min-width: 140px;
+        }
+        .legend {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        .legend-color.green { background: #c6f6d5; }
+        .legend-color.yellow { background: #fefcbf; }
+        .legend-color.red { background: #fed7d7; }
+        .legend-color.neutral { background: #e2e8f0; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .stat-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1a365d;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background: #f7fafc;
+            font-weight: 600;
+            color: #1a365d;
+            cursor: pointer;
+            position: sticky;
+            top: 0;
+            user-select: none;
+        }
+        th:hover {
+            background: #edf2f7;
+        }
+        th::after {
+            content: ' \2195';
+            opacity: 0.3;
+        }
+        th.sort-asc::after {
+            content: ' \2191';
+            opacity: 1;
+        }
+        th.sort-desc::after {
+            content: ' \2193';
+            opacity: 1;
+        }
+        tr:hover {
+            background: #f7fafc;
+        }
+        .tier-green { background-color: #c6f6d5; }
+        .tier-yellow { background-color: #fefcbf; }
+        .tier-red { background-color: #fed7d7; }
+        .tier-unknown { background-color: #e2e8f0; }
+        .neutral-badge {
+            display: inline-block;
+            padding: 0.15rem 0.4rem;
+            background: #805ad5;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        .seed {
+            color: #718096;
+            font-size: 0.85rem;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #3182ce;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .download-btn:hover {
+            background: #2c5282;
+        }
+        .actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .no-data {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .filters {
+                flex-direction: column;
+            }
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            th, td {
+                padding: 0.5rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">&larr; Back to Home</a>
+            <h1>OSAA Playoff Brackets</h1>
+            <p class="subtitle">Long-Haul Playoff Matchups (95+ miles) - Baseball & Softball 2022-2025</p>
+        </header>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="sport-filter">Sport</label>
+                <select id="sport-filter">
+                    <option value="">All Sports</option>
+                    <option value="softball">Softball</option>
+                    <option value="baseball">Baseball</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="year-filter">Year</label>
+                <select id="year-filter">
+                    <option value="">All Years</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="division-filter">Division</label>
+                <select id="division-filter">
+                    <option value="">All Divisions</option>
+                    <option value="6A">6A</option>
+                    <option value="5A">5A</option>
+                    <option value="4A">4A</option>
+                    <option value="3A">3A</option>
+                    <option value="2A/1A">2A/1A</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="tier-filter">Distance Tier</label>
+                <select id="tier-filter">
+                    <option value="">All Tiers</option>
+                    <option value="green">Green (95-119 mi)</option>
+                    <option value="yellow">Yellow (120-249 mi)</option>
+                    <option value="red">Red (250+ mi)</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="round-filter">Round</label>
+                <select id="round-filter">
+                    <option value="">All Rounds</option>
+                    <option value="First Round">First Round</option>
+                    <option value="Quarterfinals">Quarterfinals</option>
+                    <option value="Semifinals">Semifinals</option>
+                    <option value="Championship">Championship</option>
+                </select>
+            </div>
+            <div class="filter-group actions">
+                <label>&nbsp;</label>
+                <button class="download-btn" onclick="downloadCSV()">Download CSV</button>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color green"></div>
+                <span>Green: 95-119 miles</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color yellow"></div>
+                <span>Yellow: 120-249 miles</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color red"></div>
+                <span>Red: 250+ miles</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color neutral"></div>
+                <span>Neutral Site</span>
+            </div>
+        </div>
+
+        <div class="stats" id="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="total-games">0</div>
+                <div class="stat-label">Total Games</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avg-distance">0</div>
+                <div class="stat-label">Avg Distance (mi)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="green-pct">0%</div>
+                <div class="stat-label">Short Travel</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="red-pct">0%</div>
+                <div class="stat-label">Long Travel</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="games-table">
+                <thead>
+                    <tr>
+                        <th data-sort="year">Year</th>
+                        <th data-sort="sport">Sport</th>
+                        <th data-sort="division">Division</th>
+                        <th data-sort="round">Round</th>
+                        <th data-sort="team1">Team 1</th>
+                        <th data-sort="team2">Team 2</th>
+                        <th data-sort="distance_miles">Distance</th>
+                        <th data-sort="location">Location</th>
+                    </tr>
+                </thead>
+                <tbody id="games-body">
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Data sourced from OSAA. Distance calculated as straight-line miles between school locations.</p>
+        </footer>
+    </div>
+
+    <script>
+        const allGames = [{"year": 2024, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Jesuit", "team1_seed": 1, "team2": "South Medford", "team2_seed": 32, "score": null, "location": "Jesuit HS", "neutral_site": false, "distance_miles": 219.4, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Tualatin", "team1_seed": 2, "team2": "Crater", "team2_seed": 31, "score": null, "location": "Tualatin HS", "neutral_site": false, "distance_miles": 208.0, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "West Linn", "team1_seed": 3, "team2": "Roseburg", "team2_seed": 30, "score": null, "location": "West Linn HS", "neutral_site": false, "distance_miles": 152.8, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Clackamas", "team1_seed": 4, "team2": "Grants Pass", "team2_seed": 29, "score": null, "location": "Clackamas HS", "neutral_site": false, "distance_miles": 208.8, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Lincoln", "team1_seed": 8, "team2": "North Medford", "team2_seed": 25, "score": null, "location": "Lincoln HS", "neutral_site": false, "distance_miles": 219.1, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "6A", "round": "Second Round", "team1": "Jesuit", "team1_seed": 1, "team2": "Roseburg", "team2_seed": 17, "score": null, "location": "Jesuit HS", "neutral_site": false, "distance_miles": 159.6, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "6A", "round": "Quarterfinals", "team1": "Sheldon", "team1_seed": 5, "team2": "Sunset", "team2_seed": 4, "score": null, "location": "Volcanoes Stadium", "neutral_site": true, "distance_miles": 98.9, "tier": "green"}, {"year": 2024, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 32, "score": null, "location": "Crescent Valley HS", "neutral_site": false, "distance_miles": 229.7, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 2, "team2": "Hermiston", "team2_seed": 31, "score": null, "location": "Summit HS", "neutral_site": false, "distance_miles": 156.1, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "La Salle Prep", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "score": null, "location": "La Salle Prep", "neutral_site": false, "distance_miles": 107.7, "tier": "green"}, {"year": 2024, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 4, "team2": "The Dalles", "team2_seed": 29, "score": null, "location": "Churchill HS", "neutral_site": false, "distance_miles": 144.6, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Wilsonville", "team1_seed": 5, "team2": "Ridgeview", "team2_seed": 28, "score": null, "location": "Wilsonville HS", "neutral_site": false, "distance_miles": 105.8, "tier": "green"}, {"year": 2024, "sport": "baseball", "division": "5A", "round": "Quarterfinals", "team1": "Crescent Valley", "team1_seed": 1, "team2": "Redmond", "team2_seed": 8, "score": null, "location": "Crescent Valley HS", "neutral_site": false, "distance_miles": 104.3, "tier": "green"}, {"year": 2024, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Marist Catholic", "team1_seed": 1, "team2": "Baker", "team2_seed": 32, "score": null, "location": "Marist Catholic HS", "neutral_site": false, "distance_miles": 263.5, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Philomath", "team1_seed": 2, "team2": "Ontario", "team2_seed": 31, "score": null, "location": "Philomath HS", "neutral_site": false, "distance_miles": 318.6, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Hidden Valley", "team1_seed": 3, "team2": "La Grande", "team2_seed": 30, "score": null, "location": "Hidden Valley HS", "neutral_site": false, "distance_miles": 330.8, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Valley Catholic", "team1_seed": 4, "team2": "Klamath Union", "team2_seed": 29, "score": null, "location": "Valley Catholic HS", "neutral_site": false, "distance_miles": 229.4, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "North Bend", "team1_seed": 8, "team2": "Crook County", "team2_seed": 25, "score": null, "location": "North Bend HS", "neutral_site": false, "distance_miles": 179.8, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "4A", "round": "Quarterfinals", "team1": "Marist Catholic", "team1_seed": 1, "team2": "Ontario", "team2_seed": 9, "score": null, "location": "Marist Catholic HS", "neutral_site": false, "distance_miles": 303.1, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Cascade Christian", "team1_seed": 1, "team2": "Enterprise", "team2_seed": 16, "score": null, "location": "Cascade Christian", "neutral_site": false, "distance_miles": 351.4, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Rainier", "team1_seed": 2, "team2": "Burns", "team2_seed": 15, "score": null, "location": "Rainier HS", "neutral_site": false, "distance_miles": 257.0, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Dayton", "team1_seed": 3, "team2": "Vale", "team2_seed": 14, "score": null, "location": "Dayton HS", "neutral_site": false, "distance_miles": 299.6, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Yamhill-Carlton", "team1_seed": 4, "team2": "Nyssa", "team2_seed": 13, "score": null, "location": "Yamhill-Carlton HS", "neutral_site": false, "distance_miles": 321.0, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Santiam Christian", "team1_seed": 5, "team2": "Irrigon", "team2_seed": 12, "score": null, "location": "Santiam Christian", "neutral_site": false, "distance_miles": 200.2, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "3A", "round": "Quarterfinals", "team1": "South Umpqua", "team1_seed": 1, "team2": "La Grande", "team2_seed": 8, "score": null, "location": "South Umpqua HS", "neutral_site": false, "distance_miles": 304.9, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Gaston", "team1_seed": 1, "team2": "Nyssa", "team2_seed": 16, "score": null, "location": "Gaston HS", "neutral_site": false, "distance_miles": 326.0, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Vernonia", "team1_seed": 2, "team2": "Grant Union", "team2_seed": 15, "score": null, "location": "Vernonia HS", "neutral_site": false, "distance_miles": 229.4, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Kennedy", "team1_seed": 3, "team2": "Powder Valley", "team2_seed": 14, "score": null, "location": "Kennedy HS", "neutral_site": false, "distance_miles": 237.5, "tier": "yellow"}, {"year": 2024, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Knappa", "team1_seed": 4, "team2": "Crane", "team2_seed": 13, "score": null, "location": "Knappa HS", "neutral_site": false, "distance_miles": 311.2, "tier": "red"}, {"year": 2024, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Bandon", "team1_seed": 5, "team2": "Joseph", "team2_seed": 12, "score": null, "location": "Bandon HS", "neutral_site": false, "distance_miles": 387.3, "tier": "red"}, {"year": 2024, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Sunset", "team1_seed": 1, "team2": "South Medford", "team2_seed": 32, "score": null, "location": "Sunset HS", "neutral_site": false, "distance_miles": 220.8, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Clackamas", "team1_seed": 2, "team2": "Crater", "team2_seed": 31, "score": null, "location": "Clackamas HS", "neutral_site": false, "distance_miles": 210.4, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Sheldon", "team1_seed": 3, "team2": "Grants Pass", "team2_seed": 30, "score": null, "location": "Sheldon HS", "neutral_site": false, "distance_miles": 114.9, "tier": "green"}, {"year": 2024, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Jesuit", "team1_seed": 4, "team2": "Roseburg", "team2_seed": 29, "score": null, "location": "Jesuit HS", "neutral_site": false, "distance_miles": 159.6, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Tualatin", "team1_seed": 5, "team2": "North Medford", "team2_seed": 28, "score": null, "location": "Tualatin HS", "neutral_site": false, "distance_miles": 209.9, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 1, "team2": "Hermiston", "team2_seed": 32, "score": null, "location": "Summit HS", "neutral_site": false, "distance_miles": 156.1, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 2, "team2": "Pendleton", "team2_seed": 31, "score": null, "location": "Crescent Valley HS", "neutral_site": false, "distance_miles": 229.7, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "score": null, "location": "Churchill HS", "neutral_site": false, "distance_miles": 98.3, "tier": "green"}, {"year": 2024, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Wilsonville", "team1_seed": 4, "team2": "Ridgeview", "team2_seed": 29, "score": null, "location": "Wilsonville HS", "neutral_site": false, "distance_miles": 105.8, "tier": "green"}, {"year": 2024, "sport": "softball", "division": "5A", "round": "Quarterfinals", "team1": "Summit", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 8, "score": null, "location": "Summit HS", "neutral_site": false, "distance_miles": 164.8, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Valley Catholic", "team1_seed": 1, "team2": "Klamath Union", "team2_seed": 32, "score": null, "location": "Valley Catholic HS", "neutral_site": false, "distance_miles": 229.4, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Marist Catholic", "team1_seed": 2, "team2": "Ontario", "team2_seed": 31, "score": null, "location": "Marist Catholic HS", "neutral_site": false, "distance_miles": 303.1, "tier": "red"}, {"year": 2024, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Philomath", "team1_seed": 3, "team2": "Baker", "team2_seed": 30, "score": null, "location": "Philomath HS", "neutral_site": false, "distance_miles": 272.3, "tier": "red"}, {"year": 2024, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Cascade", "team1_seed": 4, "team2": "La Grande", "team2_seed": 29, "score": null, "location": "Cascade HS", "neutral_site": false, "distance_miles": 239.5, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Hidden Valley", "team1_seed": 5, "team2": "Madras", "team2_seed": 28, "score": null, "location": "Hidden Valley HS", "neutral_site": false, "distance_miles": 189.9, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "4A", "round": "Quarterfinals", "team1": "Valley Catholic", "team1_seed": 1, "team2": "Baker", "team2_seed": 8, "score": null, "location": "Valley Catholic HS", "neutral_site": false, "distance_miles": 247.0, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Cascade Christian", "team1_seed": 1, "team2": "Enterprise", "team2_seed": 16, "score": null, "location": "Cascade Christian", "neutral_site": false, "distance_miles": 351.4, "tier": "red"}, {"year": 2024, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Dayton", "team1_seed": 2, "team2": "Burns", "team2_seed": 15, "score": null, "location": "Dayton HS", "neutral_site": false, "distance_miles": 228.4, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Rainier", "team1_seed": 3, "team2": "Vale", "team2_seed": 14, "score": null, "location": "Rainier HS", "neutral_site": false, "distance_miles": 313.9, "tier": "red"}, {"year": 2024, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Santiam Christian", "team1_seed": 4, "team2": "Nyssa", "team2_seed": 13, "score": null, "location": "Santiam Christian", "neutral_site": false, "distance_miles": 313.1, "tier": "red"}, {"year": 2024, "sport": "softball", "division": "2A/1A", "round": "First Round", "team1": "Kennedy", "team1_seed": 1, "team2": "Grant Union", "team2_seed": 16, "score": null, "location": "Kennedy HS", "neutral_site": false, "distance_miles": 194.1, "tier": "yellow"}, {"year": 2024, "sport": "softball", "division": "2A/1A", "round": "First Round", "team1": "Bandon", "team1_seed": 2, "team2": "Crane", "team2_seed": 15, "score": null, "location": "Bandon HS", "neutral_site": false, "distance_miles": 293.6, "tier": "red"}, {"year": 2024, "sport": "softball", "division": "2A/1A", "round": "First Round", "team1": "Vernonia", "team1_seed": 3, "team2": "Powder Valley", "team2_seed": 14, "score": null, "location": "Vernonia HS", "neutral_site": false, "distance_miles": 261.2, "tier": "red"}, {"year": 2023, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Clackamas", "team1_seed": 1, "team2": "South Medford", "team2_seed": 32, "score": null, "location": "Clackamas HS", "neutral_site": false, "distance_miles": 214.3, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Jesuit", "team1_seed": 2, "team2": "Crater", "team2_seed": 31, "score": null, "location": "Jesuit HS", "neutral_site": false, "distance_miles": 215.4, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "West Linn", "team1_seed": 3, "team2": "North Medford", "team2_seed": 30, "score": null, "location": "West Linn HS", "neutral_site": false, "distance_miles": 208.9, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Tualatin", "team1_seed": 4, "team2": "Grants Pass", "team2_seed": 29, "score": null, "location": "Tualatin HS", "neutral_site": false, "distance_miles": 205.4, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Sunset", "team1_seed": 5, "team2": "Roseburg", "team2_seed": 28, "score": null, "location": "Sunset HS", "neutral_site": false, "distance_miles": 160.7, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "6A", "round": "Quarterfinals", "team1": "Jesuit", "team1_seed": 2, "team2": "Crater", "team2_seed": 7, "score": null, "location": "PK Park", "neutral_site": true, "distance_miles": 215.4, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 32, "score": null, "location": "Churchill HS", "neutral_site": false, "distance_miles": 241.0, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 2, "team2": "Hermiston", "team2_seed": 31, "score": null, "location": "Summit HS", "neutral_site": false, "distance_miles": 156.1, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "score": null, "location": "Crescent Valley HS", "neutral_site": false, "distance_miles": 104.3, "tier": "green"}, {"year": 2023, "sport": "baseball", "division": "5A", "round": "Quarterfinals", "team1": "Summit", "team1_seed": 2, "team2": "Hermiston", "team2_seed": 7, "score": null, "location": "Summit HS", "neutral_site": false, "distance_miles": 156.1, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Philomath", "team1_seed": 1, "team2": "Ontario", "team2_seed": 32, "score": null, "location": "Philomath HS", "neutral_site": false, "distance_miles": 318.6, "tier": "red"}, {"year": 2023, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Marist Catholic", "team1_seed": 2, "team2": "Baker", "team2_seed": 31, "score": null, "location": "Marist Catholic HS", "neutral_site": false, "distance_miles": 263.5, "tier": "red"}, {"year": 2023, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Hidden Valley", "team1_seed": 3, "team2": "La Grande", "team2_seed": 30, "score": null, "location": "Hidden Valley HS", "neutral_site": false, "distance_miles": 330.8, "tier": "red"}, {"year": 2023, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Valley Catholic", "team1_seed": 4, "team2": "Klamath Union", "team2_seed": 29, "score": null, "location": "Valley Catholic HS", "neutral_site": false, "distance_miles": 229.4, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Cascade", "team1_seed": 5, "team2": "Crook County", "team2_seed": 28, "score": null, "location": "Cascade HS", "neutral_site": false, "distance_miles": 110.8, "tier": "green"}, {"year": 2023, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "North Bend", "team1_seed": 6, "team2": "Madras", "team2_seed": 27, "score": null, "location": "North Bend HS", "neutral_site": false, "distance_miles": 175.5, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Dayton", "team1_seed": 1, "team2": "La Grande", "team2_seed": 16, "score": null, "location": "Dayton HS", "neutral_site": false, "distance_miles": 242.7, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Cascade Christian", "team1_seed": 2, "team2": "Burns", "team2_seed": 15, "score": null, "location": "Cascade Christian", "neutral_site": false, "distance_miles": 211.9, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Rainier", "team1_seed": 3, "team2": "Enterprise", "team2_seed": 14, "score": null, "location": "Rainier HS", "neutral_site": false, "distance_miles": 276.5, "tier": "red"}, {"year": 2023, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Yamhill-Carlton", "team1_seed": 4, "team2": "Vale", "team2_seed": 13, "score": null, "location": "Yamhill-Carlton HS", "neutral_site": false, "distance_miles": 307.0, "tier": "red"}, {"year": 2023, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Santiam Christian", "team1_seed": 5, "team2": "Nyssa", "team2_seed": 12, "score": null, "location": "Santiam Christian", "neutral_site": false, "distance_miles": 313.1, "tier": "red"}, {"year": 2023, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Vernonia", "team1_seed": 1, "team2": "Nyssa", "team2_seed": 16, "score": null, "location": "Vernonia HS", "neutral_site": false, "distance_miles": 333.0, "tier": "red"}, {"year": 2023, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Kennedy", "team1_seed": 2, "team2": "Grant Union", "team2_seed": 15, "score": null, "location": "Kennedy HS", "neutral_site": false, "distance_miles": 194.1, "tier": "yellow"}, {"year": 2023, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Gaston", "team1_seed": 3, "team2": "Powder Valley", "team2_seed": 14, "score": null, "location": "Gaston HS", "neutral_site": false, "distance_miles": 260.4, "tier": "red"}, {"year": 2023, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Knappa", "team1_seed": 4, "team2": "Crane", "team2_seed": 13, "score": null, "location": "Knappa HS", "neutral_site": false, "distance_miles": 311.2, "tier": "red"}, {"year": 2023, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Bandon", "team1_seed": 5, "team2": "Joseph", "team2_seed": 12, "score": null, "location": "Bandon HS", "neutral_site": false, "distance_miles": 387.3, "tier": "red"}, {"year": 2023, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Sunset", "team1_seed": 1, "team2": "South Medford", "team2_seed": 32, "score": null, "location": "Sunset HS", "neutral_site": false, "distance_miles": 220.8, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Sheldon", "team1_seed": 2, "team2": "Crater", "team2_seed": 31, "score": null, "location": "Sheldon HS", "neutral_site": false, "distance_miles": 119.0, "tier": "green"}, {"year": 2023, "sport": "softball", "division": "6A", "round": "First Round", "team1": "West Linn", "team1_seed": 3, "team2": "Grants Pass", "team2_seed": 30, "score": null, "location": "West Linn HS", "neutral_site": false, "distance_miles": 205.3, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Clackamas", "team1_seed": 4, "team2": "Roseburg", "team2_seed": 29, "score": null, "location": "Clackamas HS", "neutral_site": false, "distance_miles": 156.3, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Jesuit", "team1_seed": 5, "team2": "North Medford", "team2_seed": 28, "score": null, "location": "Jesuit HS", "neutral_site": false, "distance_miles": 217.3, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "6A", "round": "Quarterfinals", "team1": "Sheldon", "team1_seed": 2, "team2": "South Medford", "team2_seed": 7, "score": null, "location": "Jane Sanders Stadium", "neutral_site": true, "distance_miles": 123.2, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 32, "score": null, "location": "Crescent Valley HS", "neutral_site": false, "distance_miles": 229.7, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 2, "team2": "Redmond", "team2_seed": 31, "score": null, "location": "Churchill HS", "neutral_site": false, "distance_miles": 98.3, "tier": "green"}, {"year": 2023, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 3, "team2": "Hermiston", "team2_seed": 30, "score": null, "location": "Summit HS", "neutral_site": false, "distance_miles": 156.1, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Marist Catholic", "team1_seed": 1, "team2": "Klamath Union", "team2_seed": 32, "score": null, "location": "Marist Catholic HS", "neutral_site": false, "distance_miles": 139.5, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Valley Catholic", "team1_seed": 2, "team2": "Ontario", "team2_seed": 31, "score": null, "location": "Valley Catholic HS", "neutral_site": false, "distance_miles": 303.3, "tier": "red"}, {"year": 2023, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Philomath", "team1_seed": 3, "team2": "Baker", "team2_seed": 30, "score": null, "location": "Philomath HS", "neutral_site": false, "distance_miles": 272.3, "tier": "red"}, {"year": 2023, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Cascade", "team1_seed": 4, "team2": "La Grande", "team2_seed": 29, "score": null, "location": "Cascade HS", "neutral_site": false, "distance_miles": 239.5, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Hidden Valley", "team1_seed": 5, "team2": "Crook County", "team2_seed": 28, "score": null, "location": "Hidden Valley HS", "neutral_site": false, "distance_miles": 182.0, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Cascade Christian", "team1_seed": 1, "team2": "Burns", "team2_seed": 16, "score": null, "location": "Cascade Christian", "neutral_site": false, "distance_miles": 211.9, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Dayton", "team1_seed": 2, "team2": "Enterprise", "team2_seed": 15, "score": null, "location": "Dayton HS", "neutral_site": false, "distance_miles": 282.0, "tier": "red"}, {"year": 2023, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Rainier", "team1_seed": 3, "team2": "Vale", "team2_seed": 14, "score": null, "location": "Rainier HS", "neutral_site": false, "distance_miles": 313.9, "tier": "red"}, {"year": 2023, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Santiam Christian", "team1_seed": 4, "team2": "Nyssa", "team2_seed": 13, "score": null, "location": "Santiam Christian", "neutral_site": false, "distance_miles": 313.1, "tier": "red"}, {"year": 2023, "sport": "softball", "division": "2A/1A", "round": "First Round", "team1": "Kennedy", "team1_seed": 1, "team2": "Crane", "team2_seed": 16, "score": null, "location": "Kennedy HS", "neutral_site": false, "distance_miles": 237.9, "tier": "yellow"}, {"year": 2023, "sport": "softball", "division": "2A/1A", "round": "First Round", "team1": "Bandon", "team1_seed": 2, "team2": "Grant Union", "team2_seed": 15, "score": null, "location": "Bandon HS", "neutral_site": false, "distance_miles": 286.6, "tier": "red"}, {"year": 2023, "sport": "softball", "division": "2A/1A", "round": "First Round", "team1": "Vernonia", "team1_seed": 3, "team2": "Powder Valley", "team2_seed": 14, "score": null, "location": "Vernonia HS", "neutral_site": false, "distance_miles": 261.2, "tier": "red"}, {"year": 2022, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Tualatin", "team1_seed": 1, "team2": "Crater", "team2_seed": 32, "score": null, "location": "Tualatin HS", "neutral_site": false, "distance_miles": 208.0, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Clackamas", "team1_seed": 2, "team2": "South Medford", "team2_seed": 31, "score": null, "location": "Clackamas HS", "neutral_site": false, "distance_miles": 214.3, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Jesuit", "team1_seed": 3, "team2": "Grants Pass", "team2_seed": 30, "score": null, "location": "Jesuit HS", "neutral_site": false, "distance_miles": 212.6, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "West Linn", "team1_seed": 4, "team2": "North Medford", "team2_seed": 29, "score": null, "location": "West Linn HS", "neutral_site": false, "distance_miles": 208.9, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "6A", "round": "First Round", "team1": "Lincoln", "team1_seed": 5, "team2": "Roseburg", "team2_seed": 28, "score": null, "location": "Lincoln HS", "neutral_site": false, "distance_miles": 162.2, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "6A", "round": "Quarterfinals", "team1": "Tualatin", "team1_seed": 1, "team2": "South Medford", "team2_seed": 8, "score": null, "location": "Tualatin HS", "neutral_site": false, "distance_miles": 212.0, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 1, "team2": "Hermiston", "team2_seed": 32, "score": null, "location": "Crescent Valley HS", "neutral_site": false, "distance_miles": 211.0, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 2, "team2": "Pendleton", "team2_seed": 31, "score": null, "location": "Summit HS", "neutral_site": false, "distance_miles": 164.8, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "score": null, "location": "Churchill HS", "neutral_site": false, "distance_miles": 98.3, "tier": "green"}, {"year": 2022, "sport": "baseball", "division": "5A", "round": "Quarterfinals", "team1": "Crescent Valley", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 8, "score": null, "location": "Crescent Valley HS", "neutral_site": false, "distance_miles": 229.7, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Philomath", "team1_seed": 1, "team2": "Baker", "team2_seed": 32, "score": null, "location": "Philomath HS", "neutral_site": false, "distance_miles": 272.3, "tier": "red"}, {"year": 2022, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Marist Catholic", "team1_seed": 2, "team2": "Ontario", "team2_seed": 31, "score": null, "location": "Marist Catholic HS", "neutral_site": false, "distance_miles": 303.1, "tier": "red"}, {"year": 2022, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Valley Catholic", "team1_seed": 3, "team2": "Klamath Union", "team2_seed": 30, "score": null, "location": "Valley Catholic HS", "neutral_site": false, "distance_miles": 229.4, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "Hidden Valley", "team1_seed": 4, "team2": "La Grande", "team2_seed": 29, "score": null, "location": "Hidden Valley HS", "neutral_site": false, "distance_miles": 330.8, "tier": "red"}, {"year": 2022, "sport": "baseball", "division": "4A", "round": "First Round", "team1": "North Bend", "team1_seed": 6, "team2": "Crook County", "team2_seed": 27, "score": null, "location": "North Bend HS", "neutral_site": false, "distance_miles": 179.8, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Rainier", "team1_seed": 1, "team2": "Enterprise", "team2_seed": 16, "score": null, "location": "Rainier HS", "neutral_site": false, "distance_miles": 276.5, "tier": "red"}, {"year": 2022, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Cascade Christian", "team1_seed": 2, "team2": "Burns", "team2_seed": 15, "score": null, "location": "Cascade Christian", "neutral_site": false, "distance_miles": 211.9, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Dayton", "team1_seed": 3, "team2": "Vale", "team2_seed": 14, "score": null, "location": "Dayton HS", "neutral_site": false, "distance_miles": 299.6, "tier": "red"}, {"year": 2022, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Yamhill-Carlton", "team1_seed": 4, "team2": "Nyssa", "team2_seed": 13, "score": null, "location": "Yamhill-Carlton HS", "neutral_site": false, "distance_miles": 321.0, "tier": "red"}, {"year": 2022, "sport": "baseball", "division": "3A", "round": "First Round", "team1": "Santiam Christian", "team1_seed": 5, "team2": "Irrigon", "team2_seed": 12, "score": null, "location": "Santiam Christian", "neutral_site": false, "distance_miles": 200.2, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Kennedy", "team1_seed": 1, "team2": "Nyssa", "team2_seed": 16, "score": null, "location": "Kennedy HS", "neutral_site": false, "distance_miles": 297.9, "tier": "red"}, {"year": 2022, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Gaston", "team1_seed": 2, "team2": "Grant Union", "team2_seed": 15, "score": null, "location": "Gaston HS", "neutral_site": false, "distance_miles": 222.0, "tier": "yellow"}, {"year": 2022, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Vernonia", "team1_seed": 3, "team2": "Powder Valley", "team2_seed": 14, "score": null, "location": "Vernonia HS", "neutral_site": false, "distance_miles": 261.2, "tier": "red"}, {"year": 2022, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Knappa", "team1_seed": 4, "team2": "Crane", "team2_seed": 13, "score": null, "location": "Knappa HS", "neutral_site": false, "distance_miles": 311.2, "tier": "red"}, {"year": 2022, "sport": "baseball", "division": "2A/1A", "round": "First Round", "team1": "Bandon", "team1_seed": 5, "team2": "Joseph", "team2_seed": 12, "score": null, "location": "Bandon HS", "neutral_site": false, "distance_miles": 387.3, "tier": "red"}, {"year": 2022, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Jesuit", "team1_seed": 1, "team2": "Roseburg", "team2_seed": 32, "score": null, "location": "Jesuit HS", "neutral_site": false, "distance_miles": 159.6, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Sheldon", "team1_seed": 2, "team2": "South Medford", "team2_seed": 31, "score": null, "location": "Sheldon HS", "neutral_site": false, "distance_miles": 123.2, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Sunset", "team1_seed": 3, "team2": "Crater", "team2_seed": 30, "score": null, "location": "Sunset HS", "neutral_site": false, "distance_miles": 216.7, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Clackamas", "team1_seed": 4, "team2": "Grants Pass", "team2_seed": 29, "score": null, "location": "Clackamas HS", "neutral_site": false, "distance_miles": 208.8, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "6A", "round": "First Round", "team1": "Tualatin", "team1_seed": 5, "team2": "North Medford", "team2_seed": 28, "score": null, "location": "Tualatin HS", "neutral_site": false, "distance_miles": 209.9, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "6A", "round": "Quarterfinals", "team1": "Sheldon", "team1_seed": 2, "team2": "Crater", "team2_seed": 7, "score": null, "location": "Jane Sanders Stadium", "neutral_site": true, "distance_miles": 119.0, "tier": "green"}, {"year": 2022, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Summit", "team1_seed": 1, "team2": "Pendleton", "team2_seed": 32, "score": null, "location": "Summit HS", "neutral_site": false, "distance_miles": 164.8, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Crescent Valley", "team1_seed": 2, "team2": "Hermiston", "team2_seed": 31, "score": null, "location": "Crescent Valley HS", "neutral_site": false, "distance_miles": 211.0, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "5A", "round": "First Round", "team1": "Churchill", "team1_seed": 3, "team2": "Redmond", "team2_seed": 30, "score": null, "location": "Churchill HS", "neutral_site": false, "distance_miles": 98.3, "tier": "green"}, {"year": 2022, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Valley Catholic", "team1_seed": 1, "team2": "Klamath Union", "team2_seed": 32, "score": null, "location": "Valley Catholic HS", "neutral_site": false, "distance_miles": 229.4, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Marist Catholic", "team1_seed": 2, "team2": "Ontario", "team2_seed": 31, "score": null, "location": "Marist Catholic HS", "neutral_site": false, "distance_miles": 303.1, "tier": "red"}, {"year": 2022, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Philomath", "team1_seed": 3, "team2": "Baker", "team2_seed": 30, "score": null, "location": "Philomath HS", "neutral_site": false, "distance_miles": 272.3, "tier": "red"}, {"year": 2022, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Cascade", "team1_seed": 4, "team2": "La Grande", "team2_seed": 29, "score": null, "location": "Cascade HS", "neutral_site": false, "distance_miles": 239.5, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "4A", "round": "First Round", "team1": "Hidden Valley", "team1_seed": 5, "team2": "Madras", "team2_seed": 28, "score": null, "location": "Hidden Valley HS", "neutral_site": false, "distance_miles": 189.9, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Cascade Christian", "team1_seed": 1, "team2": "Enterprise", "team2_seed": 16, "score": null, "location": "Cascade Christian", "neutral_site": false, "distance_miles": 351.4, "tier": "red"}, {"year": 2022, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Dayton", "team1_seed": 2, "team2": "Burns", "team2_seed": 15, "score": null, "location": "Dayton HS", "neutral_site": false, "distance_miles": 228.4, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Rainier", "team1_seed": 3, "team2": "Vale", "team2_seed": 14, "score": null, "location": "Rainier HS", "neutral_site": false, "distance_miles": 313.9, "tier": "red"}, {"year": 2022, "sport": "softball", "division": "3A", "round": "First Round", "team1": "Santiam Christian", "team1_seed": 4, "team2": "Nyssa", "team2_seed": 13, "score": null, "location": "Santiam Christian", "neutral_site": false, "distance_miles": 313.1, "tier": "red"}, {"year": 2022, "sport": "softball", "division": "2A/1A", "round": "First Round", "team1": "Kennedy", "team1_seed": 1, "team2": "Grant Union", "team2_seed": 16, "score": null, "location": "Kennedy HS", "neutral_site": false, "distance_miles": 194.1, "tier": "yellow"}, {"year": 2022, "sport": "softball", "division": "2A/1A", "round": "First Round", "team1": "Bandon", "team1_seed": 2, "team2": "Crane", "team2_seed": 15, "score": null, "location": "Bandon HS", "neutral_site": false, "distance_miles": 293.6, "tier": "red"}, {"year": 2022, "sport": "softball", "division": "2A/1A", "round": "First Round", "team1": "Vernonia", "team1_seed": 3, "team2": "Powder Valley", "team2_seed": 14, "score": null, "location": "Vernonia HS", "neutral_site": false, "distance_miles": 261.2, "tier": "red"}];
+
+        let filteredGames = [...allGames];
+        let sortColumn = 'year';
+        let sortDirection = 'desc';
+
+        function filterGames() {
+            const sport = document.getElementById('sport-filter').value;
+            const year = document.getElementById('year-filter').value;
+            const division = document.getElementById('division-filter').value;
+            const tier = document.getElementById('tier-filter').value;
+            const round = document.getElementById('round-filter').value;
+
+            filteredGames = allGames.filter(game => {
+                if (sport && game.sport !== sport) return false;
+                if (year && game.year !== parseInt(year)) return false;
+                if (division && game.division !== division) return false;
+                if (tier && game.tier !== tier) return false;
+                if (round && game.round !== round) return false;
+                return true;
+            });
+
+            sortGames();
+            renderTable();
+            updateStats();
+        }
+
+        function sortGames() {
+            filteredGames.sort((a, b) => {
+                let aVal = a[sortColumn];
+                let bVal = b[sortColumn];
+
+                if (aVal === null || aVal === undefined) aVal = '';
+                if (bVal === null || bVal === undefined) bVal = '';
+
+                if (typeof aVal === 'number' && typeof bVal === 'number') {
+                    return sortDirection === 'asc' ? aVal - bVal : bVal - aVal;
+                }
+
+                aVal = String(aVal).toLowerCase();
+                bVal = String(bVal).toLowerCase();
+
+                if (aVal < bVal) return sortDirection === 'asc' ? -1 : 1;
+                if (aVal > bVal) return sortDirection === 'asc' ? 1 : -1;
+                return 0;
+            });
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('games-body');
+
+            if (filteredGames.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" class="no-data">No games match the selected filters</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = filteredGames.map(game => {
+                const tierClass = 'tier-' + (game.tier || 'unknown');
+                const neutralBadge = game.neutral_site ? '<span class="neutral-badge">NEUTRAL</span>' : '';
+                const seed1 = game.team1_seed ? `<span class="seed">#${game.team1_seed}</span> ` : '';
+                const seed2 = game.team2_seed ? `<span class="seed">#${game.team2_seed}</span> ` : '';
+                const distance = game.distance_miles !== null ? game.distance_miles + ' mi' : 'N/A';
+
+                return `
+                    <tr class="${tierClass}">
+                        <td>${game.year}</td>
+                        <td>${capitalize(game.sport)}</td>
+                        <td>${game.division}</td>
+                        <td>${game.round}</td>
+                        <td>${seed1}${game.team1}</td>
+                        <td>${seed2}${game.team2}</td>
+                        <td>${distance}</td>
+                        <td>${game.location}${neutralBadge}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            // Update sort indicators
+            document.querySelectorAll('th').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+                if (th.dataset.sort === sortColumn) {
+                    th.classList.add(sortDirection === 'asc' ? 'sort-asc' : 'sort-desc');
+                }
+            });
+        }
+
+        function updateStats() {
+            const total = filteredGames.length;
+            const withDistance = filteredGames.filter(g => g.distance_miles !== null);
+            const avgDist = withDistance.length > 0
+                ? (withDistance.reduce((sum, g) => sum + g.distance_miles, 0) / withDistance.length).toFixed(1)
+                : 0;
+
+            const greenCount = filteredGames.filter(g => g.tier === 'green').length;
+            const redCount = filteredGames.filter(g => g.tier === 'red').length;
+
+            document.getElementById('total-games').textContent = total;
+            document.getElementById('avg-distance').textContent = avgDist;
+            document.getElementById('green-pct').textContent = total > 0 ? Math.round(greenCount / total * 100) + '%' : '0%';
+            document.getElementById('red-pct').textContent = total > 0 ? Math.round(redCount / total * 100) + '%' : '0%';
+        }
+
+        function capitalize(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+
+        function downloadCSV() {
+            if (filteredGames.length === 0) {
+                alert('No data to download');
+                return;
+            }
+
+            const headers = ['Year', 'Sport', 'Division', 'Round', 'Team 1', 'Seed 1', 'Team 2', 'Seed 2', 'Distance (mi)', 'Location', 'Neutral Site', 'Tier'];
+            const rows = filteredGames.map(g => [
+                g.year, g.sport, g.division, g.round,
+                g.team1, g.team1_seed || '', g.team2, g.team2_seed || '',
+                g.distance_miles || '', g.location, g.neutral_site ? 'Yes' : 'No', g.tier
+            ]);
+
+            let csv = headers.join(',') + '\n';
+            rows.forEach(row => {
+                csv += row.map(cell => {
+                    const str = String(cell);
+                    if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+                        return '"' + str.replace(/"/g, '""') + '"';
+                    }
+                    return str;
+                }).join(',') + '\n';
+            });
+
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'osaa_brackets.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Event listeners
+        document.querySelectorAll('.filters select').forEach(select => {
+            select.addEventListener('change', filterGames);
+        });
+
+        document.querySelectorAll('th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => {
+                const column = th.dataset.sort;
+                if (sortColumn === column) {
+                    sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+                } else {
+                    sortColumn = column;
+                    sortDirection = 'asc';
+                }
+                sortGames();
+                renderTable();
+            });
+        });
+
+        // Initial render
+        filterGames();
+    </script>
+</body>
+</html>
