@@ -1,0 +1,15 @@
+year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutral_site,distance_miles,tier
+2024,baseball,6A,First Round,Lincoln,1,Crater,16,,Lincoln HS,False,217.2,yellow
+2024,baseball,5A,First Round,Crescent Valley,1,Pendleton,16,,Crescent Valley HS,False,229.7,yellow
+2024,baseball,5A,First Round,La Salle Prep,2,Redmond,15,,La Salle Prep,False,107.7,green
+2024,baseball,4A,First Round,Marist Catholic,1,Baker,16,,Marist Catholic HS,False,263.5,red
+2024,baseball,4A,First Round,Philomath,2,Ontario,15,,Philomath HS,False,318.6,red
+2024,softball,6A,First Round,Sheldon,1,Grants Pass,16,,Sheldon HS,False,114.9,green
+2024,softball,5A,First Round,Summit,1,Hermiston,16,,Summit HS,False,156.1,yellow
+2023,baseball,6A,First Round,Clackamas,1,South Medford,16,,Clackamas HS,False,214.3,yellow
+2023,baseball,5A,First Round,Churchill,1,Pendleton,16,,Churchill HS,False,241.0,yellow
+2023,baseball,4A,First Round,Philomath,1,Ontario,16,,Philomath HS,False,318.6,red
+2023,softball,6A,First Round,Sunset,1,South Medford,16,,Sunset HS,False,220.8,yellow
+2022,baseball,6A,First Round,Tualatin,1,Crater,16,,Tualatin HS,False,208.0,yellow
+2022,baseball,5A,First Round,Crescent Valley,1,Hermiston,16,,Crescent Valley HS,False,211.0,yellow
+2022,softball,6A,First Round,Jesuit,1,Roseburg,16,,Jesuit HS,False,159.6,yellow
