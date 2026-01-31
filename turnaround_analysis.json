@@ -1,0 +1,282 @@
+{
+  "total_team_playoff_combinations": 363,
+  "teams_with_multiple_longhaul": 31,
+  "turnaround_burden_percentage": 8.5,
+  "total_longhaul_miles": 90230,
+  "avg_miles_per_team": 248.6,
+  "by_division": {
+    "6A": {
+      "teams": 84,
+      "multi": 12,
+      "total_miles": 17686.41440847045
+    },
+    "5A": {
+      "teams": 56,
+      "multi": 10,
+      "total_miles": 10415.853499988618
+    },
+    "4A": {
+      "teams": 84,
+      "multi": 8,
+      "total_miles": 22539.71580098552
+    },
+    "3A": {
+      "teams": 75,
+      "multi": 1,
+      "total_miles": 21575.85373391133
+    },
+    "2A/1A": {
+      "teams": 64,
+      "multi": 0,
+      "total_miles": 18012.513036267792
+    }
+  },
+  "by_year": {
+    "2025": {
+      "teams": 93,
+      "multi": 9,
+      "total_miles": 23203.755557012846,
+      "games": 102
+    },
+    "2024": {
+      "teams": 96,
+      "multi": 10,
+      "total_miles": 24145.86765036507,
+      "games": 106
+    },
+    "2023": {
+      "teams": 88,
+      "multi": 6,
+      "total_miles": 21425.769834249164,
+      "games": 94
+    },
+    "2022": {
+      "teams": 86,
+      "multi": 6,
+      "total_miles": 21454.957437996607,
+      "games": 92
+    }
+  },
+  "worst_cases": [
+    {
+      "team": "Ontario",
+      "year": 2024,
+      "sport": "baseball",
+      "division": "4A",
+      "games": 2,
+      "total_miles": 621.7331649882572,
+      "details": [
+        {
+          "round": "First Round",
+          "opponent": "Philomath",
+          "distance": 318.5940002530332,
+          "home": false
+        },
+        {
+          "round": "Quarterfinals",
+          "opponent": "Marist Catholic",
+          "distance": 303.139164735224,
+          "home": false
+        }
+      ]
+    },
+    {
+      "team": "Enterprise",
+      "year": 2025,
+      "sport": "baseball",
+      "division": "3A",
+      "games": 2,
+      "total_miles": 619.1963101065867,
+      "details": [
+        {
+          "round": "First Round",
+          "opponent": "Rainier",
+          "distance": 276.49468525227536,
+          "home": false
+        },
+        {
+          "round": "Quarterfinals",
+          "opponent": "South Umpqua",
+          "distance": 342.70162485431126,
+          "home": false
+        }
+      ]
+    },
+    {
+      "team": "La Grande",
+      "year": 2025,
+      "sport": "baseball",
+      "division": "4A",
+      "games": 2,
+      "total_miles": 591.6207599869134,
+      "details": [
+        {
+          "round": "First Round",
+          "opponent": "Hidden Valley",
+          "distance": 330.8289222754677,
+          "home": false
+        },
+        {
+          "round": "Quarterfinals",
+          "opponent": "Marist Catholic",
+          "distance": 260.79183771144574,
+          "home": false
+        }
+      ]
+    },
+    {
+      "team": "Marist Catholic",
+      "year": 2024,
+      "sport": "baseball",
+      "division": "4A",
+      "games": 2,
+      "total_miles": 566.6594022366808,
+      "details": [
+        {
+          "round": "First Round",
+          "opponent": "Baker",
+          "distance": 263.5202375014568,
+          "home": true
+        },
+        {
+          "round": "Quarterfinals",
+          "opponent": "Ontario",
+          "distance": 303.139164735224,
+          "home": true
+        }
+      ]
+    },
+    {
+      "team": "Marist Catholic",
+      "year": 2025,
+      "sport": "baseball",
+      "division": "4A",
+      "games": 2,
+      "total_miles": 563.9310024466697,
+      "details": [
+        {
+          "round": "First Round",
+          "opponent": "Ontario",
+          "distance": 303.139164735224,
+          "home": true
+        },
+        {
+          "round": "Quarterfinals",
+          "opponent": "La Grande",
+          "distance": 260.79183771144574,
+          "home": true
+        }
+      ]
+    },
+    {
+      "team": "Valley Catholic",
+      "year": 2025,
+      "sport": "softball",
+      "division": "4A",
+      "games": 2,
+      "total_miles": 532.4230311860516,
+      "details": [
+        {
+          "round": "First Round",
+          "opponent": "Ontario",
+          "distance": 303.3241658442474,
+          "home": true
+        },
+        {
+          "round": "Quarterfinals",
+          "opponent": "La Grande",
+          "distance": 229.0988653418042,
+          "home": true
+        }
+      ]
+    },
+    {
+      "team": "Baker",
+      "year": 2024,
+      "sport": "softball",
+      "division": "4A",
+      "games": 2,
+      "total_miles": 519.220594150599,
+      "details": [
+        {
+          "round": "First Round",
+          "opponent": "Philomath",
+          "distance": 272.26794247640805,
+          "home": false
+        },
+        {
+          "round": "Quarterfinals",
+          "opponent": "Valley Catholic",
+          "distance": 246.95265167419103,
+          "home": false
+        }
+      ]
+    },
+    {
+      "team": "Valley Catholic",
+      "year": 2024,
+      "sport": "softball",
+      "division": "4A",
+      "games": 2,
+      "total_miles": 476.33102388996167,
+      "details": [
+        {
+          "round": "First Round",
+          "opponent": "Klamath Union",
+          "distance": 229.3783722157706,
+          "home": true
+        },
+        {
+          "round": "Quarterfinals",
+          "opponent": "Baker",
+          "distance": 246.95265167419103,
+          "home": true
+        }
+      ]
+    },
+    {
+      "team": "La Grande",
+      "year": 2025,
+      "sport": "softball",
+      "division": "4A",
+      "games": 2,
+      "total_miles": 468.59644416758414,
+      "details": [
+        {
+          "round": "First Round",
+          "opponent": "Cascade",
+          "distance": 239.49757882577993,
+          "home": false
+        },
+        {
+          "round": "Quarterfinals",
+          "opponent": "Valley Catholic",
+          "distance": 229.0988653418042,
+          "home": false
+        }
+      ]
+    },
+    {
+      "team": "Crescent Valley",
+      "year": 2025,
+      "sport": "softball",
+      "division": "5A",
+      "games": 2,
+      "total_miles": 440.7444455791259,
+      "details": [
+        {
+          "round": "First Round",
+          "opponent": "Hermiston",
+          "distance": 211.04382575893197,
+          "home": true
+        },
+        {
+          "round": "Quarterfinals",
+          "opponent": "Pendleton",
+          "distance": 229.70061982019394,
+          "home": true
+        }
+      ]
+    }
+  ]
+}
