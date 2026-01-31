@@ -260,6 +260,19 @@ OREGON_SCHOOLS = {
     "Putnam": {"city": "Milwaukie", "lat": 45.4307, "lon": -122.6206},
     "Rogue River": {"city": "Rogue River", "lat": 42.4390, "lon": -123.1718},
     "Warrenton": {"city": "Warrenton", "lat": 46.1679, "lon": -123.9226},
+    "Country Christian": {"city": "Molalla", "lat": 45.1501, "lon": -122.5768},
+    "Gladstone": {"city": "Gladstone", "lat": 45.3807, "lon": -122.5906},
+    "Horizon Christian, Tualatin": {"city": "Tualatin", "lat": 45.3838, "lon": -122.7637},
+    "Ida B. Wells": {"city": "Portland", "lat": 45.4906, "lon": -122.6906},
+    "North Marion": {"city": "Aurora", "lat": 45.2301, "lon": -122.7568},
+    "Portland Christian": {"city": "Portland", "lat": 45.4806, "lon": -122.5506},
+    "Regis": {"city": "Stayton", "lat": 44.8012, "lon": -122.7930},
+    "St. Paul": {"city": "St. Paul", "lat": 45.2101, "lon": -122.9768},
+    "Umpqua Valley Christian": {"city": "Roseburg", "lat": 43.2265, "lon": -123.3517},
+    "Molalla": {"city": "Molalla", "lat": 45.1501, "lon": -122.5768},
+    "Siuslaw": {"city": "Florence", "lat": 43.9826, "lon": -124.0990},
+    "Mountain View": {"city": "Bend", "lat": 44.0282, "lon": -121.3253},
+    "Crosspoint Christian": {"city": "Oregon City", "lat": 45.3573, "lon": -122.6068},
 }
 
 

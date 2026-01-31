@@ -1,30 +1,48 @@
 year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutral_site,distance_miles,tier
-2025,baseball,2A/1A,First Round,Kennedy,1,Nyssa,16,,Kennedy HS,False,297.9,red
-2025,baseball,2A/1A,First Round,Gaston,2,Grant Union,15,,Gaston HS,False,222.0,yellow
-2025,baseball,2A/1A,First Round,Vernonia,3,Powder Valley,14,,Vernonia HS,False,261.2,red
-2025,baseball,2A/1A,First Round,Knappa,4,Crane,13,,Knappa HS,False,311.2,red
-2025,baseball,2A/1A,First Round,Bandon,5,Joseph,12,,Bandon HS,False,387.3,red
-2025,baseball,3A,First Round,Cascade Christian,1,Burns,16,,Cascade Christian,False,211.9,yellow
-2025,baseball,3A,First Round,Rainier,2,Enterprise,15,,Rainier HS,False,276.5,red
-2025,baseball,3A,First Round,Dayton,3,Nyssa,14,,Dayton HS,False,313.6,red
-2025,baseball,3A,First Round,Yamhill-Carlton,4,Vale,13,,Yamhill-Carlton HS,False,307.0,red
-2025,baseball,3A,First Round,Santiam Christian,5,Irrigon,12,,Santiam Christian,False,200.2,yellow
-2025,baseball,3A,Quarterfinals,South Umpqua,2,Enterprise,7,,South Umpqua HS,False,342.7,red
-2025,baseball,4A,First Round,Marist Catholic,1,Ontario,32,,Marist Catholic HS,False,303.1,red
-2025,baseball,4A,First Round,Philomath,2,Baker,31,,Philomath HS,False,272.3,red
-2025,baseball,4A,First Round,Valley Catholic,3,Klamath Union,30,,Valley Catholic HS,False,229.4,yellow
-2025,baseball,4A,First Round,Hidden Valley,4,La Grande,29,,Hidden Valley HS,False,330.8,red
-2025,baseball,4A,First Round,Cascade,5,Crook County,28,,Cascade HS,False,110.8,green
-2025,baseball,4A,First Round,North Bend,6,Madras,27,,North Bend HS,False,175.5,yellow
-2025,baseball,4A,Quarterfinals,Marist Catholic,1,La Grande,8,,Marist Catholic HS,False,260.8,red
-2025,baseball,5A,First Round,Summit,1,Pendleton,32,,Summit HS,False,164.8,yellow
-2025,baseball,5A,First Round,Churchill,3,Redmond,30,,Churchill HS,False,98.3,green
-2025,baseball,6A,First Round,Jesuit,1,Crater,32,,Jesuit HS,False,215.4,yellow
-2025,baseball,6A,First Round,West Linn,2,South Medford,31,,West Linn HS,False,211.1,yellow
-2025,baseball,6A,First Round,Tualatin,3,Grants Pass,30,,Tualatin HS,False,205.4,yellow
-2025,baseball,6A,First Round,Clackamas,4,North Medford,29,,Clackamas HS,False,212.2,yellow
-2025,baseball,6A,First Round,Sunset,5,Roseburg,28,,Sunset HS,False,160.7,yellow
-2025,baseball,6A,Quarterfinals,Sheldon,4,Lincoln,5,,PK Park,True,100.3,green
+2025,baseball,2A/1A,First Round,Lost River,16,Oakridge,17,,Lost River HS,False,126.5,yellow
+2025,baseball,2A/1A,First Round,Lowell,12,Gaston,21,,Lowell HS,False,107.3,green
+2025,baseball,2A/1A,First Round,Country Christian,13,Grant Union,20,,Country Christian,False,184.8,yellow
+2025,baseball,2A/1A,First Round,Union,14,Portland Christian,19,,Union HS,False,228.4,yellow
+2025,baseball,2A/1A,First Round,Heppner,15,Illinois Valley,18,,Heppner HS,False,300.5,red
+2025,baseball,2A/1A,Quarterfinals,Umpqua Valley Christian,1,Irrigon,8,,Umpqua Valley Christian,False,264.8,red
+2025,baseball,2A/1A,Quarterfinals,Knappa,4,Myrtle Point,5,,Knappa HS,False,216.9,yellow
+2025,baseball,2A/1A,Quarterfinals,Reedsport,6,Portland Christian,19,,Reedsport HS,False,144.5,yellow
+2025,baseball,2A/1A,Second Round,Umpqua Valley Christian,1,Lost River,16,,Umpqua Valley Christian,False,121.5,yellow
+2025,baseball,2A/1A,Second Round,Irrigon,8,Culver,9,,Irrigon HS,False,126.3,yellow
+2025,baseball,2A/1A,Second Round,Reedsport,6,Regis,11,,Reedsport HS,False,99.6,green
+2025,baseball,2A/1A,Second Round,Kennedy,2,Heppner,15,,Kennedy HS,False,159.1,yellow
+2025,baseball,2A/1A,Semifinals,Umpqua Valley Christian,1,Knappa,4,,Neutral Site,False,204.6,yellow
+2025,baseball,3A,First Round,Yamhill-Carlton,16,Brookings-Harbor,17,,Yamhill-Carlton HS,False,233.8,yellow
+2025,baseball,3A,First Round,McLoughlin,13,Banks,20,,McLoughlin HS,False,228.7,yellow
+2025,baseball,3A,First Round,Lakeview,14,Glide,19,,Lakeview HS,False,159.5,yellow
+2025,baseball,3A,First Round,Creswell,15,Joseph,18,,Creswell HS,False,301.7,red
+2025,baseball,3A,Quarterfinals,Blanchet Catholic,1,Burns,8,,Blanchet Catholic,False,217.2,yellow
+2025,baseball,3A,Quarterfinals,Warrenton,3,North Valley,6,,Warrenton HS,False,253.4,red
+2025,baseball,3A,Second Round,Burns,8,Santiam Christian,9,,Burns HS,False,220.0,yellow
+2025,baseball,3A,Second Round,Warrenton,3,Lakeview,14,,Warrenton HS,False,327.0,red
+2025,baseball,3A,Second Round,North Valley,6,Vale,11,,North Valley HS,False,326.5,red
+2025,baseball,3A,Second Round,South Umpqua,7,"Horizon Christian, Tualatin",10,,South Umpqua HS,False,168.7,yellow
+2025,baseball,3A,Second Round,Cascade Christian,2,Creswell,15,,Cascade Christian HS,False,110.2,green
+2025,baseball,4A,First Round,Henley,5,La Grande,12,,Henley HS,False,284.1,red
+2025,baseball,4A,First Round,Pendleton,7,North Bend,10,,Pendleton HS,False,310.0,red
+2025,baseball,4A,First Round,Junction City,2,The Dalles,15,,Junction City HS,False,137.4,yellow
+2025,baseball,4A,Quarterfinals,Newport,4,Henley,5,,Newport HS,False,206.8,yellow
+2025,baseball,4A,Quarterfinals,Junction City,2,Pendleton,7,,Junction City HS,False,238.1,yellow
+2025,baseball,4A,Semifinals,Marist Catholic,1,Henley,5,,Marist Catholic,False,144.3,yellow
+2025,baseball,4A,Semifinals,Scappoose,3,Pendleton,7,,Scappoose HS,False,197.3,yellow
+2025,baseball,5A,First Round,Summit,5,Hood River Valley,12,,Summit HS,False,112.5,green
+2025,baseball,5A,First Round,Ridgeview,4,Dallas,13,,Ridgeview HS,False,114.4,green
+2025,baseball,5A,First Round,Crater,7,West Albany,10,,Crater HS,False,156.2,yellow
+2025,baseball,5A,Quarterfinals,Summit,5,Dallas,13,,Summit HS,False,114.5,green
+2025,baseball,6A,First Round,Sheldon,16,Barlow,17,,Sheldon HS,False,101.6,green
+2025,baseball,6A,First Round,Roseburg,8,Tigard,25,,Roseburg HS,False,155.6,yellow
+2025,baseball,6A,First Round,Sandy,12,North Medford,21,,Sandy HS,False,212.9,yellow
+2025,baseball,6A,First Round,Grants Pass,14,Lakeridge,19,,Grants Pass HS,False,206.7,yellow
+2025,baseball,6A,First Round,Ida B. Wells,15,South Medford,18,,Ida B. Wells HS,False,219.5,yellow
+2025,baseball,6A,Quarterfinals,McMinnville,7,South Medford,18,,McMinnville HS,False,200.5,yellow
+2025,baseball,6A,Second Round,Roseburg,8,Grant,9,,Roseburg HS,False,164.6,yellow
+2025,baseball,6A,Second Round,Central Catholic,3,Grants Pass,14,,Central Catholic,False,216.5,yellow
+2025,baseball,6A,Second Round,West Linn,2,South Medford,18,,West Linn HS,False,211.1,yellow
 2025,softball,2A/1A,First Round,Elgin,16,Santiam,17,,Elgin HS,False,228.9,yellow
 2025,softball,2A/1A,First Round,Union,13,Gervais,20,,Union HS,False,245.3,yellow
 2025,softball,2A/1A,First Round,Powers,14,Kennedy,19,,Powers HS,False,164.1,yellow
@@ -66,35 +84,40 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2025,softball,6A,First Round,Forest Grove,10,Grants Pass,23,,Forest Grove HS,False,213.1,yellow
 2025,softball,6A,Quarterfinals,Jesuit,2,Roseburg,7,,Jesuit HS,False,159.6,yellow
 2025,softball,6A,Second Round,Roseburg,7,Forest Grove,10,,Roseburg HS,False,159.5,yellow
-2024,baseball,2A/1A,First Round,Gaston,1,Nyssa,16,,Gaston HS,False,326.0,red
-2024,baseball,2A/1A,First Round,Vernonia,2,Grant Union,15,,Vernonia HS,False,229.4,yellow
-2024,baseball,2A/1A,First Round,Kennedy,3,Powder Valley,14,,Kennedy HS,False,237.5,yellow
-2024,baseball,2A/1A,First Round,Knappa,4,Crane,13,,Knappa HS,False,311.2,red
-2024,baseball,2A/1A,First Round,Bandon,5,Joseph,12,,Bandon HS,False,387.3,red
-2024,baseball,3A,First Round,Cascade Christian,1,Enterprise,16,,Cascade Christian,False,351.4,red
-2024,baseball,3A,First Round,Rainier,2,Burns,15,,Rainier HS,False,257.0,red
-2024,baseball,3A,First Round,Dayton,3,Vale,14,,Dayton HS,False,299.6,red
-2024,baseball,3A,First Round,Yamhill-Carlton,4,Nyssa,13,,Yamhill-Carlton HS,False,321.0,red
-2024,baseball,3A,First Round,Santiam Christian,5,Irrigon,12,,Santiam Christian,False,200.2,yellow
-2024,baseball,3A,Quarterfinals,South Umpqua,1,La Grande,8,,South Umpqua HS,False,304.9,red
-2024,baseball,4A,First Round,Marist Catholic,1,Baker,32,,Marist Catholic HS,False,263.5,red
-2024,baseball,4A,First Round,Philomath,2,Ontario,31,,Philomath HS,False,318.6,red
-2024,baseball,4A,First Round,Hidden Valley,3,La Grande,30,,Hidden Valley HS,False,330.8,red
-2024,baseball,4A,First Round,Valley Catholic,4,Klamath Union,29,,Valley Catholic HS,False,229.4,yellow
-2024,baseball,4A,First Round,North Bend,8,Crook County,25,,North Bend HS,False,179.8,yellow
-2024,baseball,4A,Quarterfinals,Marist Catholic,1,Ontario,9,,Marist Catholic HS,False,303.1,red
-2024,baseball,5A,First Round,Crescent Valley,1,Pendleton,32,,Crescent Valley HS,False,229.7,yellow
-2024,baseball,5A,First Round,La Salle Prep,3,Redmond,30,,La Salle Prep,False,107.7,green
-2024,baseball,5A,First Round,Churchill,4,The Dalles,29,,Churchill HS,False,144.6,yellow
-2024,baseball,5A,First Round,Wilsonville,5,Ridgeview,28,,Wilsonville HS,False,105.8,green
-2024,baseball,5A,Quarterfinals,Crescent Valley,1,Redmond,8,,Crescent Valley HS,False,104.3,green
-2024,baseball,6A,First Round,Jesuit,1,South Medford,32,,Jesuit HS,False,219.4,yellow
-2024,baseball,6A,First Round,Tualatin,2,Crater,31,,Tualatin HS,False,208.0,yellow
-2024,baseball,6A,First Round,West Linn,3,Roseburg,30,,West Linn HS,False,152.8,yellow
-2024,baseball,6A,First Round,Clackamas,4,Grants Pass,29,,Clackamas HS,False,208.8,yellow
-2024,baseball,6A,First Round,Lincoln,8,North Medford,25,,Lincoln HS,False,219.1,yellow
-2024,baseball,6A,Quarterfinals,Sheldon,5,Sunset,4,,Volcanoes Stadium,True,98.9,green
-2024,baseball,6A,Second Round,Jesuit,1,Roseburg,17,,Jesuit HS,False,159.6,yellow
+2024,baseball,2A/1A,First Round,Umpqua Valley Christian,1,Knappa,16,,Umpqua Valley Christian,False,204.6,yellow
+2024,baseball,2A/1A,First Round,Irrigon,8,Myrtle Point,9,,Irrigon HS,False,301.0,red
+2024,baseball,2A/1A,First Round,Lost River,7,Lowell,10,,Lost River HS,False,143.5,yellow
+2024,baseball,2A/1A,First Round,Kennedy,2,Heppner,15,,Kennedy HS,False,159.1,yellow
+2024,baseball,3A,First Round,North Valley,16,Siuslaw,17,,North Valley HS,False,106.9,green
+2024,baseball,3A,First Round,Taft,13,Burns,20,,Taft HS,False,263.0,red
+2024,baseball,3A,First Round,Santiam Christian,15,McLoughlin,18,,Santiam Christian,False,250.7,red
+2024,baseball,3A,Quarterfinals,Banks,2,La Pine,7,,Banks HS,False,156.2,yellow
+2024,baseball,3A,Second Round,Joseph,8,Brookings-Harbor,9,,Joseph HS,False,419.5,red
+2024,baseball,3A,Second Round,Sisters,5,South Umpqua,12,,Sisters HS,False,126.1,yellow
+2024,baseball,3A,Second Round,Cascade Christian,6,Valley Catholic,11,,Cascade Christian HS,False,216.6,yellow
+2024,baseball,3A,Second Round,La Pine,7,Lakeview,10,,La Pine HS,False,117.9,green
+2024,baseball,3A,Semifinals,Pleasant Hill,4,Brookings-Harbor,9,,Pleasant Hill HS,False,147.7,yellow
+2024,baseball,4A,First Round,Henley,1,Baker,16,,Henley HS,False,265.9,red
+2024,baseball,4A,First Round,Crook County,8,North Bend,9,,Crook County HS,False,179.8,yellow
+2024,baseball,4A,First Round,Pendleton,5,St. Helens,12,,Pendleton HS,False,194.1,yellow
+2024,baseball,4A,First Round,Scappoose,3,La Grande,14,,Scappoose HS,False,233.6,yellow
+2024,baseball,4A,First Round,Junction City,6,Hidden Valley,11,,Junction City HS,False,125.3,yellow
+2024,baseball,4A,First Round,The Dalles,7,Philomath,10,,The Dalles HS,False,129.2,yellow
+2024,baseball,4A,Quarterfinals,Henley,1,North Bend,9,,Henley HS,False,152.7,yellow
+2024,baseball,4A,Quarterfinals,Marist Catholic,4,Pendleton,5,,Marist Catholic,False,238.8,yellow
+2024,baseball,4A,Quarterfinals,Scappoose,3,Junction City,6,,Scappoose HS,False,107.3,green
+2024,baseball,4A,Semifinals,Henley,1,Marist Catholic,4,,Henley HS,False,144.3,yellow
+2024,baseball,5A,First Round,Summit,8,Crater,9,,Summit HS,False,143.2,yellow
+2024,baseball,5A,First Round,Ridgeview,3,Corvallis,14,,Ridgeview HS,False,105.0,green
+2024,baseball,5A,First Round,Wilsonville,6,Bend,11,,Wilsonville HS,False,111.8,green
+2024,baseball,5A,First Round,Mountain View,7,Ashland,10,,Mountain View HS,False,144.7,yellow
+2024,baseball,5A,Quarterfinals,Ridgeview,3,Wilsonville,6,,Ridgeview HS,False,105.8,green
+2024,baseball,5A,Semifinals,West Albany,4,Summit,8,,West Albany HS,False,97.4,green
+2024,baseball,6A,First Round,Grants Pass,16,Tigard,17,,Grants Pass HS,False,208.6,yellow
+2024,baseball,6A,First Round,Central Catholic,9,Roseburg,24,,Central Catholic,False,163.8,yellow
+2024,baseball,6A,First Round,North Medford,12,Clackamas,21,,North Medford HS,False,212.2,yellow
+2024,baseball,6A,First Round,Sheldon,29,Jesuit,4,,Sheldon HS,False,97.8,green
+2024,baseball,6A,Second Round,West Linn,1,Grants Pass,16,,West Linn HS,False,205.3,yellow
 2024,softball,2A/1A,First Round,Blanchet Catholic,15,Echo,18,,Blanchet Catholic,False,193.7,yellow
 2024,softball,2A/1A,Quarterfinals,Grant Union,1,Santiam,8,,Grant Union HS,False,174.9,yellow
 2024,softball,2A/1A,Second Round,Grant Union,1,Myrtle Point,16,,Grant Union HS,False,275.1,red
