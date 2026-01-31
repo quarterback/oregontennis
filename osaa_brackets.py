@@ -1059,6 +1059,119 @@ def generate_html(games: list[Game], output_file: str = "brackets.html"):
         </div>
 
         <div class="table-container">
+            <h2 style="margin: 0 0 1rem 0; color: #1a365d;">🔄 Turnaround Burden Analysis</h2>
+            <p style="margin-bottom: 1rem; color: #666;">Teams facing multiple long-haul games in the same playoff run face compounded travel burden.</p>
+
+            <div class="stats" style="margin-bottom: 1.5rem;">
+                <div class="stat-card">
+                    <div class="stat-value">8.5%</div>
+                    <div class="stat-label">Teams w/ 2+ Long-Haul Games</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">249</div>
+                    <div class="stat-label">Avg Miles per Team</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">90,230</div>
+                    <div class="stat-label">Total Long-Haul Miles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">387</div>
+                    <div class="stat-label">Max Avg Away (Joseph)</div>
+                </div>
+            </div>
+
+            <h3 style="margin: 1.5rem 0 1rem 0; color: #c53030;">🔴 Worst Turnaround Cases</h3>
+            <table style="margin-bottom: 2rem;">
+                <thead>
+                    <tr>
+                        <th>Team</th>
+                        <th>Year</th>
+                        <th>Sport</th>
+                        <th>Division</th>
+                        <th>Total Miles</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tier-red">
+                        <td><strong>Ontario</strong></td>
+                        <td>2024</td>
+                        <td>Baseball</td>
+                        <td>4A</td>
+                        <td>622 mi</td>
+                        <td>R1: @Philomath (319mi) → QF: @Marist (303mi)</td>
+                    </tr>
+                    <tr class="tier-red">
+                        <td><strong>Enterprise</strong></td>
+                        <td>2025</td>
+                        <td>Baseball</td>
+                        <td>3A</td>
+                        <td>619 mi</td>
+                        <td>R1: @Rainier (276mi) → QF: @S.Umpqua (343mi)</td>
+                    </tr>
+                    <tr class="tier-red">
+                        <td><strong>La Grande</strong></td>
+                        <td>2025</td>
+                        <td>Baseball</td>
+                        <td>4A</td>
+                        <td>592 mi</td>
+                        <td>R1: @Hidden Valley (331mi) → QF: @Marist (261mi)</td>
+                    </tr>
+                    <tr class="tier-yellow">
+                        <td><strong>Baker</strong></td>
+                        <td>2024</td>
+                        <td>Softball</td>
+                        <td>4A</td>
+                        <td>519 mi</td>
+                        <td>R1: @Philomath (272mi) → QF: @Valley Catholic (247mi)</td>
+                    </tr>
+                    <tr class="tier-yellow">
+                        <td><strong>Crescent Valley</strong></td>
+                        <td>2025</td>
+                        <td>Softball</td>
+                        <td>5A</td>
+                        <td>441 mi</td>
+                        <td>R1: vs Hermiston (211mi) → QF: vs Pendleton (230mi)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin: 1.5rem 0 1rem 0; color: #1a365d;">🗺️ Eastern Oregon Travel Burden</h3>
+            <table style="margin-bottom: 2rem;">
+                <thead>
+                    <tr>
+                        <th>Team</th>
+                        <th>Playoff Appearances</th>
+                        <th>Avg Away Miles</th>
+                        <th>Burden Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tier-red"><td>Joseph</td><td>4</td><td>387 mi</td><td>🔴 Extreme</td></tr>
+                    <tr class="tier-red"><td>Enterprise</td><td>8</td><td>357 mi</td><td>🔴 Extreme</td></tr>
+                    <tr class="tier-red"><td>Ontario</td><td>8</td><td>345 mi</td><td>🔴 Extreme</td></tr>
+                    <tr class="tier-red"><td>La Grande</td><td>10</td><td>332 mi</td><td>🔴 Extreme</td></tr>
+                    <tr class="tier-red"><td>Nyssa</td><td>12</td><td>315 mi</td><td>🔴 Extreme</td></tr>
+                    <tr class="tier-yellow"><td>Baker</td><td>8</td><td>301 mi</td><td>🟡 High</td></tr>
+                    <tr class="tier-yellow"><td>Crane</td><td>8</td><td>288 mi</td><td>🟡 High</td></tr>
+                    <tr class="tier-yellow"><td>Pendleton</td><td>8</td><td>277 mi</td><td>🟡 High</td></tr>
+                </tbody>
+            </table>
+
+            <div style="background: #ebf8ff; padding: 1rem; border-radius: 8px; border-left: 4px solid #3182ce; margin-bottom: 2rem;">
+                <h4 style="margin: 0 0 0.5rem 0; color: #2c5282;">🎾 Tennis Tournament Implications</h4>
+                <ul style="margin: 0; padding-left: 1.5rem; color: #2a4365;">
+                    <li><strong>Combined 4A/3A/2A/1A</strong> = even wider geographic spread than baseball/softball</li>
+                    <li><strong>Multi-day format</strong> compounds burden: 200+ mi Day 1, play again Day 2</li>
+                    <li><strong>Recommendation:</strong> Regional pods for early rounds (East/West split)</li>
+                    <li><strong>Recommendation:</strong> Neutral central sites for later rounds (Salem/Albany)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2 style="margin: 0 0 1rem 0; color: #1a365d;">📋 All Long-Haul Matchups</h2>
             <table id="games-table">
                 <thead>
                     <tr>
