@@ -173,7 +173,7 @@ OREGON_SCHOOLS = {
     "Ontario": {"city": "Ontario", "lat": 44.0265, "lon": -116.9629},
     "Vale": {"city": "Vale", "lat": 43.9818, "lon": -117.2384},
     "Nyssa": {"city": "Nyssa", "lat": 43.8765, "lon": -116.9929},
-    "Hermiston": {"city": "Hermiston", "lat": 45.8401, "lon": -119.2890},
+    # Note: Pendleton left OSAA for WIAA in 2018-19 due to travel hardships
     "The Dalles": {"city": "The Dalles", "lat": 45.5946, "lon": -121.1787},
     "Hood River Valley": {"city": "Hood River", "lat": 45.7101, "lon": -121.5140},
     "Enterprise": {"city": "Enterprise", "lat": 45.4265, "lon": -117.2790},
@@ -205,6 +205,61 @@ OREGON_SCHOOLS = {
     "Valley Catholic": {"city": "Beaverton", "lat": 45.4614, "lon": -122.8058},
     "La Salle Prep": {"city": "Milwaukie", "lat": 45.4407, "lon": -122.6306},
     "De La Salle North Catholic": {"city": "Portland", "lat": 45.5706, "lon": -122.6806},
+
+    # Additional Schools from 2024-2025 Brackets
+    "Banks": {"city": "Banks", "lat": 45.6190, "lon": -123.1129},
+    "Blanchet Catholic": {"city": "Salem", "lat": 44.9429, "lon": -123.0151},
+    "Clatskanie": {"city": "Clatskanie", "lat": 46.1040, "lon": -123.2065},
+    "Cottage Grove": {"city": "Cottage Grove", "lat": 43.7973, "lon": -123.0596},
+    "Creswell": {"city": "Creswell", "lat": 43.9173, "lon": -123.0251},
+    "Douglas": {"city": "Winston", "lat": 43.1218, "lon": -123.4168},
+    "Eagle Point": {"city": "Eagle Point", "lat": 42.4721, "lon": -122.8029},
+    "Echo": {"city": "Echo", "lat": 45.7440, "lon": -119.1929},
+    "Elgin": {"city": "Elgin", "lat": 45.5665, "lon": -117.9190},
+    "Estacada": {"city": "Estacada", "lat": 45.2901, "lon": -122.3351},
+    "Gervais": {"city": "Gervais", "lat": 45.1101, "lon": -122.8968},
+    "Glendale": {"city": "Glendale", "lat": 42.7365, "lon": -123.4234},
+    "Harrisburg": {"city": "Harrisburg", "lat": 44.2740, "lon": -123.1696},
+    "Heppner": {"city": "Heppner", "lat": 45.3540, "lon": -119.5565},
+    "Illinois Valley": {"city": "Cave Junction", "lat": 42.1626, "lon": -123.6484},
+    "Junction City": {"city": "Junction City", "lat": 44.2190, "lon": -123.2051},
+    "Lakeview": {"city": "Lakeview", "lat": 42.1890, "lon": -120.3465},
+    "Lost River": {"city": "Merrill", "lat": 42.0290, "lon": -121.6017},
+    "Lowell": {"city": "Lowell", "lat": 43.9173, "lon": -122.7851},
+    "McLoughlin": {"city": "Milton-Freewater", "lat": 45.9340, "lon": -118.3890},
+    "Myrtle Point": {"city": "Myrtle Point", "lat": 43.0665, "lon": -124.1379},
+    "North Douglas": {"city": "Drain", "lat": 43.6618, "lon": -123.3168},
+    "Perrydale": {"city": "Perrydale", "lat": 44.9690, "lon": -123.2268},
+    "Pleasant Hill": {"city": "Pleasant Hill", "lat": 43.9573, "lon": -122.9551},
+    "Powers": {"city": "Powers", "lat": 42.8765, "lon": -124.0640},
+    "Salem Academy": {"city": "Salem", "lat": 44.9429, "lon": -123.0351},
+    "Sandy": {"city": "Sandy", "lat": 45.3973, "lon": -122.2612},
+    "Santiam": {"city": "Mill City", "lat": 44.7540, "lon": -122.4751},
+    "Scio": {"city": "Scio", "lat": 44.7390, "lon": -122.8451},
+    "Stayton": {"city": "Stayton", "lat": 44.8012, "lon": -122.7930},
+    "Sweet Home": {"city": "Sweet Home", "lat": 44.3973, "lon": -122.7351},
+    "Toledo": {"city": "Toledo", "lat": 44.6212, "lon": -123.9365},
+    "Union": {"city": "Union", "lat": 45.2065, "lon": -117.8640},
+    "Weston-McEwen": {"city": "Athena", "lat": 45.8165, "lon": -118.4890},
+    "Willamina": {"city": "Willamina", "lat": 45.0790, "lon": -123.4868},
+    "Amity": {"city": "Amity", "lat": 45.1140, "lon": -123.2068},
+    "Culver": {"city": "Culver", "lat": 44.5290, "lon": -121.2140},
+    "Elmira": {"city": "Elmira", "lat": 44.0873, "lon": -123.3951},
+    "Glide": {"city": "Glide", "lat": 43.3018, "lon": -123.1017},
+    "Monroe": {"city": "Monroe", "lat": 44.3190, "lon": -123.2951},
+    "Nelson": {"city": "Happy Valley", "lat": 45.4407, "lon": -122.5106},
+    "Oakland": {"city": "Oakland", "lat": 43.4218, "lon": -123.3051},
+    "Oakridge": {"city": "Oakridge", "lat": 43.7473, "lon": -122.4651},
+    "Pilot Rock": {"city": "Pilot Rock", "lat": 45.4840, "lon": -118.8390},
+    "Reedsport": {"city": "Reedsport", "lat": 43.7023, "lon": -124.0965},
+    "Coquille": {"city": "Coquille", "lat": 43.1773, "lon": -124.1879},
+    "Corbett": {"city": "Corbett", "lat": 45.5140, "lon": -122.2612},
+    "Days Creek": {"city": "Days Creek", "lat": 42.9618, "lon": -123.1434},
+    "Neah-Kah-Nie": {"city": "Rockaway Beach", "lat": 45.6132, "lon": -123.9426},
+    "Nestucca": {"city": "Cloverdale", "lat": 45.2101, "lon": -123.8826},
+    "Putnam": {"city": "Milwaukie", "lat": 45.4307, "lon": -122.6206},
+    "Rogue River": {"city": "Rogue River", "lat": 42.4390, "lon": -123.1718},
+    "Warrenton": {"city": "Warrenton", "lat": 46.1679, "lon": -123.9226},
 }
 
 
@@ -564,7 +619,7 @@ def generate_sample_data() -> list[Game]:
         # 2025 Baseball
         (2025, "baseball", "6A", "First Round", "Jesuit", 1, "South Medford", 16),
         (2025, "baseball", "6A", "Quarterfinals", "Sheldon", 4, "Clackamas", 5),
-        (2025, "baseball", "5A", "First Round", "Summit", 1, "Hermiston", 16),
+        (2025, "baseball", "5A", "First Round", "Summit", 1, "Pendleton", 16),
         (2025, "baseball", "5A", "First Round", "Crescent Valley", 2, "Pendleton", 15),
         (2025, "baseball", "5A", "Quarterfinals", "La Salle Prep", 3, "Redmond", 14),
         (2025, "baseball", "4A", "First Round", "Marist Catholic", 1, "Ontario", 16),
@@ -593,7 +648,7 @@ def generate_sample_data() -> list[Game]:
         # 2024 Softball
         (2024, "softball", "6A", "First Round", "Sheldon", 1, "Grants Pass", 16),
         (2024, "softball", "6A", "Quarterfinals", "Jesuit", 3, "Roseburg", 6),
-        (2024, "softball", "5A", "First Round", "Summit", 1, "Hermiston", 16),
+        (2024, "softball", "5A", "First Round", "Summit", 1, "Pendleton", 16),
         (2024, "softball", "5A", "Quarterfinals", "Crescent Valley", 4, "Pendleton", 5),
         (2024, "softball", "4A", "First Round", "Valley Catholic", 1, "Klamath Union", 16),
 
@@ -601,7 +656,7 @@ def generate_sample_data() -> list[Game]:
         (2023, "baseball", "6A", "First Round", "Clackamas", 1, "South Medford", 16),
         (2023, "baseball", "6A", "Quarterfinals", "Jesuit", 4, "Crater", 5),
         (2023, "baseball", "5A", "First Round", "Churchill", 1, "Pendleton", 16),
-        (2023, "baseball", "5A", "First Round", "Summit", 2, "Hermiston", 15),
+        (2023, "baseball", "5A", "First Round", "Summit", 2, "Pendleton", 15),
         (2023, "baseball", "5A", "Quarterfinals", "Crescent Valley", 3, "Redmond", 6),
         (2023, "baseball", "4A", "First Round", "Philomath", 1, "Ontario", 16),
         (2023, "baseball", "4A", "First Round", "Marist Catholic", 2, "Baker", 15),
@@ -618,7 +673,7 @@ def generate_sample_data() -> list[Game]:
         # 2022 Baseball
         (2022, "baseball", "6A", "First Round", "Tualatin", 1, "Crater", 16),
         (2022, "baseball", "6A", "Quarterfinals", "Clackamas", 3, "South Medford", 6),
-        (2022, "baseball", "5A", "First Round", "Crescent Valley", 1, "Hermiston", 16),
+        (2022, "baseball", "5A", "First Round", "Crescent Valley", 1, "Pendleton", 16),
         (2022, "baseball", "5A", "First Round", "Summit", 2, "Pendleton", 15),
         (2022, "baseball", "5A", "Quarterfinals", "Churchill", 4, "Redmond", 5),
         (2022, "baseball", "4A", "First Round", "Philomath", 1, "Baker", 16),
@@ -630,7 +685,7 @@ def generate_sample_data() -> list[Game]:
         (2022, "softball", "6A", "First Round", "Jesuit", 1, "Roseburg", 16),
         (2022, "softball", "6A", "Quarterfinals", "Sheldon", 3, "South Medford", 6),
         (2022, "softball", "5A", "First Round", "Summit", 1, "Pendleton", 16),
-        (2022, "softball", "5A", "First Round", "Crescent Valley", 2, "Hermiston", 15),
+        (2022, "softball", "5A", "First Round", "Crescent Valley", 2, "Pendleton", 15),
         (2022, "softball", "4A", "First Round", "Valley Catholic", 1, "Klamath Union", 16),
     ]
 
@@ -1137,11 +1192,11 @@ def generate_html(games: list[Game], output_file: str = "brackets.html"):
                     </tr>
                     <tr class="tier-yellow">
                         <td><strong>Crescent Valley</strong></td>
-                        <td>2025</td>
-                        <td>Softball</td>
+                        <td>2022</td>
+                        <td>Baseball</td>
                         <td>5A</td>
                         <td>441 mi</td>
-                        <td>R1: vs Hermiston (211mi) → QF: vs Pendleton (230mi)</td>
+                        <td>R1: vs Pendleton (230mi) → QF: vs Pendleton (230mi)</td>
                     </tr>
                 </tbody>
             </table>
