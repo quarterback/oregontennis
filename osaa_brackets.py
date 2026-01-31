@@ -273,6 +273,7 @@ OREGON_SCHOOLS = {
     "Siuslaw": {"city": "Florence", "lat": 43.9826, "lon": -124.0990},
     "Mountain View": {"city": "Bend", "lat": 44.0282, "lon": -121.3253},
     "Crosspoint Christian": {"city": "Oregon City", "lat": 45.3573, "lon": -122.6068},
+    "Aloha": {"city": "Aloha", "lat": 45.4918, "lon": -122.8706},
 }
 
 
@@ -339,8 +340,25 @@ def save_geocode_cache(cache: dict):
         json.dump(cache, f, indent=2)
 
 
+def get_primary_school(school_name: str) -> str:
+    """Extract primary school name from co-op teams (e.g., 'Grant Union / Prairie City' -> 'Grant Union')."""
+    # Handle co-op teams by taking the first school
+    if ' / ' in school_name:
+        return school_name.split(' / ')[0].strip()
+    return school_name
+
+
 def get_school_location(school_name: str, cache: dict) -> Optional[dict]:
     """Get school location from cache or Oregon schools database."""
+    # First try the exact name
+    if school_name in OREGON_SCHOOLS:
+        return OREGON_SCHOOLS[school_name]
+
+    # For co-op teams, try the primary (first) school
+    primary_school = get_primary_school(school_name)
+    if primary_school != school_name and primary_school in OREGON_SCHOOLS:
+        return OREGON_SCHOOLS[primary_school]
+
     # Check pre-populated database first
     if school_name in OREGON_SCHOOLS:
         return OREGON_SCHOOLS[school_name]
