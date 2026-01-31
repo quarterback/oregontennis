@@ -180,6 +180,25 @@ OREGON_SCHOOLS = {
     "Irrigon": {"city": "Irrigon", "lat": 45.8965, "lon": -119.4929},
     "Weston-McEwen/Griswold": {"city": "Athena", "lat": 45.8165, "lon": -118.4890},
 
+    # Additional Schools for Bracket Data
+    "Cascade": {"city": "Turner", "lat": 44.8462, "lon": -122.9506},
+    "Burns": {"city": "Burns", "lat": 43.5865, "lon": -119.0540},
+    "Yamhill-Carlton": {"city": "Yamhill", "lat": 45.3418, "lon": -123.1868},
+    "Santiam Christian": {"city": "Adair Village", "lat": 44.6701, "lon": -123.2251},
+    "Cascade Christian": {"city": "Medford", "lat": 42.3265, "lon": -122.8756},
+    "South Umpqua": {"city": "Myrtle Creek", "lat": 42.9718, "lon": -123.2934},
+    "Gaston": {"city": "Gaston", "lat": 45.4340, "lon": -123.2568},
+    "Knappa": {"city": "Knappa", "lat": 46.1823, "lon": -123.5940},
+    "Joseph": {"city": "Joseph", "lat": 45.3540, "lon": -117.2295},
+    "Crane": {"city": "Crane", "lat": 43.4118, "lon": -118.5868},
+    "Grant Union": {"city": "John Day", "lat": 44.4165, "lon": -118.9529},
+    "Powder Valley": {"city": "North Powder", "lat": 45.0318, "lon": -117.9340},
+    "Dayton": {"city": "Dayton", "lat": 45.2201, "lon": -123.0768},
+    "Rainier": {"city": "Rainier", "lat": 46.0890, "lon": -122.9365},
+    "Vernonia": {"city": "Vernonia", "lat": 45.8590, "lon": -123.1929},
+    "Bandon": {"city": "Bandon", "lat": 43.1190, "lon": -124.4087},
+    "Joseph": {"city": "Joseph", "lat": 45.3540, "lon": -117.2295},
+
     # Private Schools
     "Oregon Episcopal": {"city": "Portland", "lat": 45.4706, "lon": -122.7306},
     "Catlin Gabel": {"city": "Portland", "lat": 45.4806, "lon": -122.7806},
