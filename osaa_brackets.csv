@@ -28,7 +28,7 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2025,baseball,4A,First Round,Junction City,2,The Dalles,15,,Junction City HS,False,137.4,yellow
 2025,baseball,4A,Quarterfinals,Newport,4,Henley,5,,Newport HS,False,206.8,yellow
 2025,baseball,4A,Quarterfinals,Junction City,2,Pendleton,7,,Junction City HS,False,238.1,yellow
-2025,baseball,4A,Semifinals,Marist Catholic,1,Henley,5,,Marist Catholic,False,144.3,yellow
+2025,baseball,4A,Semifinals,Marist Catholic,1,Henley,5,,Marist Catholic Catholic,False,144.3,yellow
 2025,baseball,4A,Semifinals,Scappoose,3,Pendleton,7,,Scappoose HS,False,197.3,yellow
 2025,baseball,5A,First Round,Summit,5,Hood River Valley,12,,Summit HS,False,112.5,green
 2025,baseball,5A,First Round,Ridgeview,4,Dallas,13,,Ridgeview HS,False,114.4,green
@@ -111,7 +111,7 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2024,baseball,4A,First Round,Scappoose,3,La Grande,14,,Scappoose HS,False,233.6,yellow
 2024,baseball,4A,First Round,The Dalles,7,Philomath,10,,The Dalles HS,False,129.2,yellow
 2024,baseball,4A,Quarterfinals,Henley,1,North Bend,9,,Henley HS,False,152.7,yellow
-2024,baseball,4A,Quarterfinals,Marist Catholic,4,Pendleton,5,,Marist Catholic,False,238.8,yellow
+2024,baseball,4A,Quarterfinals,Marist Catholic,4,Pendleton,5,,Marist Catholic Catholic,False,238.8,yellow
 2024,baseball,4A,Semifinals,Henley,1,Marist Catholic,4,,Henley HS,False,144.3,yellow
 2024,baseball,5A,First Round,Summit,8,Crater,9,,Summit HS,False,143.2,yellow
 2024,baseball,5A,First Round,Ridgeview,3,Corvallis,14,,Ridgeview HS,False,105.0,green
@@ -179,11 +179,11 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2023,baseball,4A,First Round,Henley,8,Crook County,9,,Henley HS,False,154.2,yellow
 2023,baseball,4A,First Round,La Grande,5,Madras,12,,La Grande HS,False,156.2,yellow
 2023,baseball,4A,First Round,Pendleton,6,Newport,11,,Pendleton HS,False,266.3,red
-2023,baseball,4A,First Round,Marist Catholic,3,Astoria,14,,Marist Catholic,False,154.9,yellow
+2023,baseball,4A,First Round,Marist Catholic,3,Astoria,14,,Marist Catholic Catholic,False,154.9,yellow
 2023,baseball,4A,First Round,The Dalles,7,Stayton,10,,The Dalles HS,False,95.8,green
 2023,baseball,4A,Quarterfinals,Scappoose,1,Crook County,9,,Scappoose HS,False,141.6,yellow
 2023,baseball,4A,Quarterfinals,North Marion,4,La Grande,5,,North Marion HS,False,227.1,yellow
-2023,baseball,4A,Quarterfinals,Marist Catholic,3,Pendleton,6,,Marist Catholic,False,238.8,yellow
+2023,baseball,4A,Quarterfinals,Marist Catholic,3,Pendleton,6,,Marist Catholic Catholic,False,238.8,yellow
 2023,baseball,4A,Semifinals,Scappoose,1,La Grande,5,,Scappoose HS,False,233.6,yellow
 2023,baseball,4A,Semifinals,Gladstone,2,Pendleton,6,,Gladstone HS,False,185.1,yellow
 2023,baseball,5A,First Round,Summit,1,La Salle Prep,16,,Summit HS,False,113.8,green
@@ -261,7 +261,7 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2022,baseball,3A,First Round,Yamhill-Carlton,4,Nyssa,13,,Yamhill-Carlton HS,False,321.0,red
 2022,baseball,3A,First Round,Santiam Christian,5,Irrigon,12,,Santiam Christian,False,200.2,yellow
 2022,baseball,4A,First Round,Philomath,1,Baker,32,,Philomath HS,False,272.3,red
-2022,baseball,4A,First Round,Marist Catholic,2,Ontario,31,,Marist Catholic HS,False,303.1,red
+2022,baseball,4A,First Round,Marist Catholic,2,Ontario,31,,Marist Catholic Catholic HS,False,303.1,red
 2022,baseball,4A,First Round,Valley Catholic,3,Klamath Union,30,,Valley Catholic HS,False,229.4,yellow
 2022,baseball,4A,First Round,Hidden Valley,4,La Grande,29,,Hidden Valley HS,False,330.8,red
 2022,baseball,4A,First Round,North Bend,6,Crook County,27,,North Bend HS,False,179.8,yellow
@@ -301,14 +301,14 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2022,softball,3A,Quarterfinals,Burns,3,Blanchet Catholic,11,,Burns HS,False,217.2,yellow
 2022,softball,3A,Quarterfinals,South Umpqua,2,Taft,7,,South Umpqua HS,False,141.8,yellow
 2022,softball,3A,Semifinals,South Umpqua,2,Burns,3,,South Umpqua HS,False,217.4,yellow
-2022,softball,4A,First Round,Marist Catholic,1,Baker,16,,Marist Catholic HS,False,263.5,red
+2022,softball,4A,First Round,Marist Catholic,1,Baker,16,,Marist Catholic Catholic HS,False,263.5,red
 2022,softball,4A,First Round,Henley,8,Sweet Home,9,,Henley HS,False,162.3,yellow
 2022,softball,4A,First Round,Stayton,5,Marshfield,12,,Stayton HS,False,121.8,yellow
 2022,softball,4A,First Round,La Grande,3,Banks,14,,La Grande HS,False,244.3,yellow
 2022,softball,4A,First Round,Ontario,6,Valley Catholic,11,,Ontario HS,False,303.3,red
 2022,softball,4A,First Round,Estacada,7,Mazama,10,,Estacada HS,False,214.8,yellow
 2022,softball,4A,First Round,Cascade,2,Hidden Valley,15,,Cascade HS,False,169.6,yellow
-2022,softball,4A,Quarterfinals,Marist Catholic,1,Henley,8,,Marist Catholic HS,False,144.3,yellow
+2022,softball,4A,Quarterfinals,Marist Catholic,1,Henley,8,,Marist Catholic Catholic HS,False,144.3,yellow
 2022,softball,4A,Quarterfinals,La Grande,3,Ontario,6,,La Grande HS,False,105.4,green
 2022,softball,4A,Semifinals,Cascade,2,La Grande,3,,Cascade HS,False,239.5,yellow
 2022,softball,5A,First Round,Pendleton,1,La Salle Prep,16,,Pendleton HS,False,186.6,yellow
@@ -325,3 +325,542 @@ year,sport,division,round,team1,team1_seed,team2,team2_seed,score,location,neutr
 2022,softball,6A,First Round,Bend,2,Franklin,31,,Bend HS,False,117.3,green
 2022,softball,6A,Quarterfinals,Bend,2,McMinnville,7,,Bend HS,False,121.7,yellow
 2022,softball,6A,Second Round,McNary,4,North Medford,20,,McNary HS,False,183.7,yellow
+2019,baseball,2A/1A,First Round,Bandon,,Nestucca,,,Bandon HS,False,146.8,yellow
+2019,baseball,2A/1A,First Round,Lost River,,Glide,,,Lost River HS,False,116.4,green
+2019,baseball,2A/1A,First Round,Dufur,,Lakeview,,,Dufur HS,False,229.1,yellow
+2019,baseball,2A/1A,First Round,Pilot Rock,,Hosanna Christian,,,Kiger Stadium,False,268.7,red
+2019,baseball,2A/1A,Second Round,Culver,,Umpqua Valley Christian,,,Legion Field,False,139.4,yellow
+2019,baseball,2A/1A,Second Round,Lakeview,,Grant Union / Prairie City,,,Lakeview HS,False,169.1,yellow
+2019,baseball,2A/1A,Second Round,Hosanna Christian,,Monroe,,,Hosanna Christian HS,False,163.5,yellow
+2019,baseball,2A/1A,Quarterfinals,Regis,,Knappa,,,Regis HS,False,103.0,green
+2019,baseball,2A/1A,Quarterfinals,Grant Union / Prairie …,,Kennedy,,,Grant Union / Prairie … HS,False,194.1,yellow
+2019,baseball,2A/1A,Semifinals,Umpqua Valley Christian,,Knappa,,,Umpqua Valley Christian HS,False,204.6,yellow
+2019,baseball,2A/1A,Semifinals,North Douglas,,Kennedy,,,North Douglas HS,False,100.6,green
+2019,baseball,2A/1A,Championship,Umpqua Valley Christian,,Kennedy,,,Volcanoes Stadium,False,130.3,yellow
+2019,baseball,3A,First Round,Joseph / Enterprise…,,"Horizon Christian, Tualatin",,,Joseph / Enterprise… HS,False,268.6,red
+2019,baseball,3A,First Round,Sutherlin,,Rainier,,,Sutherlin HS,False,187.4,yellow
+2019,baseball,3A,First Round,Vale,,La Pine,,,Vale HS,False,213.7,yellow
+2019,baseball,3A,First Round,Taft,,Irrigon,,,Taft HS,False,228.6,yellow
+2019,baseball,3A,First Round,Burns / Crane,,Warrenton,,,Burns / Crane HS,False,297.6,red
+2019,baseball,3A,First Round,Amity / Perrydale,,Brookings-Harbor,,,Amity / Perrydale HS,False,218.3,yellow
+2019,baseball,3A,Quarterfinals,Joseph / Enterprise / …,,Pleasant Hill,,,Joseph / Enterprise / … HS,False,297.4,red
+2019,baseball,3A,Quarterfinals,Rainier,,La Pine,,,Rainier HS,False,181.3,yellow
+2019,baseball,3A,Championship,Warrenton,,La Pine,,,Volcanoes Stadium,False,209.2,yellow
+2019,baseball,4A,First Round,Elmira,,Banks,,,Elmira HS,False,106.7,green
+2019,baseball,4A,First Round,Phoenix,,Junction City,,,Phoenix HS,False,135.7,yellow
+2019,baseball,4A,First Round,Valley Catholic,,Hidden Valley,,,Valley Catholic HS,False,212.7,yellow
+2019,baseball,4A,First Round,Sweet Home,,La Grande,,,Sweet Home HS,False,236.4,yellow
+2019,baseball,4A,First Round,Philomath / Alsea,,Baker,,,Philomath / Alsea HS,False,272.3,red
+2019,baseball,4A,First Round,Seaside,,Henley,,,Seaside HS,False,286.0,red
+2019,baseball,4A,Quarterfinals,Junction City,,Hidden Valley,,,Junction City HS,False,125.3,yellow
+2019,baseball,4A,Quarterfinals,Astoria,,Sweet Home,,,Astoria HS,False,134.7,yellow
+2019,baseball,4A,Quarterfinals,Philomath / Alsea,,Henley,,,Philomath / Alsea HS,False,183.5,yellow
+2019,baseball,4A,Semifinals,Hidden Valley,,Banks,,,Hidden Valley HS,False,222.1,yellow
+2019,baseball,4A,Semifinals,Astoria,,Henley,,,Astoria HS,False,296.8,red
+2019,baseball,4A,Championship,Henley,,Banks,,,Volcanoes Stadium,False,248.4,yellow
+2019,baseball,5A,First Round,Ashland,,La Salle Prep,,,Ashland HS,False,224.3,yellow
+2019,baseball,5A,First Round,Crater,,Silverton,,,Crater HS,False,181.8,yellow
+2019,baseball,5A,First Round,Putnam,,Thurston,,,Putnam HS,False,96.8,green
+2019,baseball,5A,First Round,Hood River Valley,,West Albany,,,Hood River Valley HS,False,108.3,green
+2019,baseball,5A,First Round,Wilsonville,,Pendleton,,,"Bob White Field, Pend…",False,194.7,yellow
+2019,baseball,5A,First Round,Crook County,,Crescent Valley,,,Crook County HS,False,120.4,yellow
+2019,baseball,5A,Semifinals,Pendleton,,West Albany,,,Pendleton HS,False,223.2,yellow
+2019,baseball,5A,Championship,Pendleton,,Central,,,Volcanoes Stadium,False,221.3,yellow
+2019,baseball,6A,First Round,North Medford,,Beaverton,,,North Medford HS,False,217.0,yellow
+2019,baseball,6A,First Round,Summit,,Clackamas,,,Summit HS,False,110.5,green
+2019,baseball,6A,First Round,Canby,,Roseburg,,,Legion Field - Roseburg,False,145.0,yellow
+2019,baseball,6A,First Round,Grants Pass,,Lakeridge,,,Grants Pass HS,False,206.7,yellow
+2019,baseball,6A,First Round,South Medford,,Tigard,,,South Medford HS,False,215.3,yellow
+2019,baseball,6A,Second Round,Bend,,West Linn,,,Bend HS,False,110.5,green
+2019,baseball,6A,Second Round,Sprague,,Roseburg,,,"Legion Field, Roseburg",False,120.3,yellow
+2019,baseball,6A,Quarterfinals,Roseburg,,Clackamas,,,Roseburg HS,False,156.3,yellow
+2018,baseball,6A,First Round,North Medford,,West Linn,,,North Medford HS,False,208.9,yellow
+2018,baseball,6A,First Round,Sheldon,,Jesuit,,,Sheldon HS,False,97.8,green
+2018,baseball,6A,First Round,South Eugene,,Grant,,,Walker Stadium,False,106.7,green
+2018,baseball,6A,First Round,Sherwood,,Roseburg,,,Legion Field - Stewart…,False,150.0,yellow
+2018,baseball,6A,First Round,Centennial,,South Medford,,,Harry and David Field,False,221.0,yellow
+2018,baseball,6A,Second Round,Roseburg,,Central Catholic,,,University of Portland,False,163.8,yellow
+2018,baseball,6A,Second Round,Sprague,,South Medford,,,Grants Pass High School,False,181.7,yellow
+2018,baseball,5A,First Round,North Eugene,,Pendleton,,,"Bob White Field, Pendlet…",False,238.5,yellow
+2018,baseball,5A,First Round,La Salle Prep,,Crater,,,La Salle Prep HS,False,212.2,yellow
+2018,baseball,5A,First Round,Wilsonville,,Bend,,,Wilsonville HS,False,111.8,green
+2018,baseball,5A,Quarterfinals,Churchill,,Pendleton,,,Churchill HS,False,241.0,yellow
+2018,baseball,5A,Quarterfinals,Sandy,,Crater,,,Sandy HS,False,211.2,yellow
+2018,baseball,5A,Semifinals,Bend,,Crater,,,Bend HS,False,141.2,yellow
+2018,baseball,5A,Championship,Crater,,Crescent Valley,,,Volcanoes Stadium,False,153.6,yellow
+2018,baseball,4A,First Round,Baker,,Henley,,,Baker HS,False,265.9,red
+2018,baseball,4A,First Round,Phoenix,,Junction City,,,Phoenix HS,False,135.7,yellow
+2018,baseball,4A,First Round,Valley Catholic,,North Bend,,,Valley Catholic HS,False,158.3,yellow
+2018,baseball,4A,First Round,Brookings-Harbor,,Gladstone,,,Brookings-Harbor HS,False,245.0,yellow
+2018,baseball,4A,First Round,Estacada,,La Grande,,,Estacada HS,False,206.4,yellow
+2018,baseball,4A,First Round,Madras,,Astoria,,,Madras HS,False,169.5,yellow
+2018,baseball,4A,First Round,Crook County,,North Marion,,,Crook County HS,False,114.2,green
+2018,baseball,4A,Quarterfinals,Junction City,,Henley,,,Junction City HS,False,160.2,yellow
+2018,baseball,4A,Quarterfinals,North Bend,,Gladstone,,,North Bend HS,False,158.5,yellow
+2018,baseball,4A,Quarterfinals,Banks,,La Grande,,,Banks HS,False,244.3,yellow
+2018,baseball,4A,Semifinals,La Grande,,North Marion,,,La Grande HS,False,227.1,yellow
+2018,baseball,4A,Championship,Gladstone,,La Grande,,,Volcanoes Stadium,False,218.7,yellow
+2018,baseball,3A,First Round,Joseph / Enterprise…,,Salem Academy,,,Joseph / Enterprise… HS,False,284.3,red
+2018,baseball,3A,First Round,Irrigon,,Pleasant Hill,,,Irrigon HS,False,215.9,yellow
+2018,baseball,3A,First Round,Vale,,La Pine,,,Vale HS,False,213.7,yellow
+2018,baseball,3A,First Round,Rogue River,,Santiam Christian,,,Rogue River HS,False,154.2,yellow
+2018,baseball,3A,First Round,Warrenton,,Cascade Christian,,,US Cellular Field,False,270.4,red
+2018,baseball,3A,First Round,Blanchet Catholic,,Stanfield,,,Blanchet Catholic HS,False,193.3,yellow
+2018,baseball,3A,Quarterfinals,Joseph / Enterprise / …,,Taft,,,Joseph / Enterprise / … HS,False,331.6,red
+2018,baseball,3A,Quarterfinals,Cascade Christian,,Santiam Christian,,,Cascade Christian HS,False,162.9,yellow
+2018,baseball,3A,Quarterfinals,"Horizon Christian, Tualatin",,Stanfield,,,"Horizon Christian, Tualatin HS",False,173.7,yellow
+2018,baseball,3A,Semifinals,La Pine,,Taft,,,La Pine HS,False,152.6,yellow
+2018,baseball,3A,Championship,"Horizon Christian, Tualatin",,La Pine,,,Volcanoes Stadium,False,133.7,yellow
+2018,baseball,2A/1A,First Round,Riddle,,Knappa,,,Riddle HS,False,223.7,yellow
+2018,baseball,2A/1A,First Round,Western Mennonite,,Pilot Rock / Nixyaa…,,,Western Mennonite HS,False,207.6,yellow
+2018,baseball,2A/1A,First Round,Lost River,,Sherman,,,Lost River HS,False,242.6,yellow
+2018,baseball,2A/1A,First Round,Neah-Kah-Nie,,Bandon,,,Neah-Kah-Nie HS,False,173.9,yellow
+2018,baseball,2A/1A,First Round,Grant Union / Prairie …,,Reedsport,,,Grant Union / Prairie … HS,False,260.1,red
+2018,baseball,2A/1A,Quarterfinals,Monroe,,Knappa,,,Monroe HS,False,129.6,yellow
+2018,baseball,2A/1A,Quarterfinals,Oakland,,Kennedy,,,Oakland HS,False,116.6,green
+2018,baseball,2A/1A,Semifinals,Bandon,,Pilot Rock / Nixyaa…,,,Bandon HS,False,320.1,red
+2018,baseball,2A/1A,Championship,Pilot Rock,,Knappa,,,Volcanoes Stadium,False,233.9,yellow
+2018,softball,6A,First Round,South Medford,,Oregon City,,,South Medford HS,False,210.5,yellow
+2018,softball,6A,First Round,Reynolds,,North Medford,,,Reynolds HS,False,221.8,yellow
+2018,softball,6A,First Round,Sprague,,Grants Pass,,,Sprague HS,False,173.6,yellow
+2018,softball,6A,First Round,Roosevelt,,Roseburg,,,"Stewart Park, Roseburg",False,166.3,yellow
+2018,softball,6A,Second Round,Sheldon,,North Medford,,,Sheldon HS,False,121.2,yellow
+2018,softball,6A,Second Round,West Albany,,Grants Pass,,,West Albany HS,False,151.7,yellow
+2018,softball,6A,Second Round,Roseburg,,Clackamas,,,Roseburg HS,False,156.3,yellow
+2018,softball,6A,Quarterfinals,Tigard,,North Medford,,,Tigard HS,False,213.2,yellow
+2018,softball,6A,Quarterfinals,Grants Pass,,Clackamas,,,Grants Pass HS,False,208.8,yellow
+2018,softball,6A,Semifinals,North Medford,,Clackamas,,,North Medford HS,False,212.2,yellow
+2018,softball,5A,First Round,Sandy,,Pendleton,,,Sunridge Middle Sch…,False,169.1,yellow
+2018,softball,5A,First Round,La Salle Prep,,Ridgeview,,,La Salle Prep HS,False,107.7,green
+2018,softball,5A,First Round,Thurston,,Hood River Valley,,,Westside Elementary,False,134.1,yellow
+2018,softball,5A,First Round,Crater,,Dallas,,,Crater HS,False,176.9,yellow
+2018,softball,5A,First Round,Eagle Point,,Hermiston,,,Eagle Point HS,False,290.6,red
+2018,softball,5A,Quarterfinals,Ridgeview,,Pendleton,,,Ridgeview HS,False,151.5,yellow
+2018,softball,5A,Quarterfinals,Hood River Valley,,Marist Catholic,,,Hood River Valley HS,False,139.7,yellow
+2018,softball,5A,Quarterfinals,Crater,,Putnam,,,Crater HS,False,211.6,yellow
+2018,softball,5A,Quarterfinals,Lebanon,,Hermiston,,,Lebanon HS,False,197.8,yellow
+2018,softball,5A,Semifinals,Marist Catholic,,Pendleton,,,Marist Catholic Catholic HS,False,238.8,yellow
+2018,softball,5A,Championship,Putnam,,Pendleton,,,OSU Softball Complex,False,186.1,yellow
+2018,softball,4A,First Round,Crook County,,La Grande,,,Crook County HS,False,152.1,yellow
+2018,softball,4A,First Round,Elmira,,Gladstone,,,Elmira HS,False,97.7,green
+2018,softball,4A,First Round,Sweet Home,,McLoughlin,,,Sweet Home HS,False,236.8,yellow
+2018,softball,4A,First Round,North Valley,,Philomath / Alsea,,,North Valley HS,False,139.7,yellow
+2018,softball,4A,First Round,Newport,,Henley,,,Newport HS,False,206.8,yellow
+2018,softball,4A,First Round,North Bend,,Scappoose,,,North Bend HS,False,175.2,yellow
+2018,softball,4A,First Round,Banks,,South Umpqua,,,Tri-City Elementary School,False,183.1,yellow
+2018,softball,4A,First Round,Baker,,Junction City,,,Baker HS,False,267.4,red
+2018,softball,4A,Quarterfinals,Gladstone,,La Grande,,,Gladstone HS,False,218.7,yellow
+2018,softball,4A,Quarterfinals,North Bend,,Henley,,,North Bend HS,False,152.7,yellow
+2018,softball,4A,Semifinals,Philomath / Alsea,,La Grande,,,Philomath / Alsea HS,False,263.7,red
+2018,softball,4A,Semifinals,South Umpqua,,Henley,,,South Umpqua HS,False,97.1,green
+2018,softball,4A,Championship,Henley,,La Grande,,,OSU Softball Complex,False,284.1,red
+2018,softball,3A,First Round,Lakeview,,Dayton,,,Lakeview HS,False,249.9,red
+2018,softball,3A,First Round,Taft,,Stanfield,,,Taft HS,False,239.7,yellow
+2018,softball,3A,First Round,Harrisburg,,Clatskanie,,,Harrisburg HS,False,126.5,yellow
+2018,softball,3A,First Round,Riverside,,Grant Union / Dayv…,,,Riverside HS,False,104.8,green
+2018,softball,3A,First Round,Blanchet Catholic,,Glide,,,Blanchet Catholic HS,False,113.5,green
+2018,softball,3A,First Round,Amity,,Cascade Christian,,,U.S. Cellular Fields - Fie…,False,193.3,yellow
+2018,softball,3A,First Round,Enterprise / Joseph / …,,Scio,,,Enterprise / Joseph / … HS,False,275.6,red
+2018,softball,3A,Quarterfinals,Clatskanie,,Grant Union / Dayville…,,,Clatskanie HS,False,237.4,yellow
+2018,softball,3A,Quarterfinals,Glide,,Rainier,,,Glide HS,False,192.8,yellow
+2018,softball,2A/1A,First Round,Butte Falls,,Toledo,,,Butte Falls HS,False,159.1,yellow
+2018,softball,2A/1A,First Round,Reedsport,,Bonanza,,,Reedsport HS,False,171.0,yellow
+2018,softball,2A/1A,First Round,Oakland,,Union / Cove,,,Oakland HS,False,295.8,red
+2018,softball,2A/1A,First Round,Siletz Valley,,Pilot Rock / Nixyaa…,,,Siletz Valley HS,False,253.4,red
+2018,softball,2A/1A,First Round,North Douglas / Cr…,,Knappa,,,North Douglas / Cr… HS,False,174.7,yellow
+2018,softball,2A/1A,First Round,Riddle,,Kennedy,,,Riddle HS,False,149.2,yellow
+2018,softball,2A/1A,Quarterfinals,Bonanza,,Toledo,,,Bonanza HS,False,209.9,yellow
+2018,softball,2A/1A,Quarterfinals,North Douglas / Crow,,Kennedy,,,North Douglas / Crow HS,False,100.6,green
+2018,softball,2A/1A,Semifinals,Pilot Rock / Nixyaa…,,Toledo,,,Pilot Rock / Nixyaa… HS,False,255.8,red
+2018,softball,2A/1A,Championship,Pilot Rock / Nixyaawii,,Kennedy,,,OSU Softball Complex,False,194.7,yellow
+2017,softball,2A/1A,First Round,Monroe,,Vernonia,,,Monroe HS,False,106.5,green
+2017,softball,2A/1A,First Round,Butte Falls,,Union / Cove,,,Butte Falls HS,False,297.8,red
+2017,softball,2A/1A,First Round,Santiam,,Bonanza,,,Santiam HS,False,184.3,yellow
+2017,softball,2A/1A,First Round,Lost River,,Toledo,,,Lost River HS,False,214.1,yellow
+2017,softball,2A/1A,First Round,Regis,,Pilot Rock / Nixyaa…,,,Regis HS,False,198.4,yellow
+2017,softball,2A/1A,Quarterfinals,Bonanza,,Union / Cove,,,Bonanza HS,False,272.8,red
+2017,softball,2A/1A,Quarterfinals,Lost River,,Pilot Rock / Nixyaa…,,,Lost River HS,False,275.6,red
+2017,softball,2A/1A,Semifinals,North Douglas,,Kennedy,,,North Douglas HS,False,100.6,green
+2017,softball,2A/1A,Championship,North Douglas,,Pilot Rock / Nixyaawii,,,OSU Softball Complex,False,253.8,red
+2017,softball,3A,First Round,Irrigon,,Rainier,,,Irrigon HS,False,165.8,yellow
+2017,softball,3A,First Round,Amity,,Cascade Christian,,,"US Cellular Field, Medfor…",False,193.3,yellow
+2017,softball,3A,First Round,Clatskanie,,Pleasant Hill,,,Clatskanie HS,False,148.8,yellow
+2017,softball,3A,First Round,Harrisburg,,Vale,,,Harrisburg HS,False,294.8,red
+2017,softball,3A,First Round,Burns,,Dayton,,,Burns HS,False,228.4,yellow
+2017,softball,3A,First Round,Grant Union / Dayville…,,Glide,,,Grant Union / Dayville… HS,False,220.6,yellow
+2017,softball,3A,First Round,Blanchet Catholic,,Weston-McEwen,,,Blanchet Catholic HS,False,227.8,yellow
+2017,softball,3A,First Round,Rogue River,,Scio,,,Rogue River HS,False,159.8,yellow
+2017,softball,3A,Quarterfinals,Pleasant Hill,,Vale,,,Pleasant Hill HS,False,284.2,red
+2017,softball,3A,Quarterfinals,Glide,,Dayton,,,Glide HS,False,132.6,yellow
+2017,softball,3A,Semifinals,Vale,,Rainier,,,Vale HS,False,313.9,red
+2017,softball,4A,First Round,Ontario,,Henley,,,Ontario HS,False,272.8,red
+2017,softball,4A,First Round,Mazama,,La Grande,,,Mazama HS,False,284.2,red
+2017,softball,4A,First Round,Newport,,McLoughlin,,,Yantis Park-Milton Freew…,False,289.5,red
+2017,softball,4A,First Round,North Bend,,Crook County,,,North Bend HS,False,179.8,yellow
+2017,softball,4A,First Round,Hidden Valley,,Banks,,,Hidden Valley HS,False,222.1,yellow
+2017,softball,4A,Quarterfinals,Scappoose,,Henley,,,Scappoose HS,False,254.4,red
+2017,softball,4A,Quarterfinals,Elmira,,La Grande,,,Elmira HS,False,274.2,red
+2017,softball,4A,Quarterfinals,Crook County,,McLoughlin,,,Yantis Park-Milton Freew…,False,164.2,yellow
+2017,softball,4A,Semifinals,La Grande,,Henley,,,La Grande HS,False,284.1,red
+2017,softball,4A,Semifinals,Gladstone,,Crook County,,,Gladstone HS,False,114.0,green
+2017,softball,4A,Championship,Crook County,,Henley,,,OSU Softball Complex,False,154.2,yellow
+2017,softball,5A,First Round,Lebanon,,Eagle Point,,,Lebanon HS,False,142.8,yellow
+2017,softball,5A,First Round,Churchill,,Ridgeview,,,Churchill HS,False,98.3,green
+2017,softball,5A,First Round,Corvallis,,Pendleton,,,Corvallis HS,False,231.1,yellow
+2017,softball,5A,First Round,Crater,,Putnam,,,Crater HS,False,211.6,yellow
+2017,softball,5A,First Round,Hermiston,,Marist Catholic,,,Hermiston HS,False,223.7,yellow
+2017,softball,5A,Quarterfinals,Hood River Valley,,Pendleton,,,Hood River Valley HS,False,131.6,yellow
+2017,softball,5A,Quarterfinals,Putnam,,Marist Catholic,,,Putnam HS,False,100.4,green
+2017,softball,5A,Semifinals,Pendleton,,Marist Catholic,,,Pendleton HS,False,238.8,yellow
+2017,softball,6A,First Round,David Douglas,,North Medford,,,David Douglas HS,False,217.9,yellow
+2017,softball,6A,First Round,Roseburg,,West Albany,,,Roseburg HS,False,98.3,green
+2017,softball,6A,First Round,Sheldon,,Barlow,,,Sheldon HS,False,101.6,green
+2017,softball,6A,First Round,Tigard,,Grants Pass,,,Tigard HS,False,208.6,yellow
+2017,softball,6A,Second Round,West Albany,,North Medford,,,West Albany HS,False,158.4,yellow
+2017,softball,6A,Second Round,Grants Pass,,Jesuit,,,Grants Pass HS,False,212.6,yellow
+2017,softball,6A,Quarterfinals,Glencoe,,North Medford,,,Glencoe HS,False,220.0,yellow
+2017,softball,6A,Quarterfinals,Grants Pass,,Tualatin,,,Grants Pass HS,False,205.4,yellow
+2017,softball,6A,Championship,Westview,,North Medford,,,OSU Softball Complex,False,220.9,yellow
+2016,softball,2A/1A,First Round,Gaston,,Pilot Rock / Nixyaa…,,,Gaston HS,False,214.1,yellow
+2016,softball,2A/1A,First Round,Burns,,Vernonia,,,Burns HS,False,256.7,red
+2016,softball,2A/1A,First Round,Irrigon,,North Douglas,,,Irrigon HS,False,242.9,yellow
+2016,softball,2A/1A,First Round,Waldport,,Bonanza,,,Waldport HS,False,203.8,yellow
+2016,softball,2A/1A,First Round,Butte Falls,,Central Linn,,,Butte Falls HS,False,130.3,yellow
+2016,softball,2A/1A,First Round,Reedsport,,Union / Cove,,,Reedsport HS,False,324.4,red
+2016,softball,2A/1A,Quarterfinals,Vernonia,,Pilot Rock / Nixyaa…,,,Vernonia HS,False,211.8,yellow
+2016,softball,2A/1A,Quarterfinals,Kennedy,,North Douglas,,,Kennedy HS,False,100.6,green
+2016,softball,2A/1A,Quarterfinals,Oakland,,Bonanza,,,Oakland HS,False,127.9,yellow
+2016,softball,2A/1A,Quarterfinals,Central Linn,,Union / Cove,,,Central Linn HS,False,263.1,red
+2016,softball,2A/1A,Semifinals,Kennedy,,Pilot Rock / Nixyaa…,,,Kennedy HS,False,194.7,yellow
+2016,softball,2A/1A,Semifinals,Bonanza,,Union / Cove,,,Bonanza HS,False,272.8,red
+2016,softball,3A,First Round,Rogue River,,Dayton,,,Rogue River HS,False,192.2,yellow
+2016,softball,3A,First Round,Vale,,Cascade Christian,,,US Cellular Field # 7,False,306.2,red
+2016,softball,3A,First Round,Clatskanie,,Weston-McEwen / …,,,Clatskanie HS,False,227.4,yellow
+2016,softball,3A,First Round,Enterprise / Joseph / …,,Rainier,,,Enterprise / Joseph / … HS,False,276.5,red
+2016,softball,3A,First Round,Stanfield,,Harrisburg,,,Stanfield HS,False,219.3,yellow
+2016,softball,3A,First Round,Glide,,Scio,,,Glide HS,False,100.1,green
+2016,softball,3A,Quarterfinals,Cascade Christian,,Dayton,,,Cascade Christian HS,False,200.2,yellow
+2016,softball,3A,Quarterfinals,Pleasant Hill,,Weston-McEwen,,,Pleasant Hill HS,False,253.5,red
+2016,softball,4A,First Round,Hidden Valley,,McLoughlin,,,Milton-Freewater - Ya…,False,346.3,red
+2016,softball,4A,First Round,Crook County,,Douglas,,,Crook County HS,False,152.5,yellow
+2016,softball,4A,First Round,Sweet Home,,Henley,,,Sweet Home HS,False,162.3,yellow
+2016,softball,4A,First Round,South Umpqua,,Banks,,,South Umpqua HS,False,183.1,yellow
+2016,softball,4A,First Round,Ontario,,Elmira,,,Ontario HS,False,319.3,red
+2016,softball,4A,Quarterfinals,Douglas,,McLoughlin,,,Douglas HS,False,314.7,red
+2016,softball,4A,Quarterfinals,Henley,,Gladstone,,,Henley HS,False,226.3,yellow
+2016,softball,4A,Quarterfinals,Ontario,,Banks,,,"Hillsboro Stadium, Hillsb…",False,320.8,red
+2016,softball,4A,Quarterfinals,Newport,,Scappoose,,,Newport HS,False,96.1,green
+2016,softball,4A,Semifinals,Gladstone,,McLoughlin,,,Yantis Park,False,206.5,yellow
+2016,softball,4A,Championship,Banks,,McLoughlin,,,OSU Softball Complex,False,228.7,yellow
+2016,softball,5A,First Round,Liberty,,Marist Catholic,,,Liberty HS,False,105.5,green
+2016,softball,5A,First Round,Eagle Point,,Putnam,,,Eagle Point HS,False,204.6,yellow
+2016,softball,5A,First Round,Crater,,Pendleton,,,Crater HS,False,306.1,red
+2016,softball,5A,Quarterfinals,The Dalles / Dufur,,Lebanon,,,The Dalles / Dufur HS,False,111.6,green
+2016,softball,5A,Quarterfinals,Marist Catholic,,Putnam,,,Marist Catholic Catholic HS,False,100.4,green
+2016,softball,5A,Quarterfinals,Silverton,,Pendleton,,,Sunridge Middle School,False,199.4,yellow
+2016,softball,5A,Semifinals,Churchill,,Pendleton,,,Churchill HS,False,241.0,yellow
+2016,softball,6A,First Round,Grants Pass,,Central Catholic,,,Hood View Park,False,216.5,yellow
+2016,softball,6A,First Round,Thurston,,Clackamas,,,Thurston HS,False,95.9,green
+2016,softball,6A,First Round,McNary,,North Medford,,,McNary HS,False,183.7,yellow
+2016,softball,6A,First Round,Sprague,,Roseburg,,,"Stewart Park, Rosebu…",False,120.3,yellow
+2016,softball,6A,First Round,Southridge,,South Medford,,,Southridge HS,False,217.5,yellow
+2016,softball,6A,Second Round,Grants Pass,,Westview,,,Grants Pass HS,False,215.8,yellow
+2016,softball,6A,Second Round,West Linn,,North Medford,,,West Linn HS,False,208.9,yellow
+2016,softball,6A,Second Round,Reynolds,,Roseburg,,,"Stewart Park, Rosebu…",False,167.2,yellow
+2016,softball,6A,Second Round,South Medford,,Jesuit,,,South Medford HS,False,219.4,yellow
+2016,softball,6A,Quarterfinals,Grants Pass,,Franklin,,,Erv Lind Stadium,False,213.5,yellow
+2016,softball,6A,Quarterfinals,McMinnville,,North Medford,,,McMinnville HS,False,198.6,yellow
+2016,softball,6A,Semifinals,Grants Pass,,Glencoe,,,Grants Pass HS,False,214.3,yellow
+2016,softball,6A,Semifinals,North Medford,,Jesuit,,,North Medford HS,False,217.3,yellow
+2015,softball,2A/1A,First Round,Waldport,,Union / Cove,,,Waldport HS,False,308.7,red
+2015,softball,2A/1A,First Round,Kennedy,,North Douglas,,,Kennedy HS,False,100.6,green
+2015,softball,2A/1A,First Round,Oakland,,Weston-McEwen / …,,,Oakland HS,False,288.9,red
+2015,softball,2A/1A,First Round,Reedsport,,Bonanza,,,Reedsport HS,False,171.0,yellow
+2015,softball,2A/1A,First Round,Riddle,,Pilot Rock / Nixyaa…,,,Riddle HS,False,284.3,red
+2015,softball,2A/1A,First Round,Butte Falls,,Knappa,,,Butte Falls HS,False,256.5,red
+2015,softball,2A/1A,First Round,Gaston,,Gold Beach,,,Gaston HS,False,217.0,yellow
+2015,softball,2A/1A,Quarterfinals,North Douglas,,Union / Cove,,,North Douglas HS,False,289.4,red
+2015,softball,2A/1A,Quarterfinals,Gold Beach,,Central Linn,,,Gold Beach HS,False,152.0,yellow
+2015,softball,3A,First Round,Lakeview,,Dayton,,,Lakeview HS,False,249.9,red
+2015,softball,3A,First Round,Stanfield,,Rogue River,,,Stanfield HS,False,302.8,red
+2015,softball,3A,First Round,Glide,,Vale,,,Glide HS,False,296.9,red
+2015,softball,3A,First Round,Elgin / Imbler,,Harrisburg,,,Elgin / Imbler HS,False,271.9,red
+2015,softball,3A,Quarterfinals,Stanfield,,Dayton,,,Stanfield HS,False,190.9,yellow
+2015,softball,3A,Quarterfinals,Vale,,Scio,,,Vale HS,False,281.8,red
+2015,softball,3A,Quarterfinals,Harrisburg,,Rainier,,,Harrisburg HS,False,125.9,yellow
+2015,softball,4A,First Round,Ontario,,Banks,,,Ontario HS,False,320.8,red
+2015,softball,4A,First Round,Scappoose,,Elmira,,,Scappoose HS,False,117.9,green
+2015,softball,4A,First Round,Mazama,,Marshfield,,,Mazama HS,False,146.5,yellow
+2015,softball,4A,First Round,North Valley,,Newport,,,Yaquina View Elementar…,False,149.9,yellow
+2015,softball,4A,First Round,Crook County,,Henley,,,Crook County HS,False,154.2,yellow
+2015,softball,4A,First Round,Douglas / Camas V…,,Gladstone,,,Douglas / Camas V… HS,False,161.3,yellow
+2015,softball,4A,First Round,Cascade,,McLoughlin,,,Yantis Park,False,233.7,yellow
+2015,softball,4A,Quarterfinals,Mazama,,Newport,,,Yaquina View Eleme…,False,202.5,yellow
+2015,softball,4A,Quarterfinals,Henley,,Yamhill-Carlton,,,Henley HS,False,231.2,yellow
+2015,softball,4A,Quarterfinals,Douglas / Camas Val…,,McLoughlin,,,Yantis Park,False,314.7,red
+2015,softball,4A,Semifinals,Mazama,,Banks,,,Mazama HS,False,244.8,yellow
+2015,softball,4A,Semifinals,Yamhill-Carlton,,McLoughlin,,,Yantis Park,False,235.3,yellow
+2015,softball,4A,Championship,McLoughlin,,Banks,,,OSU Softball Complex,False,228.7,yellow
+2015,softball,5A,First Round,North Eugene,,Putnam,,,North Eugene HS,False,96.8,green
+2015,softball,5A,First Round,La Salle Prep,,Marist Catholic,,,La Salle Prep HS,False,100.9,green
+2015,softball,5A,First Round,Hillsboro,,Churchill,,,Hillsboro HS,False,103.9,green
+2015,softball,5A,First Round,Crater,,Silverton,,,Crater HS,False,181.8,yellow
+2015,softball,5A,First Round,Liberty,,Eagle Point,,,Liberty HS,False,212.2,yellow
+2015,softball,5A,First Round,Central,,Pendleton,,,Sunridge Middle Scho…,False,221.3,yellow
+2015,softball,5A,Quarterfinals,Sandy,,Marist Catholic,,,Sandy HS,False,103.5,green
+2015,softball,5A,Quarterfinals,Liberty,,Pendleton,,,Sunridge Middle Scho…,False,204.3,yellow
+2015,softball,5A,Semifinals,Marist Catholic,,Putnam,,,Hood View Park,False,100.4,green
+2015,softball,5A,Semifinals,Silverton,,Pendleton,,,Sunridge Middle School,False,199.4,yellow
+2015,softball,5A,Championship,Pendleton,,Putnam,,,OSU Softball Complex,False,186.1,yellow
+2015,softball,6A,First Round,Thurston,,Jesuit,,,Thurston HS,False,100.1,green
+2015,softball,6A,First Round,Roseburg,,Barlow,,,Roseburg HS,False,163.3,yellow
+2015,softball,6A,First Round,Newberg,,Grants Pass,,,Newberg HS,False,198.5,yellow
+2015,softball,6A,First Round,Glencoe,,North Medford,,,Glencoe HS,False,220.0,yellow
+2015,softball,6A,First Round,Reynolds,,South Medford,,,Reynolds HS,False,224.0,yellow
+2015,softball,6A,Second Round,Roosevelt,,Grants Pass,,,Roosevelt HS,False,219.3,yellow
+2015,softball,6A,Second Round,McNary,,North Medford,,,McNary HS,False,183.7,yellow
+2015,softball,6A,Quarterfinals,McNary,,Grants Pass,,,McNary HS,False,177.8,yellow
+2015,softball,6A,Semifinals,Grants Pass,,Tualatin,,,Grants Pass HS,False,205.4,yellow
+2014,softball,2A/1A,First Round,Gold Beach,,Weston-McEwen / …,,,Gold Beach HS,False,376.9,red
+2014,softball,2A/1A,First Round,Pilot Rock / Nixyaa…,,Riddle,,,Pilot Rock / Nixyaa… HS,False,284.3,red
+2014,softball,2A/1A,First Round,Knappa,,Bonanza,,,Knappa HS,False,295.6,red
+2014,softball,2A/1A,First Round,Regis,,Union / Cove,,,Regis HS,False,242.4,yellow
+2014,softball,2A/1A,First Round,Butte Falls,,Vernonia,,,Butte Falls HS,False,231.2,yellow
+2014,softball,2A/1A,Quarterfinals,Central Linn,,Bonanza,,,Central Linn HS,False,173.6,yellow
+2014,softball,2A/1A,Quarterfinals,Butte Falls,,Union / Cove,,,Butte Falls HS,False,297.8,red
+2014,softball,2A/1A,Semifinals,Bonanza,,Weston-McEwen,,,Bonanza HS,False,288.8,red
+2014,softball,2A/1A,Semifinals,Union / Cove,,North Douglas / Elkton,,,Union / Cove HS,False,289.4,red
+2014,softball,2A/1A,Championship,Bonanza,,Union / Cove,,,OSU Softball Complex,False,272.8,red
+2014,softball,3A,First Round,Vale,,Lakeview,,,Vale HS,False,199.8,yellow
+2014,softball,3A,First Round,Elgin / Imbler,,Pleasant Hill,,,Elgin / Imbler HS,False,270.9,red
+2014,softball,3A,First Round,Harrisburg,,Rainier,,,Harrisburg HS,False,125.9,yellow
+2014,softball,3A,First Round,Santiam Christian,,Enterprise / Joseph…,,,Santiam Christian HS,False,294.9,red
+2014,softball,3A,Quarterfinals,Vale,,Glide,,,Vale HS,False,296.9,red
+2014,softball,3A,Quarterfinals,Enterprise / Joseph / …,,Dayton,,,Enterprise / Joseph / … HS,False,282.0,red
+2014,softball,3A,Semifinals,Vale,,Blanchet Catholic,,,Vale HS,False,292.4,red
+2014,softball,3A,Championship,Vale,,Rainier,,,OSU Softball Complex,False,313.9,red
+2014,softball,4A,First Round,Mazama,,Yamhill-Carlton,,,Mazama HS,False,227.5,yellow
+2014,softball,4A,First Round,Banks,,South Umpqua,,,Banks HS,False,183.1,yellow
+2014,softball,4A,First Round,Douglas,,Henley,,,Douglas HS,False,108.2,green
+2014,softball,4A,First Round,Marshfield,,Gladstone,,,Wilsonville HS,False,160.7,yellow
+2014,softball,4A,First Round,Elmira,,Ridgeview,,,Elmira HS,False,110.8,green
+2014,softball,4A,First Round,Scappoose,,Newport,,,Yaquina View Eleme…,False,96.1,green
+2014,softball,4A,First Round,North Marion / St. Paul,,McLoughlin,,,Yantis Park,False,216.7,yellow
+2014,softball,4A,Quarterfinals,Mazama,,Banks,,,Mazama HS,False,244.8,yellow
+2014,softball,4A,Quarterfinals,Stayton,,Henley,,,Stayton HS,False,189.8,yellow
+2014,softball,4A,Quarterfinals,Ridgeview,,Gladstone,,,Ridgeview HS,False,103.4,green
+2014,softball,4A,Quarterfinals,Newport,,McLoughlin,,,Yantis Park,False,289.5,red
+2014,softball,4A,Semifinals,Banks,,Henley,,,Banks HS,False,248.4,yellow
+2014,softball,4A,Semifinals,Ridgeview,,McLoughlin,,,Yantis Park,False,177.8,yellow
+2014,softball,4A,Championship,Henley,,McLoughlin,,,OSU Softball Complex,False,308.8,red
+2014,softball,5A,First Round,Marist Catholic,,St. Helens,,,"Hillsboro Stadium, H…",False,128.5,yellow
+2014,softball,5A,First Round,Churchill,,Putnam,,,Hood View Park,False,100.4,green
+2014,softball,5A,First Round,Eagle Point,,West Albany,,,Eagle Point HS,False,150.0,yellow
+2014,softball,5A,First Round,Corvallis,,Pendleton,,,Corvallis HS,False,231.1,yellow
+2014,softball,5A,Quarterfinals,Liberty,,Pendleton,,,Liberty HS,False,204.3,yellow
+2014,softball,5A,Quarterfinals,Willamette,,Hood River Valley,,,Willamette HS,False,137.4,yellow
+2014,softball,5A,Semifinals,Pendleton,,Hood River Valley,,,Pendleton HS,False,131.6,yellow
+2014,softball,5A,Championship,Putnam,,Pendleton,,,OSU Softball Complex,False,186.1,yellow
+2014,softball,6A,First Round,Beaverton,,North Medford,,,Beaverton HS,False,217.0,yellow
+2014,softball,6A,First Round,Gresham,,Grants Pass,,,Gresham HS,False,216.3,yellow
+2014,softball,6A,First Round,South Medford,,Tualatin,,,South Medford HS,False,212.0,yellow
+2014,softball,6A,First Round,Roseburg,,Forest Grove,,,Roseburg HS,False,159.5,yellow
+2014,softball,6A,First Round,Sheldon,,Glencoe,,,Sheldon HS,False,99.4,green
+2014,softball,6A,Second Round,Jesuit,,North Medford,,,Jesuit HS,False,217.3,yellow
+2014,softball,6A,Second Round,Thurston,,Grants Pass,,,Thurston HS,False,112.9,green
+2014,softball,6A,Semifinals,Westview,,North Medford,,,Westview HS,False,220.9,yellow
+2014,softball,6A,Semifinals,South Medford,,South Salem,,,South Medford HS,False,179.6,yellow
+2014,softball,6A,Championship,South Salem,,North Medford,,,OSU Softball Complex,False,177.6,yellow
+2017,baseball,2A/1A,First Round,Bandon,,Dufur / South Wasc…,,,Quinton Street Ballpark …,False,229.1,yellow
+2017,baseball,2A/1A,First Round,Pilot Rock / Nixyaawii,,Umpqua Valley Christian,,,Pilot Rock / Nixyaawii HS,False,272.0,red
+2017,baseball,2A/1A,First Round,Bonanza,,Regis,,,Bonanza HS,False,192.6,yellow
+2017,baseball,2A/1A,First Round,Nestucca,,Oakland,,,Nestucca HS,False,126.8,yellow
+2017,baseball,2A/1A,First Round,Kennedy,,Sherman,,,Kennedy HS,False,104.5,green
+2017,baseball,2A/1A,First Round,Lost River,,Knappa,,,Lost River HS,False,303.5,red
+2017,baseball,2A/1A,Quarterfinals,Umpqua Valley Christian,,Dufur / South Wasc…,,,Quinton Street Ballpa…,False,189.4,yellow
+2017,baseball,2A/1A,Quarterfinals,Oakland,,Regis,,,Oakland HS,False,98.6,green
+2017,baseball,2A/1A,Quarterfinals,Sherman,,Knappa,,,Sherman HS,False,145.9,yellow
+2017,baseball,2A/1A,Semifinals,Reedsport,,Dufur,,,Quinton Street Ballpark …,False,190.0,yellow
+2017,baseball,2A/1A,Semifinals,Regis,,Knappa,,,Regis HS,False,103.0,green
+2017,baseball,2A/1A,Championship,Reedsport,,Knappa,,,Volcanoes Stadium,False,173.1,yellow
+2017,baseball,3A,First Round,Catlin Gabel,,Stanfield,,,Catlin Gabel HS,False,173.5,yellow
+2017,baseball,3A,First Round,Cascade Christian,,Santiam Christian,,,Cascade Christian HS,False,162.9,yellow
+2017,baseball,3A,First Round,Irrigon,,"St. Mary's, Medford",,,Irrigon HS,False,298.0,red
+2017,baseball,3A,First Round,Nyssa,,Dayton,,,Nyssa HS,False,313.6,red
+2017,baseball,3A,First Round,Salem Academy,,Glide,,,Salem Academy HS,False,113.4,green
+2017,baseball,3A,First Round,Joseph / Enterprise / …,,La Pine,,,Joseph / Enterprise / … HS,False,240.6,yellow
+2017,baseball,3A,Quarterfinals,Taft,,Stanfield,,,Taft HS,False,239.7,yellow
+2017,baseball,3A,Quarterfinals,Santiam Christian,,"St. Mary's, Medford",,,Santiam Christian HS,False,162.9,yellow
+2017,baseball,3A,Quarterfinals,Glide,,Dayton,,,Glide HS,False,132.6,yellow
+2017,baseball,3A,Semifinals,"St. Mary's, Medford",,Stanfield,,,"St. Mary's, Medford HS",False,299.5,red
+2017,baseball,4A,First Round,Astoria,,Estacada,,,Astoria HS,False,95.2,green
+2017,baseball,4A,First Round,Phoenix,,La Grande,,,Phoenix HS,False,316.3,red
+2017,baseball,4A,First Round,Junction City,,Henley,,,Junction City HS,False,160.2,yellow
+2017,baseball,4A,Quarterfinals,Astoria,,Hidden Valley,,,Astoria HS,False,262.2,red
+2017,baseball,4A,Quarterfinals,Sweet Home,,La Grande,,,Sweet Home HS,False,236.4,yellow
+2017,baseball,4A,Quarterfinals,Banks,,Henley,,,Banks HS,False,248.4,yellow
+2017,baseball,4A,Semifinals,Astoria,,La Grande,,,Astoria HS,False,283.2,red
+2017,baseball,4A,Semifinals,Philomath,,Henley,,,Philomath HS,False,183.5,yellow
+2017,baseball,4A,Championship,La Grande,,Henley,,,Volcanoes Stadium,False,284.1,red
+2017,baseball,5A,First Round,Milwaukie,,Churchill,,,Milwaukie HS,False,101.2,green
+2017,baseball,5A,First Round,Summit,,Wilsonville,,,Summit HS,False,110.5,green
+2017,baseball,5A,First Round,Dallas,,Hood River Valley,,,Dallas HS,False,103.2,green
+2017,baseball,5A,First Round,Hillsboro,,Crater,,,Anhorn Field,False,217.5,yellow
+2017,baseball,5A,Quarterfinals,Putnam,,Crater,,,Putnam HS,False,211.6,yellow
+2017,baseball,5A,Semifinals,Crescent Valley,,Crater,,,Crescent Valley HS,False,153.6,yellow
+2017,baseball,5A,Championship,Crater,,Churchill,,,Volcanoes Stadium,False,114.4,green
+2017,baseball,6A,First Round,Roseburg,,South Salem,,,Roseburg HS,False,118.2,green
+2017,baseball,6A,First Round,Reynolds,,Sheldon,,,Reynolds HS,False,105.6,green
+2017,baseball,6A,First Round,Jesuit,,South Medford,,,Harry and David Field,False,219.4,yellow
+2017,baseball,6A,First Round,Grants Pass,,Westview,,,Grants Pass HS,False,215.8,yellow
+2017,baseball,6A,Second Round,Roseburg,,Beaverton,,,Roseburg HS,False,159.1,yellow
+2017,baseball,6A,Second Round,South Medford,,Sheldon,,,South Medford HS,False,123.2,yellow
+2017,baseball,6A,Quarterfinals,Grant,,Sheldon,,,Grant HS,False,102.7,green
+2016,baseball,6A,First Round,Century,,Sheldon,,,Century HS,False,98.8,green
+2016,baseball,6A,First Round,South Medford,,West Linn,,,South Medford HS,False,211.1,yellow
+2016,baseball,6A,First Round,Grants Pass,,Beaverton,,,Grants Pass HS,False,212.2,yellow
+2016,baseball,6A,First Round,Grant,,North Medford,,,Grant HS,False,221.2,yellow
+2016,baseball,6A,First Round,Roseburg,,West Salem,,,Roseburg HS,False,120.8,yellow
+2016,baseball,5A,First Round,Milwaukie,,Summit,,,Milwaukie HS,False,114.1,green
+2016,baseball,5A,First Round,Hillsboro,,Crater,,,Anhorn Field,False,217.5,yellow
+2016,baseball,5A,First Round,La Salle Prep,,Churchill,,,La Salle Prep HS,False,100.9,green
+2016,baseball,5A,First Round,Wilsonville,,Ashland,,,North Mountain Park,False,214.6,yellow
+2016,baseball,5A,First Round,Eagle Point,,Hood River Valley,,,Eagle Point HS,False,232.7,yellow
+2016,baseball,5A,Quarterfinals,Putnam,,Summit,,,Putnam HS,False,113.0,green
+2016,baseball,5A,Quarterfinals,Churchill,,Crater,,,Churchill HS,False,114.4,green
+2016,baseball,5A,Quarterfinals,Ashland,,Hood River Valley,,,Ashland HS,False,250.1,red
+2016,baseball,5A,Semifinals,Crescent Valley,,Summit,,,Crescent Valley HS,False,101.7,green
+2016,baseball,5A,Semifinals,Churchill,,Hood River Valley,,,Churchill HS,False,140.8,yellow
+2016,baseball,5A,Championship,Hood River Valley,,Summit,,,Volcanoes Stadium,False,112.5,green
+2016,baseball,4A,First Round,Brookings-Harbor,,Henley,,,Brookings-Harbor HS,False,131.1,yellow
+2016,baseball,4A,First Round,Hidden Valley,,La Grande,,,Hidden Valley HS,False,330.8,red
+2016,baseball,4A,First Round,Astoria,,North Bend,,,Astoria HS,False,193.1,yellow
+2016,baseball,4A,First Round,Baker,,Cottage Grove,,,Baker HS,False,267.1,red
+2016,baseball,4A,First Round,Ontario,,Estacada,,,Ontario HS,False,278.0,red
+2016,baseball,4A,First Round,South Umpqua,,Banks,,,South Umpqua HS,False,183.1,yellow
+2016,baseball,4A,Quarterfinals,Astoria,,Cottage Grove,,,Astoria HS,False,169.4,yellow
+2016,baseball,4A,Quarterfinals,Elmira,,Banks,,,Hillsboro Stadium - Ron T…,False,106.7,green
+2016,baseball,4A,Semifinals,Astoria,,Henley,,,Astoria HS,False,296.8,red
+2016,baseball,4A,Championship,Estacada,,Henley,,,Volcanoes Stadium,False,218.0,yellow
+2016,baseball,3A,First Round,Nyssa,,"St. Mary's, Medford",,,Nyssa HS,False,315.0,red
+2016,baseball,3A,First Round,Lakeview,,Stanfield,,,Horyna Athletic Comp…,False,254.3,red
+2016,baseball,3A,First Round,Catlin Gabel,,Pleasant Hill,,,Catlin Gabel HS,False,105.6,green
+2016,baseball,3A,First Round,Vale,,Glide,,,Vale HS,False,296.9,red
+2016,baseball,3A,Quarterfinals,"Horizon Christian, Tualatin",,"St. Mary's, Medford",,,"Horizon Christian, Tualatin HS",False,211.3,yellow
+2016,baseball,3A,Quarterfinals,Catlin Gabel,,Stanfield,,,Horyna Athletic Comp…,False,173.5,yellow
+2016,baseball,3A,Quarterfinals,Glide,,Rainier,,,Glide HS,False,192.8,yellow
+2016,baseball,3A,Semifinals,"St. Mary's, Medford",,Santiam Christian,,,"St. Mary's, Medford HS",False,162.9,yellow
+2016,baseball,3A,Semifinals,Stanfield,,Rainier,,,Stanfield HS,False,180.1,yellow
+2016,baseball,3A,Championship,Stanfield,,Santiam Christian,,,Volcanoes Stadium,False,209.6,yellow
+2016,baseball,2A/1A,First Round,Dufur,,Burns,,,Dufur HS,False,164.6,yellow
+2016,baseball,2A/1A,First Round,Lost River,,Irrigon,,,Lost River HS,False,287.1,red
+2016,baseball,2A/1A,First Round,Regis,,Weston-McEwen,,,Regis HS,False,220.6,yellow
+2016,baseball,2A/1A,First Round,Oakland,,Knappa,,,Oakland HS,False,191.3,yellow
+2016,baseball,2A/1A,Quarterfinals,Waldport,,Burns,,,Waldport HS,False,255.8,red
+2016,baseball,2A/1A,Quarterfinals,Kennedy,,Irrigon,,,Kennedy HS,False,170.1,yellow
+2016,baseball,2A/1A,Quarterfinals,Weston-McEwen,,Monroe,,,Weston-McEwen HS,False,256.3,red
+2016,baseball,2A/1A,Quarterfinals,North Douglas,,Knappa,,,North Douglas HS,False,174.7,yellow
+2016,baseball,2A/1A,Semifinals,Irrigon,,Burns,,,Irrigon HS,False,161.1,yellow
+2016,baseball,2A/1A,Semifinals,Monroe,,Knappa,,,Monroe HS,False,129.6,yellow
+2016,baseball,2A/1A,Championship,Knappa,,Burns,,,Volcanoes Stadium,False,285.5,red
+2015,baseball,6A,First Round,Thurston,,Westview,,,Thurston HS,False,103.5,green
+2015,baseball,6A,First Round,Grants Pass,,Gresham,,,Grants Pass HS,False,216.3,yellow
+2015,baseball,6A,First Round,Grant,,North Medford,,,Grant HS,False,221.2,yellow
+2015,baseball,6A,Second Round,Grants Pass,,McMinnville,,,Grants Pass HS,False,191.6,yellow
+2015,baseball,6A,Second Round,Sherwood,,North Medford,,,Sherwood HS,False,208.0,yellow
+2015,baseball,6A,Quarterfinals,Beaverton,,Sheldon,,,Beaverton HS,False,97.3,green
+2015,baseball,6A,Quarterfinals,McMinnville,,North Medford,,,McMinnville HS,False,198.6,yellow
+2015,baseball,5A,First Round,Wilsonville,,Bend,,,Wilsonville HS,False,111.8,green
+2015,baseball,5A,First Round,St. Helens,,North Eugene,,,St. Helens HS,False,124.6,yellow
+2015,baseball,5A,First Round,Crater,,Summit,,,Crater HS,False,143.2,yellow
+2015,baseball,5A,First Round,Pendleton,,Corvallis,,,Pendleton HS,False,231.1,yellow
+2015,baseball,5A,First Round,Dallas,,Hood River Valley,,,Dallas HS,False,103.2,green
+2015,baseball,5A,First Round,Putnam,,Churchill,,,Putnam HS,False,100.4,green
+2015,baseball,5A,Quarterfinals,Bend,,Liberty,,,Bend HS,False,131.8,yellow
+2015,baseball,5A,Quarterfinals,Pendleton,,Crescent Valley,,,Pendleton HS,False,229.7,yellow
+2015,baseball,5A,Semifinals,Summit,,Liberty,,,Ron Tonkin Field,False,130.5,yellow
+2015,baseball,5A,Semifinals,Pendleton,,Hood River Valley,,,Pendleton HS,False,131.6,yellow
+2015,baseball,4A,First Round,Cascade,,Henley,,,Cascade HS,False,195.1,yellow
+2015,baseball,4A,First Round,Sweet Home,,North Bend / Orego…,,,Sweet Home HS,False,100.9,green
+2015,baseball,4A,First Round,Estacada,,Astoria,,,Estacada HS,False,95.2,green
+2015,baseball,4A,First Round,Philomath,,Hidden Valley,,,Philomath HS,False,147.3,yellow
+2015,baseball,4A,First Round,Mazama,,Gladstone,,,Mazama HS,False,222.9,yellow
+2015,baseball,4A,First Round,North Marion,,Baker,,,North Marion HS,False,242.5,yellow
+2015,baseball,4A,First Round,Scappoose,,Newport,,,Frank Wade Field,False,96.1,green
+2015,baseball,4A,Quarterfinals,North Bend / Oregon …,,Henley,,,North Bend / Oregon … HS,False,152.7,yellow
+2015,baseball,4A,Quarterfinals,Astoria,,Hidden Valley,,,Astoria HS,False,262.2,red
+2015,baseball,4A,Championship,Scappoose,,Henley,,,Volcanoes Stadium,False,254.4,red
+2015,baseball,3A,First Round,Scio,,Cascade Christian,,,U.S. Cellular Fields,False,166.7,yellow
+2015,baseball,3A,First Round,Pleasant Hill,,Stanfield,,,Pleasant Hill HS,False,222.2,yellow
+2015,baseball,3A,First Round,Vale,,Glide,,,Vale HS,False,296.9,red
+2015,baseball,3A,First Round,Harrisburg,,Clatskanie,,,Harrisburg HS,False,126.5,yellow
+2015,baseball,3A,First Round,"St. Mary's, Medford",,Taft,,,"St. Mary's, Medford HS",False,190.6,yellow
+2015,baseball,3A,First Round,Nyssa,,Santiam Christian,,,Nyssa HS,False,313.1,red
+2015,baseball,3A,Quarterfinals,Stanfield,,Cascade Christian,,,US Cellular Field,False,299.8,red
+2015,baseball,3A,Quarterfinals,"Horizon Christian, Tualatin",,Glide,,,"Horizon Christian, Tualatin HS",False,144.8,yellow
+2015,baseball,3A,Quarterfinals,"St. Mary's, Medford",,Santiam Christian,,,"St. Mary's, Medford HS",False,162.9,yellow
+2015,baseball,3A,Semifinals,Clatskanie,,Santiam Christian,,,Clatskanie HS,False,99.1,green
+2015,baseball,2A/1A,First Round,Glendale,,Monroe / Alsea,,,Glendale HS,False,109.5,green
+2015,baseball,2A/1A,First Round,Kennedy,,Pilot Rock / Nixyaa…,,,Kennedy HS,False,194.7,yellow
+2015,baseball,2A/1A,First Round,Faith Bible,,Burns,,,Faith Bible HS,False,235.4,yellow
+2015,baseball,2A/1A,First Round,Grant Union,,Regis,,,Grant Union HS,False,190.7,yellow
+2015,baseball,2A/1A,First Round,Country Christian,,North Douglas,,,Country Christian HS,False,109.1,green
+2015,baseball,2A/1A,First Round,Toledo,,Dufur,,,Toledo HS,False,148.9,yellow
+2015,baseball,2A/1A,First Round,Lost River,,Knappa,,,Lost River HS,False,303.5,red
+2015,baseball,2A/1A,Quarterfinals,Pilot Rock / Nixyaawii,,Monroe / Alsea,,,Pilot Rock / Nixyaawii HS,False,232.4,yellow
+2015,baseball,2A/1A,Quarterfinals,Reedsport,,Burns,,,Reedsport HS,False,252.2,red
+2015,baseball,2A/1A,Quarterfinals,Dufur,,Knappa,,,Dufur HS,False,129.1,yellow
+2015,baseball,2A/1A,Semifinals,Burns,,Monroe / Alsea,,,Goss Stadium,False,216.9,yellow
+2015,baseball,2A/1A,Semifinals,Regis,,Knappa,,,CMH Field Astoria,False,103.0,green
+2015,baseball,2A/1A,Championship,Knappa,,Monroe / Alsea,,,Volcanoes Stadium,False,129.6,yellow
+2014,baseball,2A/1A,First Round,Lost River,,Knappa,,,Broadway Field,False,303.5,red
+2014,baseball,2A/1A,First Round,Portland Christian,,Gold Beach,,,Portland Christian HS,False,231.9,yellow
+2014,baseball,2A/1A,First Round,Country Christian,,Weston-McEwen / …,,,Country Christian HS,False,203.3,yellow
+2014,baseball,2A/1A,First Round,Gaston,,Umpqua Valley Christian,,,Legion Field,False,152.6,yellow
+2014,baseball,2A/1A,First Round,Dufur / South Wasc…,,Grant Union,,,Dufur / South Wasc… HS,False,128.2,yellow
+2014,baseball,2A/1A,First Round,Union / Cove,,Monroe,,,Union / Cove HS,False,273.4,red
+2014,baseball,2A/1A,Quarterfinals,Dufur,,Monroe,,,Dufur HS,False,132.2,yellow
+2014,baseball,2A/1A,Championship,Weston-McEwen,,Monroe,,,Volcanoes Stadium,False,256.3,red
+2014,baseball,3A,First Round,Harrisburg,,Stanfield,,,Harrisburg HS,False,219.3,yellow
+2014,baseball,3A,First Round,Dayton,,Glide,,,Dayton HS,False,132.6,yellow
+2014,baseball,3A,First Round,Burns,,"Horizon Christian, Tualatin",,,West Linn HS,False,221.0,yellow
+2014,baseball,3A,First Round,Vale,,Pleasant Hill,,,Vale HS,False,284.2,red
+2014,baseball,3A,First Round,"St. Mary's, Medford",,Santiam Christian,,,"St. Mary's, Medford HS",False,162.9,yellow
+2014,baseball,3A,First Round,Rainier,,Cascade Christian,,,US Cellular Field #9,False,260.0,red
+2014,baseball,3A,Quarterfinals,Pleasant Hill,,"Horizon Christian, Tualatin",,,Pleasant Hill HS,False,99.0,green
+2014,baseball,3A,Semifinals,Glide,,Valley Catholic,,,Glide HS,False,149.9,yellow
+2014,baseball,3A,Semifinals,"Horizon Christian, Tualatin",,Cascade Christian,,,US Cellular Field #9,False,211.3,yellow
+2014,baseball,4A,First Round,Mazama,,Sisters,,,Mazama HS,False,144.6,yellow
+2014,baseball,4A,First Round,La Grande,,Scappoose,,,La Grande HS,False,233.6,yellow
+2014,baseball,4A,First Round,Hidden Valley,,North Marion,,,Hidden Valley HS,False,197.2,yellow
+2014,baseball,4A,First Round,Estacada,,Baker / Powder Va…,,,Estacada HS,False,222.6,yellow
+2014,baseball,4A,First Round,Cascade,,Ridgeview,,,Cascade HS,False,96.0,green
+2014,baseball,4A,First Round,Astoria,,Philomath,,,Astoria HS,False,116.1,green
+2014,baseball,4A,First Round,Cottage Grove,,Henley,,,Cottage Grove HS,False,131.3,yellow
+2014,baseball,4A,Quarterfinals,Newport,,Sisters,,,Newport HS,False,125.8,yellow
+2014,baseball,4A,Quarterfinals,La Grande,,North Marion,,,La Grande HS,False,227.1,yellow
+2014,baseball,4A,Quarterfinals,Ridgeview,,Baker,,,Ridgeview HS,False,168.1,yellow
+2014,baseball,4A,Quarterfinals,Philomath,,Henley,,,Philomath HS,False,183.5,yellow
+2014,baseball,4A,Semifinals,Ridgeview,,Henley,,,Ridgeview HS,False,148.3,yellow
+2014,baseball,4A,Championship,Henley,,Sisters,,,Volcanoes Stadium,False,147.1,yellow
+2014,baseball,5A,First Round,Hermiston,,Sherwood,,,Hermiston HS,False,174.9,yellow
+2014,baseball,5A,First Round,Dallas,,Ashland,,,N. Mountain Park,False,190.7,yellow
+2014,baseball,5A,First Round,Hood River Valley,,Springfield,,,Hood River Valley HS,False,135.6,yellow
+2014,baseball,5A,First Round,Corvallis,,Pendleton,,,Corvallis HS,False,231.1,yellow
+2014,baseball,5A,Quarterfinals,Marist Catholic,,Sandy,,,Marist Catholic HS,False,103.5,green
+2014,baseball,5A,Quarterfinals,Sherwood,,Ashland,,,N. Mountain Park,False,218.6,yellow
+2014,baseball,5A,Quarterfinals,Hood River Valley,,Pendleton,,,Hood River Valley HS,False,131.6,yellow
+2014,baseball,5A,Semifinals,Hood River Valley,,Crescent Valley,,,Hood River Valley HS,False,114.6,green
+2014,baseball,6A,First Round,Aloha,,Crater,,,Anhorn Field,False,215.3,yellow
+2014,baseball,6A,First Round,Sunset,,Sheldon,,,Sunset HS,False,98.9,green
+2014,baseball,6A,First Round,Roseburg,,West Linn,,,Roseburg HS,False,152.8,yellow
+2014,baseball,6A,First Round,Thurston,,Westview,,,Thurston HS,False,103.5,green
+2014,baseball,6A,First Round,Barlow,,South Medford,,,Harry & David Field,False,220.3,yellow
+2014,baseball,6A,First Round,Oregon City,,North Medford,,,Oregon City HS,False,208.4,yellow
+2014,baseball,6A,Second Round,Tigard,,Crater,,,Anhorn Field,False,211.2,yellow
+2014,baseball,6A,Second Round,Century,,Sheldon,,,Century HS,False,98.8,green
+2014,baseball,6A,Quarterfinals,Sheldon,,Crater,,,Anhorn Field,False,119.0,green
+2014,baseball,6A,Quarterfinals,Lake Oswego,,North Medford,,,Lake Oswego HS,False,211.9,yellow
+2014,baseball,6A,Semifinals,Hillsboro,,Sheldon,,,Hillsboro HS,False,98.9,green
+2014,baseball,6A,Semifinals,Tualatin,,North Medford,,,Tualatin HS,False,209.9,yellow
+2014,baseball,6A,Championship,Sheldon,,North Medford,,,Volcanoes Stadium,False,121.2,yellow
