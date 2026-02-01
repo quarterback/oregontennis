@@ -38,8 +38,8 @@ DIVISIONS = {
     "baseball": ["6A", "5A", "4A", "3A", "2A/1A"],
 }
 
-# Last 4 years
-YEARS = [2022, 2023, 2024, 2025]
+# Years with data (2020 was COVID - no playoffs)
+YEARS = [2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025]
 
 # Distance thresholds for tier colors (in miles)
 # Only tracking matchups over 95 miles
@@ -274,6 +274,43 @@ OREGON_SCHOOLS = {
     "Mountain View": {"city": "Bend", "lat": 44.0282, "lon": -121.3253},
     "Crosspoint Christian": {"city": "Oregon City", "lat": 45.3573, "lon": -122.6068},
     "Aloha": {"city": "Aloha", "lat": 45.4918, "lon": -122.8706},
+
+    # Additional schools from 2014-2019 data
+    "Beaverton": {"city": "Beaverton", "lat": 45.4871, "lon": -122.8037},
+    "Bonanza": {"city": "Bonanza", "lat": 42.2012, "lon": -121.4073},
+    "Butte Falls": {"city": "Butte Falls", "lat": 42.5437, "lon": -122.5678},
+    "Central Linn": {"city": "Halsey", "lat": 44.3879, "lon": -123.1062},
+    "Colton": {"city": "Colton", "lat": 45.1701, "lon": -122.4312},
+    "Gold Beach": {"city": "Gold Beach", "lat": 42.4073, "lon": -124.4234},
+    "Hermiston": {"city": "Hermiston", "lat": 45.8401, "lon": -119.2895},
+    "Riddle": {"city": "Riddle", "lat": 42.9493, "lon": -123.3634},
+    "Sutherlin": {"city": "Sutherlin", "lat": 43.3901, "lon": -123.3123},
+    "Waldport": {"city": "Waldport", "lat": 44.4268, "lon": -124.0668},
+    "Western Mennonite": {"city": "Salem", "lat": 44.9429, "lon": -123.0351},
+    "Dufur": {"city": "Dufur", "lat": 45.4565, "lon": -121.1240},
+    "Hosanna Christian": {"city": "Klamath Falls", "lat": 42.2249, "lon": -121.7817},
+    "Siletz Valley": {"city": "Siletz", "lat": 44.7212, "lon": -123.9212},
+    "Stanfield": {"city": "Stanfield", "lat": 45.7779, "lon": -119.2151},
+    "Arlington": {"city": "Arlington", "lat": 45.7212, "lon": -120.1984},
+    "Sherman": {"city": "Moro", "lat": 45.4840, "lon": -120.7340},
+    "Riverside": {"city": "Boardman", "lat": 45.8390, "lon": -119.7006},
+    "Crow": {"city": "Crow", "lat": 43.9568, "lon": -123.4051},
+    "Prospect": {"city": "Prospect", "lat": 42.7512, "lon": -122.4868},
+    "Cove": {"city": "Cove", "lat": 45.3001, "lon": -117.8140},
+    "Pilot Rock": {"city": "Pilot Rock", "lat": 45.4840, "lon": -118.8390},
+    "South Wasco": {"city": "Maupin", "lat": 45.1765, "lon": -121.0840},
+    "Eddyville": {"city": "Eddyville", "lat": 44.6168, "lon": -123.8068},
+    "Crater Lake": {"city": "Chiloquin", "lat": 42.5790, "lon": -121.8617},
+    "Nixyaawii": {"city": "Pendleton", "lat": 45.6721, "lon": -118.7886},
+    "Yoncalla": {"city": "Yoncalla", "lat": 43.5965, "lon": -123.2817},
+    "Elkton": {"city": "Elkton", "lat": 43.6318, "lon": -123.5534},
+    "Triangle Lake": {"city": "Blachly", "lat": 44.0868, "lon": -123.5851},
+    "Condon": {"city": "Condon", "lat": 45.2337, "lon": -120.1851},
+    "Prairie City": {"city": "Prairie City", "lat": 44.4590, "lon": -118.7068},
+    "Wallowa": {"city": "Wallowa", "lat": 45.5712, "lon": -117.5290},
+    "Ione": {"city": "Ione", "lat": 45.4965, "lon": -119.8268},
+    "Milwaukie": {"city": "Milwaukie", "lat": 45.4451, "lon": -122.6306},
+    "Faith Bible": {"city": "Hillsboro", "lat": 45.5229, "lon": -122.9898},
 }
 
 
@@ -1048,7 +1085,7 @@ def generate_html(games: list[Game], output_file: str = "brackets.html"):
         <header>
             <a href="index.html" class="back-link">&larr; Back to Home</a>
             <h1>OSAA Playoff Brackets</h1>
-            <p class="subtitle">Long-Haul Playoff Matchups (95+ miles) - Baseball & Softball 2022-2025</p>
+            <p class="subtitle">Long-Haul Playoff Matchups (95+ miles) - Baseball & Softball 2014-2025</p>
         </header>
 
         <div class="filters">
@@ -1068,6 +1105,12 @@ def generate_html(games: list[Game], output_file: str = "brackets.html"):
                     <option value="2024">2024</option>
                     <option value="2023">2023</option>
                     <option value="2022">2022</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
                 </select>
             </div>
             <div class="filter-group">
@@ -1126,31 +1169,31 @@ def generate_html(games: list[Game], output_file: str = "brackets.html"):
         </div>
 
         <div style="background: #1a365d; color: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
-            <h2 style="margin: 0 0 1rem 0;">📊 Overall Travel Statistics (2022-2025)</h2>
+            <h2 style="margin: 0 0 1rem 0;">📊 Overall Travel Statistics (2014-2025)</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
                 <div style="text-align: center;">
-                    <div style="font-size: 2rem; font-weight: bold;">405</div>
+                    <div style="font-size: 2rem; font-weight: bold;">1,381</div>
                     <div style="font-size: 0.85rem; opacity: 0.9;">Total Playoff Games</div>
                 </div>
                 <div style="text-align: center;">
-                    <div style="font-size: 2rem; font-weight: bold;">170 mi</div>
+                    <div style="font-size: 2rem; font-weight: bold;">139 mi</div>
                     <div style="font-size: 0.85rem; opacity: 0.9;">Avg Distance</div>
                 </div>
                 <div style="text-align: center;">
-                    <div style="font-size: 2rem; font-weight: bold; color: #68d391;">21%</div>
+                    <div style="font-size: 2rem; font-weight: bold; color: #68d391;">37%</div>
                     <div style="font-size: 0.85rem; opacity: 0.9;">Short Travel (&lt;95 mi)</div>
                 </div>
                 <div style="text-align: center;">
-                    <div style="font-size: 2rem; font-weight: bold; color: #fc8181;">79%</div>
+                    <div style="font-size: 2rem; font-weight: bold; color: #fc8181;">63%</div>
                     <div style="font-size: 0.85rem; opacity: 0.9;">Long-Haul (95+ mi)</div>
                 </div>
                 <div style="text-align: center;">
-                    <div style="font-size: 2rem; font-weight: bold;">63,612</div>
+                    <div style="font-size: 2rem; font-weight: bold;">169,235</div>
                     <div style="font-size: 0.85rem; opacity: 0.9;">Total Long-Haul Miles</div>
                 </div>
             </div>
             <p style="margin: 1rem 0 0 0; font-size: 0.9rem; opacity: 0.9; text-align: center;">
-                <strong>Key Finding:</strong> Nearly 4 out of 5 playoff games require 95+ miles of travel
+                <strong>Key Finding:</strong> Nearly 2 out of 3 playoff games require 95+ miles of travel
             </p>
         </div>
 
