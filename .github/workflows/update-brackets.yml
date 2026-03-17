@@ -1,0 +1,38 @@
+name: Update Brackets
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'bracket_data.json'
+      - 'raw_brackets.txt'
+      - 'raw_baseball.txt'
+      - 'softball-brackets'
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate HTML and CSV from bracket data
+        run: python osaa_brackets.py --json bracket_data.json --csv osaa_brackets.csv --html brackets.html
+
+      - name: Commit updated output files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add brackets.html osaa_brackets.csv
+          git diff --cached --quiet || git commit -m "chore: regenerate brackets HTML and CSV [skip ci]"
+          git push

@@ -39,7 +39,7 @@ DIVISIONS = {
 }
 
 # Years with data (2020 was COVID - no playoffs)
-YEARS = [2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025]
+YEARS = [2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025, 2026]
 
 # Distance thresholds for tier colors (in miles)
 # Only tracking matchups over 95 miles
@@ -1085,7 +1085,7 @@ def generate_html(games: list[Game], output_file: str = "brackets.html"):
         <header>
             <a href="index.html" class="back-link">&larr; Back to Home</a>
             <h1>OSAA Playoff Brackets</h1>
-            <p class="subtitle">Long-Haul Playoff Matchups (95+ miles) - Baseball & Softball 2014-2025</p>
+            <p class="subtitle">Long-Haul Playoff Matchups (95+ miles) - Baseball & Softball 2014-2026</p>
         </header>
 
         <div class="filters">
@@ -1101,6 +1101,7 @@ def generate_html(games: list[Game], output_file: str = "brackets.html"):
                 <label for="year-filter">Year</label>
                 <select id="year-filter">
                     <option value="">All Years</option>
+                    <option value="2026">2026</option>
                     <option value="2025">2025</option>
                     <option value="2024">2024</option>
                     <option value="2023">2023</option>
@@ -1169,7 +1170,7 @@ def generate_html(games: list[Game], output_file: str = "brackets.html"):
         </div>
 
         <div style="background: #1a365d; color: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
-            <h2 style="margin: 0 0 1rem 0;">📊 Overall Travel Statistics (2014-2025)</h2>
+            <h2 style="margin: 0 0 1rem 0;">📊 Overall Travel Statistics (2014-2026)</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
                 <div style="text-align: center;">
                     <div style="font-size: 2rem; font-weight: bold;">1,381</div>
